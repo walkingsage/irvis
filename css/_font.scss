@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap&subset=cyrillic');
+
+@mixin sanscond{
+ font-family: 'Open Sans Condensed', ;
+}
+
+@mixin opensans {
+    font-family: 'Open Sans', ;
+}
+
+@mixin bold {
+    font-weight: 700;
+}
+
+@mixin light {
+    font-weight: 300;
+}
+
+@mixin regular {
+    font-weight: 400;
+}
