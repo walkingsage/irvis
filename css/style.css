@@ -1,52 +1,598 @@
-/*
-Error: File to import not found or unreadable: fonts.
-       Load path: E:/projects/irvis/irvis/irvis/css
-        on line 1 of E:\projects\irvis\irvis\irvis\css\style.sass
+@import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap&subset=cyrillic");
+* {
+  padding: 0;
+  margin: 0; }
 
-1: @import fonts
-2:  
-3: *
-4:     padding: 0
-5:     margin: 0
-6: 
+.container {
+  max-width: 1190px;
+  padding: 0 10px 0 10px;
+  margin: 0 auto; }
 
-Backtrace:
-E:\projects\irvis\irvis\irvis\css\style.sass:1
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:67:in `rescue in import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:45:in `import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:28:in `imported_file'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:37:in `css_import?'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:314:in `visit_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
-C:/Program Files (x86)/Koala/bin/sass:22:in `load'
-C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: File to import not found or unreadable: fonts.\A        Load path: E:/projects/irvis/irvis/irvis/css\A         on line 1 of E:\projects\irvis\irvis\irvis\css\style.sass\A \A 1: @import fonts\A 2:  \A 3: *\A 4:     padding: 0\A 5:     margin: 0\A 6: "; }
+header {
+  background-color: #fff;
+  margin: 0;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  z-index: 50; }
+
+.header__content {
+  display: grid;
+  box-sizing: border-box;
+  grid-template-columns: 12.126% 2.22% 18.7% 9.65% 14.5175% 4.61% 12.468% 6% 19.72%;
+  padding: 20px 0;
+  width: 100%;
+  align-items: center;
+  z-index: 51; }
+  .header__content .header__logo {
+    width: 100%;
+    align-self: center;
+    z-index: 51; }
+  .header__content .header__title {
+    font-family: "Open Sans";
+    font-weight: 400;
+    color: #0096dc;
+    font-size: 0.875em;
+    width: 100%;
+    z-index: 51; }
+  .header__content .header__button {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 17.65% 5.8% 55.8%;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #55a831;
+    border-radius: 10px;
+    text-decoration: none;
+    z-index: 51; }
+    .header__content .header__button p {
+      text-transform: uppercase;
+      font-family: "Open Sans";
+      font-weight: 700;
+      font-size: 14px;
+      color: #55a831;
+      border-bottom: none;
+      z-index: 51; }
+  .header__content .header__button:hover {
+    border: 2px solid #3a790e; }
+    .header__content .header__button:hover p {
+      color: #3a790e; }
+  .header__content .header__clock {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 20% 15% 65%;
+    grid-template-rows: repeat(2, 50%);
+    z-index: 51; }
+    .header__content .header__clock img {
+      grid-area: 1/1/3/2;
+      align-self: center; }
+    .header__content .header__clock span {
+      grid-area: 1/2/3/3; }
+    .header__content .header__clock .header__clock__title {
+      grid-area: 1/3/3/4;
+      display: grid;
+      grid-template-columns: 100%;
+      grid-row: repeat(2, 50%); }
+      .header__content .header__clock .header__clock__title .weekend {
+        align-self: center;
+        font-family: "Open Sans";
+        font-weight: 400;
+        color: #333333;
+        font-size: 14px; }
+      .header__content .header__clock .header__clock__title .hours {
+        align-self: center;
+        font-family: "Open Sans";
+        font-weight: 700;
+        color: #333333;
+        font-size: 100%; }
+  .header__content .header__contact {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 8.65% 6.5% 84.85%;
+    grid-template-rows: repeat(2, 50%);
+    z-index: 51; }
+    .header__content .header__contact img {
+      grid-area: 1/1/2/2;
+      align-self: center; }
+    .header__content .header__contact span {
+      grid-area: 1/2/3/3; }
+    .header__content .header__contact .phone {
+      grid-area: 1/3/3/4;
+      display: grid;
+      grid-template-columns: 100%;
+      grid-row: repeat(2, 50%); }
+      .header__content .header__contact .phone .number {
+        text-decoration: none;
+        font-family: "Open Sans";
+        font-weight: 700;
+        font-size: 22px;
+        color: #333333;
+        text-align: right; }
+      .header__content .header__contact .phone .goform {
+        font-family: "Open Sans";
+        font-weight: 400;
+        font-size: 15px;
+        color: #0089cc;
+        text-align: right; }
+
+main {
+  margin-top: 100px; }
+  main .whowe {
+    background-image: url(../img/bgwhowe.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 100px 0;
+    margin: 0; }
+    main .whowe .whowe__main {
+      display: grid;
+      grid-template-columns: 43% 32%;
+      grid-template-rows: 442px;
+      grid-gap: 25%; }
+      main .whowe .whowe__main .whowe__left {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 50% 50%; }
+        main .whowe .whowe__main .whowe__left .whowe__title {
+          display: grid;
+          grid-template-columns: auto;
+          grid-template-rows: 50% 50%; }
+          main .whowe .whowe__main .whowe__left .whowe__title .whowe__title__one {
+            font-family: "Open Sans";
+            font-weight: 700;
+            color: #333333;
+            font-size: 26px; }
+          main .whowe .whowe__main .whowe__left .whowe__title .whowe__title__two {
+            font-family: "Open Sans";
+            font-weight: 700;
+            color: #333333;
+            font-size: 55px; }
+      main .whowe .whowe__main .whowe__favorite {
+        display: grid;
+        grid-template-columns: repeat(4, 22%);
+        grid-gap: 4%; }
+        main .whowe .whowe__main .whowe__favorite .contain {
+          position: relative;
+          display: grid;
+          grid-template-columns: auto;
+          grid-template-rows: 50% 50%;
+          justify-items: center; }
+          main .whowe .whowe__main .whowe__favorite .contain span {
+            grid-area: 2/1/3/2;
+            width: 100%;
+            height: 100%;
+            background-color: #0d8fe3;
+            border: 1px solid #ffffff;
+            border-radius: 50%;
+            position: absolute;
+            z-index: 3;
+            bottom: 0; }
+          main .whowe .whowe__main .whowe__favorite .contain img {
+            z-index: 4;
+            position: absolute;
+            bottom: 84px; }
+          main .whowe .whowe__main .whowe__favorite .contain p {
+            z-index: 4;
+            font-family: "Open Sans Condensed";
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: #ffffff;
+            grid-area: 2/1/3/2;
+            align-self: center;
+            justify-self: center;
+            text-align: center; }
+      main .whowe .whowe__main .form {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 25% 75%;
+        background-color: #ffffff;
+        border-radius: 10px; }
+        main .whowe .whowe__main .form .form__title {
+          text-align: center;
+          display: grid;
+          grid-template-rows: 50%;
+          grid-auto-columns: auto; }
+          main .whowe .whowe__main .form .form__title p {
+            align-self: end;
+            font-family: "Open Sans";
+            font-weight: 700;
+            font-size: 16px;
+            color: #333333;
+            text-transform: uppercase; }
+          main .whowe .whowe__main .form .form__title h1 {
+            align-self: start;
+            font-family: "Open Sans";
+            font-weight: 700;
+            font-size: 24px;
+            color: #333333;
+            text-transform: uppercase; }
+        main .whowe .whowe__main .form form {
+          display: grid;
+          grid-template-columns: auto;
+          grid-template-rows: 18% 18% 24% 18%;
+          grid-gap: 7%;
+          justify-items: center; }
+          main .whowe .whowe__main .form form input {
+            border-radius: 10px;
+            border: 1px solid #d1d1d1;
+            text-align: center;
+            width: 79%; }
+          main .whowe .whowe__main .form form .button {
+            border-radius: 10px;
+            border: 1px solid #ffc600;
+            box-shadow: 0 2px 20px rgba(255, 153, 0, 0.4);
+            background-image: linear-gradient(to bottom, #ffed26 0%, #ffb400 100%);
+            background-color: #e8e8e8;
+            text-align: center;
+            font-family: "Open Sans Condensed";
+            font-weight: 700;
+            color: #000000;
+            font-size: 20px;
+            width: 79%;
+            text-transform: uppercase; }
+          main .whowe .whowe__main .form form p {
+            font-family: "Open Sans";
+            font-weight: 300;
+            font-size: 11px;
+            color: #666666; }
+  main .type__balkon {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 5.84% 7.95% 19.157% 3.73% 63.6%;
+    margin: 79px 0 103px 0;
+    height: 1044px; }
+    main .type__balkon .main__primer__title {
+      display: grid;
+      grid-template-rows: 70% 30%;
+      text-align: center;
+      justify-items: center; }
+      main .type__balkon .main__primer__title h1 {
+        font-family: "Open Sans";
+        font-weight: 700;
+        color: #333333;
+        font-size: 30px;
+        line-height: 48px;
+        text-transform: uppercase;
+        align-self: start; }
+      main .type__balkon .main__primer__title .bbottom {
+        background-color: #57B1EC;
+        width: 9.6%;
+        height: 7.7%;
+        align-self: end; }
+    main .type__balkon .main__primer__type {
+      display: grid;
+      grid-template-columns: repeat(5, 18%);
+      grid-gap: 2.5%; }
+      main .type__balkon .main__primer__type .type__name {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 70% 30%;
+        justify-items: center;
+        text-align: center;
+        height: 100%; }
+        main .type__balkon .main__primer__type .type__name img {
+          grid-area: 1/1/2/2;
+          height: 100%;
+          align-self: center; }
+        main .type__balkon .main__primer__type .type__name a {
+          grid-area: 2/1/3/2;
+          align-self: center;
+          color: #249ae6;
+          font-family: "Open Sans";
+          font-weight: 400;
+          font-size: 100%;
+          line-height: 26px; }
+        main .type__balkon .main__primer__type .type__name .active {
+          color: #464646;
+          text-decoration: none; }
+      main .type__balkon .main__primer__type .type__name:hover {
+        cursor: pointer; }
+    main .type__balkon .primer__raboty {
+      display: grid;
+      grid-template-columns: 50% 50%; }
+      main .type__balkon .primer__raboty .content__primer {
+        max-width: 76.2393162393%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 2.8614457831% 4.3674698795% 45.1807228916% 4.5180722892% 17.3192771084% 6.4759036145% 10.6060606061%; }
+      main .type__balkon .primer__raboty .cold {
+        background-image: url("../img/cold.png");
+        display: grid;
+        grid-template-rows: 1.8072289157% 4.0662650602% 94.1265060241%; }
+        main .type__balkon .primer__raboty .cold .cold__line {
+          display: grid;
+          grid-template-rows: 41.7362270451% 58.4307178631%; }
+          main .type__balkon .primer__raboty .cold .cold__line .upper__line {
+            background-color: #0d8fe3;
+            border-radius: 5px 0 0;
+            width: 100%;
+            height: 100%; }
+          main .type__balkon .primer__raboty .cold .cold__line .treugolnik {
+            width: 0;
+            height: 0;
+            border-left: 7px solid transparent;
+            border-right: 7px solid transparent;
+            border-top: 7px solid #0d8fe3;
+            justify-self: center; }
+        main .type__balkon .primer__raboty .cold h1 {
+          font-family: "Open Sans";
+          font-weight: 700;
+          font-size: 20px;
+          text-transform: uppercase;
+          color: #0d8fe3;
+          justify-self: center; }
+        main .type__balkon .primer__raboty .cold img {
+          width: 100%;
+          justify-self: center; }
+        main .type__balkon .primer__raboty .cold .content__priemushestva {
+          display: grid;
+          grid-template-columns: auto;
+          grid-template-rows: repeat(4, 21.7391304348%);
+          grid-row-gap: 4.347826087%; }
+          main .type__balkon .primer__raboty .cold .content__priemushestva .cold__checkbox {
+            display: grid;
+            grid-template-columns: 5.6053811659% 94.3946188341%;
+            grid-gap: 3.8116591928%; }
+            main .type__balkon .primer__raboty .cold .content__priemushestva .cold__checkbox p {
+              color: #000000;
+              font-family: "Open Sans";
+              font-weight: 400;
+              font-size: 0.9rem;
+              line-height: 30px; }
+            main .type__balkon .primer__raboty .cold .content__priemushestva .cold__checkbox img {
+              width: 100%; }
+        main .type__balkon .primer__raboty .cold .primer__raboty__footer {
+          display: grid;
+          grid-template-columns: 34.7533632287% 58.7443946188%;
+          grid-column-gap: 5.6053811659%;
+          height: 100%; }
+          main .type__balkon .primer__raboty .cold .primer__raboty__footer .primer__raboty__footer__cold__left {
+            display: grid;
+            grid-template-rows: 50% 50%; }
+            main .type__balkon .primer__raboty .cold .primer__raboty__footer .primer__raboty__footer__cold__left .cost__cold {
+              font-family: "Open Sans";
+              font-weight: 700;
+              font-size: 1.25rem;
+              line-height: 1.875rem;
+              align-self: center; }
+            main .type__balkon .primer__raboty .cold .primer__raboty__footer .primer__raboty__footer__cold__left .key {
+              font-family: "Open Sans";
+              font-weight: 400;
+              font-size: 0.875rem;
+              line-height: 1.875rem;
+              align-self: center; }
+          main .type__balkon .primer__raboty .cold .primer__raboty__footer .primer__raboty__footer__cold__right .button {
+            border-radius: 10px;
+            border: 1px solid #ffc600;
+            box-shadow: 0 2px 20px rgba(255, 153, 0, 0.4);
+            background-image: linear-gradient(to bottom, #ffed26 0%, #ffb400 100%);
+            background-color: #e8e8e8;
+            text-align: center;
+            font-family: "Open Sans Condensed";
+            font-weight: 700;
+            color: #000000;
+            font-size: 1.25rem;
+            width: 100%;
+            height: 100%;
+            text-transform: uppercase;
+            font-weight: 700; }
+      main .type__balkon .primer__raboty .hot {
+        background-image: url("../img/hot.png");
+        display: grid;
+        grid-template-rows: 1.8072289157% 4.0662650602% 94.1265060241%; }
+        main .type__balkon .primer__raboty .hot .hot__line {
+          display: grid;
+          grid-template-rows: 41.7362270451% 58.4307178631%; }
+          main .type__balkon .primer__raboty .hot .hot__line .upper__line {
+            background-color: #ffb903;
+            border-radius: 0 5px 0 0;
+            width: 100%;
+            height: 100%; }
+          main .type__balkon .primer__raboty .hot .hot__line .treugolnik {
+            width: 0;
+            height: 0;
+            border-left: 7px solid transparent;
+            border-right: 7px solid transparent;
+            border-top: 7px solid #ffb903;
+            justify-self: center; }
+        main .type__balkon .primer__raboty .hot h1 {
+          font-family: "Open Sans";
+          font-weight: 700;
+          font-size: 20px;
+          text-transform: uppercase;
+          color: #ffb903;
+          justify-self: center; }
+        main .type__balkon .primer__raboty .hot img {
+          width: 100%;
+          justify-self: center; }
+        main .type__balkon .primer__raboty .hot .content__priemushestva {
+          display: grid;
+          grid-template-columns: auto;
+          grid-template-rows: repeat(4, 21.7391304348%);
+          grid-gap: 4.347826087%; }
+          main .type__balkon .primer__raboty .hot .content__priemushestva .hot__checkbox {
+            display: grid;
+            grid-template-columns: 5.6053811659% 94.3946188341%;
+            grid-gap: 3.8116591928%; }
+            main .type__balkon .primer__raboty .hot .content__priemushestva .hot__checkbox p {
+              color: #000000;
+              font-family: "Open Sans";
+              font-weight: 400;
+              font-size: 0.9rem;
+              line-height: 30px; }
+            main .type__balkon .primer__raboty .hot .content__priemushestva .hot__checkbox img {
+              width: 100%; }
+        main .type__balkon .primer__raboty .hot .primer__raboty__footer {
+          display: grid;
+          grid-template-columns: 34.7533632287% 58.7443946188%;
+          grid-column-gap: 5.6053811659%;
+          height: 100%; }
+          main .type__balkon .primer__raboty .hot .primer__raboty__footer .primer__raboty__footer__hot__left {
+            display: grid;
+            grid-template-rows: 50% 50%; }
+            main .type__balkon .primer__raboty .hot .primer__raboty__footer .primer__raboty__footer__hot__left .cost__hot {
+              font-family: "Open Sans";
+              font-weight: 700;
+              font-size: 1.25rem;
+              line-height: 1.875rem;
+              align-self: center; }
+            main .type__balkon .primer__raboty .hot .primer__raboty__footer .primer__raboty__footer__hot__left .key {
+              font-family: "Open Sans";
+              font-weight: 400;
+              font-size: 0.875rem;
+              line-height: 1.875rem;
+              align-self: center; }
+          main .type__balkon .primer__raboty .hot .primer__raboty__footer .primer__raboty__footer__hot__right .button {
+            border-radius: 10px;
+            border: 1px solid #ffc600;
+            box-shadow: 0 2px 20px rgba(255, 153, 0, 0.4);
+            background-image: linear-gradient(to bottom, #ffed26 0%, #ffb400 100%);
+            background-color: #e8e8e8;
+            text-align: center;
+            font-family: "Open Sans Condensed";
+            font-weight: 700;
+            color: #000000;
+            font-size: 1.25rem;
+            width: 100%;
+            height: 100%;
+            text-transform: uppercase;
+            font-weight: 700; }
+  main .main__primer__otdelky {
+    background-color: #f7f7f7; }
+    main .main__primer__otdelky .container .primer__otdelki {
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: 8.5753803596% 11.0650069156% 13.0013831259% 5.5325034578% 61.1341632089%;
+      padding-top: 4.9375rem;
+      height: 723px; }
+      main .main__primer__otdelky .container .primer__otdelki .primer__otdelki__title {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 59.0163934426% 40.9836065574%;
+        justify-items: center; }
+        main .main__primer__otdelky .container .primer__otdelki .primer__otdelki__title h1 {
+          font-family: "Open Sans";
+          font-weight: 700;
+          font-size: 30px;
+          color: #333333;
+          text-transform: uppercase; }
+        main .main__primer__otdelky .container .primer__otdelki .primer__otdelki__title .primer__title__border {
+          background-color: #57B1EC;
+          width: 9.6%;
+          height: 7.7%;
+          align-self: end; }
+      main .main__primer__otdelky .container .primer__otdelki .primer__otdelki__menu {
+        display: grid;
+        grid-template-columns: repeat(4, 25%); }
+        main .main__primer__otdelky .container .primer__otdelki .primer__otdelki__menu .vnutr__otdelka {
+          display: grid;
+          grid-template-rows: 10.6382978723% 12.7659574468% 76.5957446809%; }
+          main .main__primer__otdelky .container .primer__otdelki .primer__otdelki__menu .vnutr__otdelka .vnutr__upper {
+            background-color: #0d8fe3;
+            width: 100%;
+            height: 100%; }
+          main .main__primer__otdelky .container .primer__otdelki .primer__otdelki__menu .vnutr__otdelka .vnutr__treugolnik {
+            width: 0;
+            height: 0;
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+            border-top: 6px solid #0d8fe3;
+            justify-self: center; }
+          main .main__primer__otdelky .container .primer__otdelki .primer__otdelki__menu .vnutr__otdelka p {
+            font-family: "Open Sans";
+            font-weight: 400;
+            font-size: 1.25rem;
+            text-transform: uppercase;
+            justify-self: center;
+            align-self: center; }
+        main .main__primer__otdelky .container .primer__otdelki .primer__otdelki__menu .vnutr__otdelka:hover {
+          border: 1px solid responsive;
+          background-image: linear-gradient(to bottom, #EDEDED 0%, rgba(0, 0, 0, 0) 100%);
+          cursor: pointer; }
+        main .main__primer__otdelky .container .primer__otdelki .primer__otdelki__menu .vnesh__otdelka {
+          display: grid;
+          grid-template-rows: 10.6382978723% 12.7659574468% 76.5957446809%; }
+          main .main__primer__otdelky .container .primer__otdelki .primer__otdelki__menu .vnesh__otdelka .vnesh__upper {
+            opacity: 0%;
+            background-color: #0d8fe3;
+            width: 100%;
+            height: 100%; }
+          main .main__primer__otdelky .container .primer__otdelki .primer__otdelki__menu .vnesh__otdelka .vnesh__treugolnik {
+            opacity: 0%;
+            width: 0;
+            height: 0;
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+            border-top: 6px solid #0d8fe3;
+            justify-self: center; }
+          main .main__primer__otdelky .container .primer__otdelki .primer__otdelki__menu .vnesh__otdelka p {
+            font-family: "Open Sans";
+            font-weight: 400;
+            font-size: 1.25rem;
+            text-transform: uppercase;
+            justify-self: center;
+            align-self: center; }
+        main .main__primer__otdelky .container .primer__otdelki .primer__otdelki__menu .vnesh__otdelka:hover {
+          border: 1px solid responsive;
+          background-image: linear-gradient(to bottom, #EDEDED 0%, rgba(0, 0, 0, 0) 100%);
+          cursor: pointer; }
+        main .main__primer__otdelky .container .primer__otdelki .primer__otdelki__menu .vynos__otdelka {
+          display: grid;
+          grid-template-rows: 10.6382978723% 12.7659574468% 76.5957446809%; }
+          main .main__primer__otdelky .container .primer__otdelki .primer__otdelki__menu .vynos__otdelka .vynos__upper {
+            opacity: 0%;
+            background-color: #0d8fe3;
+            width: 100%;
+            height: 100%; }
+          main .main__primer__otdelky .container .primer__otdelki .primer__otdelki__menu .vynos__otdelka .vynos__treugolnik {
+            opacity: 0%;
+            width: 0;
+            height: 0;
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+            border-top: 6px solid #0d8fe3;
+            justify-self: center; }
+          main .main__primer__otdelky .container .primer__otdelki .primer__otdelki__menu .vynos__otdelka p {
+            font-family: "Open Sans";
+            font-weight: 400;
+            font-size: 1.25rem;
+            text-transform: uppercase;
+            justify-self: center;
+            align-self: center; }
+        main .main__primer__otdelky .container .primer__otdelki .primer__otdelki__menu .vynos__otdelka:hover {
+          border: 1px solid responsive;
+          background-image: linear-gradient(to bottom, #EDEDED 0%, rgba(0, 0, 0, 0) 100%);
+          cursor: pointer; }
+        main .main__primer__otdelky .container .primer__otdelki .primer__otdelki__menu .krysha__otdelka {
+          display: grid;
+          grid-template-rows: 10.6382978723% 12.7659574468% 76.5957446809%; }
+          main .main__primer__otdelky .container .primer__otdelki .primer__otdelki__menu .krysha__otdelka .krysha__upper {
+            opacity: 0%;
+            background-color: #0d8fe3;
+            width: 100%;
+            height: 100%; }
+          main .main__primer__otdelky .container .primer__otdelki .primer__otdelki__menu .krysha__otdelka .krusha__treugolnik {
+            opacity: 0%;
+            width: 0;
+            height: 0;
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+            border-top: 6px solid #0d8fe3;
+            justify-self: center; }
+          main .main__primer__otdelky .container .primer__otdelki .primer__otdelki__menu .krysha__otdelka p {
+            font-family: "Open Sans";
+            font-weight: 400;
+            font-size: 1.25rem;
+            text-transform: uppercase;
+            justify-self: center;
+            align-self: center; }
+        main .main__primer__otdelky .container .primer__otdelki .primer__otdelki__menu .krysha__otdelka:hover {
+          border: 1px solid responsive;
+          background-image: linear-gradient(to bottom, #EDEDED 0%, rgba(0, 0, 0, 0) 100%);
+          cursor: pointer; }
+
+/*# sourceMappingURL=style.css.map */
