@@ -935,7 +935,9 @@ main
          
                 
     .main__sale
-        background-image: url(../img/manbg.png)
+        background-image: url(../img/manbg.png) 
+        background-position: center
+        padding: 80px 0 80px 0
 
         .sale__contain
             height: 442px
@@ -944,6 +946,7 @@ main
             grid-template-rows: 190px/442px*100% 160px/442px*100%
             grid-column-gap: 404px/1171px*100%
             grid-row-gap: 80px/442px*100%
+            
             .sale__title
                 grid-area: 1/1/2/2
                 display: grid
@@ -956,8 +959,92 @@ main
                     +bold
                     font-size: 48px/16px*1rem
                     text-transform: uppercase
+                    color: #008cce
 
                 p
                     +opensans
                     +regular
                     font-size: 24px/16px*1rem
+            
+            .sale__time
+                grid-area: 2/1/3/2
+                display: grid
+                grid-template-columns: 100%
+                grid-template-rows: (14px+21px+19px)/160px*100% 81px/160px*100% 
+                grid-row-gap: 19px/160px*100%
+
+                h2
+                    +opensans
+                    +regular
+                    font-size: 14px
+                    text-transform: uppercase
+                    justify-self: center
+                    text-align: center
+                
+                .sale__timer
+                    display: grid
+                    grid-template-columns: repeat(4,12px/260px*100%)
+                    grid-template-rows: 50px/106px*100% 13px/106px*100%
+                    grid-column-gap: 15px/260px*100%
+                    grid-row-gap: 18px/260px*100%
+
+            .form
+                grid-area: 1/2/3/2 
+                display: grid
+                grid-template-columns: auto
+                grid-template-rows: 25% 75%
+                background-color: #ffffff
+                border-radius: 10px
+                height: 100%
+                        
+                .form__title
+                    text-align: center
+                    display: grid
+                    grid-template-rows: 50%
+                    grid-auto-columns: auto
+                        
+                    p
+                        align-self: end
+                        +opensans
+                        +bold
+                        font-size: 16px
+                        color: #333333
+                        text-transform: uppercase
+                    h1
+                        align-self: start
+                        +opensans
+                        +bold
+                        font-size: 24px
+                        text-transform: uppercase
+                        
+                form
+                    display: grid
+                    grid-template-columns: auto
+                    grid-template-rows: 18% 18% 24% 18%
+                    grid-gap: 7%
+                    justify-items: center
+
+                    input
+                        border-radius: 10px
+                        border: 1px solid #d1d1d1
+                        text-align: center
+                        width: 79%
+                        
+                    .button
+                        border-radius: 10px
+                        border: 1px solid #ffc600
+                        box-shadow: 0 2px 20px rgba(255, 153, 0, 0.4)
+                        background-image: linear-gradient(to bottom, #ffed26 0%, #ffb400 100%)
+                        background-color: #e8e8e8
+                        text-align: center
+                        +sanscond
+                        +bold
+                        color: #000000
+                        font-size: 20px
+                        width: 79%
+                        text-transform: uppercase
+                    p
+                        +opensans
+                        +light
+                        font-size: 11px
+                        color: #666666  

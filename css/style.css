@@ -804,7 +804,9 @@ main {
             font-weight: 400;
             font-size: 1.25rem; }
   main .main__sale {
-    background-image: url(../img/manbg.png); }
+    background-image: url(../img/manbg.png);
+    background-position: center;
+    padding: 80px 0 80px 0; }
     main .main__sale .sale__contain {
       height: 442px;
       display: grid;
@@ -822,10 +824,85 @@ main {
           font-family: "Open Sans";
           font-weight: 700;
           font-size: 3rem;
-          text-transform: uppercase; }
+          text-transform: uppercase;
+          color: #008cce; }
         main .main__sale .sale__contain .sale__title p {
           font-family: "Open Sans";
           font-weight: 400;
           font-size: 1.5rem; }
+      main .main__sale .sale__contain .sale__time {
+        grid-area: 2/1/3/2;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 33.75% 50.625%;
+        grid-row-gap: 11.875%; }
+        main .main__sale .sale__contain .sale__time h2 {
+          font-family: "Open Sans";
+          font-weight: 400;
+          font-size: 14px;
+          text-transform: uppercase;
+          justify-self: center;
+          text-align: center; }
+        main .main__sale .sale__contain .sale__time .sale__timer {
+          display: grid;
+          grid-template-columns: repeat(4, 4.6153846154%);
+          grid-template-rows: 47.1698113208% 12.2641509434%;
+          grid-column-gap: 5.7692307692%;
+          grid-row-gap: 6.9230769231%; }
+      main .main__sale .sale__contain .form {
+        grid-area: 1/2/3/2;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 25% 75%;
+        background-color: #ffffff;
+        border-radius: 10px;
+        height: 100%; }
+        main .main__sale .sale__contain .form .form__title {
+          text-align: center;
+          display: grid;
+          grid-template-rows: 50%;
+          grid-auto-columns: auto; }
+          main .main__sale .sale__contain .form .form__title p {
+            align-self: end;
+            font-family: "Open Sans";
+            font-weight: 700;
+            font-size: 16px;
+            color: #333333;
+            text-transform: uppercase; }
+          main .main__sale .sale__contain .form .form__title h1 {
+            align-self: start;
+            font-family: "Open Sans";
+            font-weight: 700;
+            font-size: 24px;
+            text-transform: uppercase; }
+        main .main__sale .sale__contain .form form {
+          display: grid;
+          grid-template-columns: auto;
+          grid-template-rows: 18% 18% 24% 18%;
+          grid-gap: 7%;
+          justify-items: center; }
+          main .main__sale .sale__contain .form form input {
+            border-radius: 10px;
+            border: 1px solid #d1d1d1;
+            text-align: center;
+            width: 79%; }
+          main .main__sale .sale__contain .form form .button {
+            border-radius: 10px;
+            border: 1px solid #ffc600;
+            box-shadow: 0 2px 20px rgba(255, 153, 0, 0.4);
+            background-image: linear-gradient(to bottom, #ffed26 0%, #ffb400 100%);
+            background-color: #e8e8e8;
+            text-align: center;
+            font-family: "Open Sans Condensed";
+            font-weight: 700;
+            color: #000000;
+            font-size: 20px;
+            width: 79%;
+            text-transform: uppercase; }
+          main .main__sale .sale__contain .form form p {
+            font-family: "Open Sans";
+            font-weight: 300;
+            font-size: 11px;
+            color: #666666; }
 
 /*# sourceMappingURL=style.css.map */
