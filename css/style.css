@@ -726,9 +726,106 @@ main {
         main .main__our__work .our__work .work__images .container__photo {
           position: relative; }
           main .main__our__work .our__work .work__images .container__photo .zoom {
-            opacity: 0%;
             position: absolute;
             top: 42.5925925926%;
             left: 42.5925925926%; }
+  main .main__garantiya {
+    background-image: url(../img/bg3.png);
+    padding: 80px 0; }
+    main .main__garantiya .container .garantiya__we {
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: 10.9090909091% 72.9292929293%;
+      grid-row-gap: 16.1616161616%;
+      height: 495px; }
+      main .main__garantiya .container .garantiya__we .garantiya__title {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 42.5925925926% 57.4074074074%; }
+        main .main__garantiya .container .garantiya__we .garantiya__title h1 {
+          font-family: "Open Sans";
+          font-weight: 700;
+          text-transform: uppercase;
+          font-size: 1.875rem;
+          color: #ffffff;
+          justify-self: center; }
+        main .main__garantiya .container .garantiya__we .garantiya__title .bbottom {
+          background-color: #ffffff;
+          width: 9.6%;
+          height: 7.7%;
+          align-self: end;
+          justify-self: center; }
+      main .main__garantiya .container .garantiya__we .garantya__content {
+        display: grid;
+        grid-template-columns: repeat(3, 17.4180327869%);
+        grid-template-rows: 39.0581717452% 39.0581717452%;
+        grid-row-gap: 21.8836565097%;
+        grid-column-gap: 22.5409836066%; }
+        main .main__garantiya .container .garantiya__we .garantya__content .garantya__container {
+          display: grid;
+          grid-template-columns: 100%;
+          grid-template-rows: 49.2957746479% 28.1690140845%;
+          grid-row-gap: 22.5352112676%; }
+          main .main__garantiya .container .garantiya__we .garantya__content .garantya__container img {
+            justify-self: center; }
+          main .main__garantiya .container .garantiya__we .garantya__content .garantya__container p {
+            text-align: center;
+            align-self: start;
+            font-family: "Open Sans";
+            color: #ffffff;
+            font-size: 1.125rem;
+            font-weight: 400; }
+  main .main__sposob__oplaty {
+    margin: 80px 0; }
+    main .main__sposob__oplaty .container .sposoby__oplaty {
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: 16.7597765363% 39.1061452514%;
+      grid-row-gap: 44.1340782123%; }
+      main .main__sposob__oplaty .container .sposoby__oplaty h1 {
+        font-family: "Open Sans";
+        font-weight: 700;
+        font-size: 1.875rem;
+        justify-self: center; }
+      main .main__sposob__oplaty .container .sposoby__oplaty .sposob__oplaty__container {
+        display: grid;
+        grid-template-columns: repeat(3, 25.7653061224%);
+        grid-gap: 11.3520408163%; }
+        main .main__sposob__oplaty .container .sposoby__oplaty .sposob__oplaty__container .sposoby__oplaty__contain {
+          display: grid;
+          grid-template-columns: 23.102310231% 66.99669967%;
+          grid-gap: 9.900990099%; }
+          main .main__sposob__oplaty .container .sposoby__oplaty .sposob__oplaty__container .sposoby__oplaty__contain img {
+            width: 100%; }
+          main .main__sposob__oplaty .container .sposoby__oplaty .sposob__oplaty__container .sposoby__oplaty__contain p {
+            align-self: center;
+            justify-self: start;
+            font-family: "Open Sans";
+            font-weight: 400;
+            font-size: 1.25rem; }
+  main .main__sale {
+    background-image: url(../img/manbg.png); }
+    main .main__sale .sale__contain {
+      height: 442px;
+      display: grid;
+      grid-template-columns: 34.1588385995% 31.5969257045%;
+      grid-template-rows: 42.9864253394% 36.1990950226%;
+      grid-column-gap: 34.5004269855%;
+      grid-row-gap: 18.0995475113%; }
+      main .main__sale .sale__contain .sale__title {
+        grid-area: 1/1/2/2;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 23.6842105263% 33.6842105263%;
+        grid-row-gap: 42.6315789474%; }
+        main .main__sale .sale__contain .sale__title h1 {
+          font-family: "Open Sans";
+          font-weight: 700;
+          font-size: 3rem;
+          text-transform: uppercase; }
+        main .main__sale .sale__contain .sale__title p {
+          font-family: "Open Sans";
+          font-weight: 400;
+          font-size: 1.5rem; }
 
 /*# sourceMappingURL=style.css.map */

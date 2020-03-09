@@ -835,12 +835,129 @@ main
                     position: relative
 
                     .zoom 
-                         
                         position: absolute
                         top: 115px/270px*100%
                         left: 115px/270px*100%
-                    
-                
-                
+    .main__garantiya
+        background-image: url(../img/bg3.png)
+        padding: 80px 0
 
-                   
+        .container
+
+            .garantiya__we
+                display: grid
+                grid-template-columns: 100%
+                grid-template-rows: 54px/495px*100% 361px/495px*100%
+                grid-row-gap: 80px/495px*100%
+                height: 495px
+
+                .garantiya__title
+                    display: grid
+                    grid-template-columns: 100%
+                    grid-template-rows: 23px/54px*100% 31px/54px*100%
+                    
+
+                    h1
+                        +opensans
+                        +bold
+                        text-transform: uppercase
+                        font-size: 30px/16px*1rem
+                        color: #ffffff
+                        justify-self: center
+                    
+                    .bbottom
+                        background-color: #ffffff
+                        width: 9.6%
+                        height: 7.7%
+                        align-self: end
+                        justify-self: center
+
+                .garantya__content
+                    display: grid
+                    grid-template-columns: repeat(3,170px/976px*100%)
+                    grid-template-rows: 141px/361px*100% 141px/361px*100%
+                    grid-row-gap: 79px/361px*100%
+                    grid-column-gap: 220px/976px*100%
+
+                    .garantya__container    
+                        display: grid
+                        grid-template-columns: 100%
+                        grid-template-rows: 70px/142px*100% 40px/142px*100%
+                        grid-row-gap: 32px/142px*100%
+
+                        img
+                            justify-self: center
+                            
+                        p
+                            text-align: center
+                            align-self: start
+                            +opensans
+                            color: #ffffff
+                            font-size: 18px/16px*1rem
+                            +regular
+
+            
+    .main__sposob__oplaty
+        margin: 80px 0 
+
+        .container  
+            .sposoby__oplaty
+                display: grid
+                grid-template-columns: 100%
+                grid-template-rows: 30px/179px*100% 70px/179px*100%
+                grid-row-gap: 79px/179px*100%
+
+                h1
+                    +opensans
+                    +bold
+                    font-size: 30px/16px*1rem
+                    justify-self: center
+                
+                .sposob__oplaty__container
+                    display: grid
+                    grid-template-columns: repeat(3,303px/1176px*100%)
+                    grid-gap: 133.5px/1176px*100%
+
+                    .sposoby__oplaty__contain
+                        display: grid
+                        grid-template-columns: 70px/303px*100% 203px/303px*100%
+                        grid-gap: 30px/303px*100%
+
+                        img
+                            width: 100%
+
+                        p  
+                            align-self: center
+                            justify-self: start
+                            +opensans
+                            +regular
+                            font-size: 20px/16px*1rem 
+         
+                
+    .main__sale
+        background-image: url(../img/manbg.png)
+
+        .sale__contain
+            height: 442px
+            display: grid
+            grid-template-columns: 400px/1171px*100% 370px/1171px*100%
+            grid-template-rows: 190px/442px*100% 160px/442px*100%
+            grid-column-gap: 404px/1171px*100%
+            grid-row-gap: 80px/442px*100%
+            .sale__title
+                grid-area: 1/1/2/2
+                display: grid
+                grid-template-columns: 100%
+                grid-template-rows: 45px/190px*100% 64px/190px*100%
+                grid-row-gap: 81px/190px*100%
+
+                h1
+                    +opensans
+                    +bold
+                    font-size: 48px/16px*1rem
+                    text-transform: uppercase
+
+                p
+                    +opensans
+                    +regular
+                    font-size: 24px/16px*1rem
