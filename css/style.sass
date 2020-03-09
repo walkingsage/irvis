@@ -902,6 +902,7 @@ main
 
         .container  
             .sposoby__oplaty
+                height: 179px
                 display: grid
                 grid-template-columns: 100%
                 grid-template-rows: 30px/179px*100% 70px/179px*100%
@@ -967,26 +968,57 @@ main
                     font-size: 24px/16px*1rem
             
             .sale__time
-                grid-area: 2/1/3/2
+                border-radius: 10px
+                border: 1px solid #d1d1d1
+                background-color: #ffffff
                 display: grid
                 grid-template-columns: 100%
-                grid-template-rows: (14px+21px+19px)/160px*100% 81px/160px*100% 
-                grid-row-gap: 19px/160px*100%
+                grid-template-rows: (14px+21px)/160px*100% (19px+50px+18px+13px+25px)/160px*100%
 
                 h2
                     +opensans
-                    +regular
-                    font-size: 14px
-                    text-transform: uppercase
+                    +bold
+                    font-size: 14px/16px*1em
                     justify-self: center
-                    text-align: center
-                
+                    align-self: end
+                    text-transform: uppercase
+
                 .sale__timer
+                    padding: 0 69px
                     display: grid
-                    grid-template-columns: repeat(4,12px/260px*100%)
-                    grid-template-rows: 50px/106px*100% 13px/106px*100%
-                    grid-column-gap: 15px/260px*100%
-                    grid-row-gap: 18px/260px*100%
+                    grid-template-columns: repeat(3,25%)
+                    grid-template-rows: 87px/160px*100% (13px+25px)/160px*100%
+                    grid-column-gap: 13%
+
+                    .timer
+                        grid-area: 1/1/3/4
+                        align-self: center
+                        justify-self: start
+
+                    .hours
+                        grid-area: 2/1/3/2
+                        +opensans
+                        +bold
+                        font-size: 13px/16px*1em
+                        justify-self: center
+                        align-self: end
+
+                    .minutes
+                        grid-area: 2/2/3/3
+                        +opensans
+                        +bold
+                        font-size: 13px/16px*1em
+                        justify-self: center
+                        align-self: end
+
+                    .seconds
+                        margin-right: 10px
+                        grid-area: 2/3/3/4   
+                        +opensans
+                        +bold
+                        font-size: 13px/16px*1em
+                        justify-self: center 
+                        align-self: end
 
             .form
                 grid-area: 1/2/3/2 
@@ -1048,3 +1080,113 @@ main
                         +light
                         font-size: 11px
                         color: #666666  
+    
+    .main__where_we
+        padding: 80px 0
+        
+        .container
+
+            .where__we
+                height: 609px
+                display: grid
+                grid-template-columns: 569px/1170px*100% 472px/1170px*100%
+                grid-template-rows: 61px/609px*100% 467px/609px*100%
+                grid-row-gap: 80px/609px*100%
+                grid-column-gap: 129px/1170px*100%
+
+                .where__we__title
+                    grid-area: 1/1/2/3
+                    display: grid
+                    grid-template-columns: 100%
+                    grid-template-rows: 30px/61px*100% 31px/61px*100%
+
+                    h1
+
+                        +opensans
+                        +bold
+                        text-transform: uppercase
+                        font-size: 30px/16px*1em
+                        color: #000000
+                        justify-self: center 
+                    
+                    .bbottom
+                        background-color: #57B1EC
+                        width: 9.6%
+                        height: 7.7%
+                        align-self: end
+                        justify-self: center
+                
+                .map
+                    grid-area: 2/1/2/2
+
+                .where__we__info
+                    grid-area: 2/2/3/3
+                    display: grid
+                    grid-template-columns: 100%
+                    grid-template-rows: repeat(5,61.4px/467px*100%)
+                    grid-row-gap:  42px/467px*100%
+
+                    .info__container
+                        display: grid
+                        grid-template-columns: 100%
+                        grid-template-rows: 16px/61.4px*100% 28.4px/61.4px*100%
+                        grid-row-gap: 17px/61.4px*100%
+
+                        .info__sup
+                            +opensans
+                            +bold
+                            font-size: 15px
+                            color: #008cce
+
+                        .info__sub
+                            +opensans
+                            +regular
+                            font-size: 18px
+    
+    .main__many__questions
+        border: 1px solid #ffffff
+        background-color: #00a0eb
+        padding: 80px 0 80px 0
+
+        .container
+
+            .questions
+                display: grid
+                grid-template-columns: 409px/1170px*100% 722px/1170px*100%
+                grid-template-rows: auto
+                grid-column-gap: 39px/1170px*100%
+
+                p
+                    +opensans
+                    font-size: 30px/16px*1em
+                    +regular
+                    color: #ffffff
+                    justify-self: end
+                
+                a
+                    +opensans
+                    +bold
+                    font-size: 30px/16px*1em
+                    color: #ffffff
+                    justify-self: start
+
+                a:hover
+                    color: #f8e1e1
+    
+    footer
+        
+        .container
+            max-width: 1190px
+            padding: 0 10px 0 10px
+            margin: 0 auto
+
+            .footer__contain
+                display: grid
+                grid-template-columns: repeat(3,176px/1170px*100%)
+                grid-template-rows: 100%
+                grid-column-gap: 321px/1170px*100%
+
+
+
+
+
