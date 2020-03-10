@@ -1,7 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap&subset=cyrillic");
+@media screen and (max-width: 1200px) {
+  body {
+    font-size: 10px; } }
 * {
   padding: 0;
   margin: 0; }
+
+body {
+  font-size: 16px; }
 
 .container {
   max-width: 1190px;
@@ -20,6 +26,7 @@ header {
   display: grid;
   box-sizing: border-box;
   grid-template-columns: 12.126% 2.22% 18.7% 9.65% 14.5175% 4.61% 12.468% 6% 19.72%;
+  grid-template-rows: 100%;
   padding: 20px 0;
   width: 100%;
   align-items: center;
@@ -806,7 +813,10 @@ main {
             font-size: 1.25rem; }
   main .main__sale {
     background-image: url(../img/manbg.png);
-    background-position: center;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
     padding: 80px 0 80px 0; }
     main .main__sale .sale__contain {
       height: 442px;
@@ -847,9 +857,9 @@ main {
           text-transform: uppercase; }
         main .main__sale .sale__contain .sale__time .sale__timer {
           display: grid;
-          grid-template-columns: repeat(3, 25%);
+          grid-template-columns: 100%;
           grid-template-rows: 78.125%;
-          justify-items: center; }
+          margin-top: 6.25%; }
           main .main__sale .sale__contain .sale__time .sale__timer .timer {
             align-self: center; }
       main .main__sale .sale__contain .form {
