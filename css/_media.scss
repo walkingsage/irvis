@@ -1,5 +1,79 @@
-@media screen and (max-width: 1200px) {
+
+@media (min-width: 1200px) {
+    
+    
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .container{
+        max-width: 1190px !important;
+    }
     body{
-        font-size: 10px;
+        font-size: 14px !important;
+    }  
+    .header__content{
+        grid-template-columns: 12.126% 1.22% 22.7% 3.13% 14.5175% 3.13% 15.468% 2% 21.72% !important;
+    }
+    .header__contact{
+        grid-template-columns: 14.65% 0.1% 85.34% !important;
+    }
+    .header__contact img{
+        justify-self:end
+    }
+    .header__clock{
+        grid-template-columns: 20% 10% 66% !important;
+    }
+    .header__clock img{
+        justify-self: end;
     }
 }
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .container{
+        width: 100vh !important;
+        box-sizing: border-box;
+        margin: 0 !important;
+    }
+    body{
+        font-size: 13px !important;
+    } 
+    .clock__btn{
+        display: block !important;
+        grid-area: 1/9/2/10;
+        justify-self: center;
+    }
+    .header__clock{
+        display: none !important;
+    }
+    .header__content span{
+        display: none;
+    }
+    .header__content{
+        grid-template-columns: 15% 20% 5% !important;  
+        grid-gap: 30%;
+    }
+    .clock__btn__content{
+        position: absolute;
+    }
+    .header__contact{
+        grid-area: 1/7/2/8;
+        grid-template-columns: 8.65% 2% 92.35% !important;
+    }
+    .header__title{
+        display: none;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    
+}
+
+@media (max-width: 480px) {
+    
+}
+
+@media (max-width: 650) {
+    
+} 

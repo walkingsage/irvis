@@ -24,6 +24,7 @@ header
     
    
 .header__content
+    height: 100px
     display: grid
     box-sizing: border-box
     grid-template-columns: 12.126% 2.22% 18.7% 9.65% 14.5175% 4.61% 12.468% 6% 19.72%
@@ -37,6 +38,7 @@ header
         width: 100%
         align-self: center
         z-index: 51
+        max-height: 1190px
 
     .header__title
         p
@@ -44,7 +46,6 @@ header
         +regular
         color: #0096dc
         font-size: 0.875em
-        width: 100%
         z-index: 51
     
     .header__button
@@ -64,7 +65,7 @@ header
             text-transform: uppercase
             +opensans
             +bold
-            font-size: 14px/16px*1.5vh
+            font-size: 14px/16px*1em
             color: #55a831
             border-bottom: none
             z-index: 51
@@ -84,6 +85,7 @@ header
         img
             grid-area: 1/1/3/2
             align-self: center
+            max-width: 100%
         span
             grid-area: 1/2/3/3
         .header__clock__title
@@ -96,7 +98,7 @@ header
                 +opensans
                 +regular
                 color: #333333
-                font-size: 14px/16px*1.5vh
+                font-size: 14px/16px*1em
             .hours
                 align-self: center
                 +opensans
@@ -143,6 +145,7 @@ main
         background-size: cover
         padding: 100px 0
         margin: 0
+        
             
         .whowe__main
             display: grid
@@ -197,7 +200,7 @@ main
                         z-index: 4
                         +sanscond
                         +bold
-                        font-size: 1.2rem
+                        font-size: 1.2em
                         color: #ffffff
                         grid-area: 2/1/3/2
                         align-self: center
@@ -381,7 +384,7 @@ main
                             color: #000000
                             +opensans
                             +regular
-                            font-size: 0.9rem
+                            font-size: 0.9em
                             line-height: 30px
                         
                         img
@@ -400,15 +403,15 @@ main
                         .cost__cold
                             +opensans
                             +bold
-                            font-size: 1.25rem
-                            line-height: 1.875rem
+                            font-size: 1.25em
+                            line-height: 1.875em
                             align-self: center
                         
                         .key
                             +opensans
                             +regular
-                            font-size: 0.875rem
-                            line-height: 1.875rem
+                            font-size: 0.875em
+                            line-height: 1.875em
                             align-self: center
 
                     .primer__raboty__footer__cold__right
@@ -422,7 +425,7 @@ main
                             +sanscond
                             +bold
                             color: #000000
-                            font-size: 1.25rem
+                            font-size: 1.25em
                             width: 100%
                             height: 100%
                             text-transform: uppercase
@@ -480,7 +483,7 @@ main
                             color: #000000
                             +opensans
                             +regular
-                            font-size: 0.9rem
+                            font-size: 0.9em
                             line-height: 30px
 
                         img
@@ -499,15 +502,15 @@ main
                         .cost__hot
                             +opensans
                             +bold
-                            font-size: 1.25rem
-                            line-height: 1.875rem
+                            font-size: 1.25em
+                            line-height: 1.875em
                             align-self: center
                         
                         .key
                             +opensans
                             +regular
-                            font-size: 0.875rem
-                            line-height: 1.875rem
+                            font-size: 0.875em
+                            line-height: 1.875em
                             align-self: center
 
                     .primer__raboty__footer__hot__right
@@ -521,7 +524,7 @@ main
                             +sanscond
                             +bold
                             color: #000000
-                            font-size: 1.25rem
+                            font-size: 1.25em
                             width: 100%
                             height: 100%
                             text-transform: uppercase
@@ -536,7 +539,7 @@ main
                 display: grid
                 grid-template-columns: auto
                 grid-template-rows: 62px/723px*100% 80px/723px*100% 94px/723px*100% 40px/723px*100% 442px/723px*100%
-                padding: 79px/16px*1rem 0
+                padding: 79px/16px*1em 0
                 height: 723px
 
                 .primer__otdelki__title
@@ -583,7 +586,7 @@ main
                         p
                             +opensans
                             +regular
-                            font-size: 20px/16px*1rem
+                            font-size: 20px/16px*1em
                             text-transform: uppercase
                             justify-self: center
                             align-self: center
@@ -618,7 +621,7 @@ main
                         p
                             +opensans
                             +regular
-                            font-size: 20px/16px*1rem
+                            font-size: 20px/16px*1em
                             text-transform: uppercase
                             justify-self: center
                             align-self: center
@@ -651,7 +654,7 @@ main
                         p
                             +opensans
                             +regular
-                            font-size: 20px/16px*1rem
+                            font-size: 20px/16px*1em
                             text-transform: uppercase
                             justify-self: center
                             align-self: center
@@ -684,7 +687,7 @@ main
                         p
                             +opensans
                             +regular
-                            font-size: 20px/16px*1rem
+                            font-size: 20px/16px*1em
                             text-transform: uppercase
                             justify-self: center
                             align-self: center
@@ -730,7 +733,7 @@ main
                             .material__razmer
                                 +opensans
                                 +bold
-                                font-size: 14px/16px*1rem
+                                font-size: 14px/16px*1em
                                 color: #0d8fe3
                                 justify-self: center
                                 align-self: end
@@ -738,7 +741,7 @@ main
                             .with__material
                                 +opensans
                                 +regular
-                                font-size: 12px/16px*1rem
+                                font-size: 12px/16px*1em
                                 justify-self: center
                                 align-self: start
 
@@ -867,7 +870,7 @@ main
                         +opensans
                         +bold
                         text-transform: uppercase
-                        font-size: 30px/16px*1rem
+                        font-size: 30px/16px*1em
                         color: #ffffff
                         justify-self: center
                     
@@ -899,7 +902,7 @@ main
                             align-self: start
                             +opensans
                             color: #ffffff
-                            font-size: 18px/16px*1rem
+                            font-size: 18px/16px*1em
                             +regular
 
             
@@ -917,7 +920,7 @@ main
                 h1
                     +opensans
                     +bold
-                    font-size: 30px/16px*1rem
+                    font-size: 30px/16px*1em
                     justify-self: center
                 
                 .sposob__oplaty__container
@@ -938,7 +941,7 @@ main
                             justify-self: start
                             +opensans
                             +regular
-                            font-size: 20px/16px*1rem 
+                            font-size: 20px/16px*1em 
          
                 
     .main__sale
@@ -967,14 +970,14 @@ main
                 h1
                     +opensans
                     +bold
-                    font-size: 48px/16px*1rem
+                    font-size: 48px/16px*1em
                     text-transform: uppercase
                     color: #008cce
 
                 p
                     +opensans
                     +regular
-                    font-size: 24px/16px*1rem
+                    font-size: 24px/16px*1em
             
             .sale__time
                 border-radius: 10px

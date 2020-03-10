@@ -1,7 +1,58 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap&subset=cyrillic");
-@media screen and (max-width: 1200px) {
+@media (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    max-width: 1190px !important; }
+
   body {
-    font-size: 10px; } }
+    font-size: 14px !important; }
+
+  .header__content {
+    grid-template-columns: 12.126% 1.22% 22.7% 3.13% 14.5175% 3.13% 15.468% 2% 21.72% !important; }
+
+  .header__contact {
+    grid-template-columns: 14.65% 0.1% 85.34% !important; }
+
+  .header__contact img {
+    justify-self: end; }
+
+  .header__clock {
+    grid-template-columns: 20% 10% 66% !important; }
+
+  .header__clock img {
+    justify-self: end; } }
+@media (min-width: 768px) and (max-width: 992px) {
+  .container {
+    width: 100vh !important;
+    box-sizing: border-box;
+    margin: 0 !important; }
+
+  body {
+    font-size: 13px !important; }
+
+  .clock__btn {
+    display: block !important;
+    grid-area: 1/9/2/10;
+    justify-self: center; }
+
+  .header__clock {
+    display: none !important; }
+
+  .header__content span {
+    display: none; }
+
+  .header__content {
+    grid-template-columns: 15% 20% 5% !important;
+    grid-gap: 30%; }
+
+  .clock__btn__content {
+    position: absolute; }
+
+  .header__contact {
+    grid-area: 1/7/2/8;
+    grid-template-columns: 8.65% 2% 92.35% !important; }
+
+  .header__title {
+    display: none; } }
 * {
   padding: 0;
   margin: 0; }
@@ -23,6 +74,7 @@ header {
   z-index: 50; }
 
 .header__content {
+  height: 100px;
   display: grid;
   box-sizing: border-box;
   grid-template-columns: 12.126% 2.22% 18.7% 9.65% 14.5175% 4.61% 12.468% 6% 19.72%;
@@ -34,13 +86,13 @@ header {
   .header__content .header__logo {
     width: 100%;
     align-self: center;
-    z-index: 51; }
+    z-index: 51;
+    max-height: 1190px; }
   .header__content .header__title {
     font-family: "Open Sans";
     font-weight: 400;
     color: #0096dc;
     font-size: 0.875em;
-    width: 100%;
     z-index: 51; }
   .header__content .header__button {
     box-sizing: border-box;
@@ -58,7 +110,7 @@ header {
       text-transform: uppercase;
       font-family: "Open Sans";
       font-weight: 700;
-      font-size: 1.3125vh;
+      font-size: 0.875em;
       color: #55a831;
       border-bottom: none;
       z-index: 51; }
@@ -74,7 +126,8 @@ header {
     z-index: 51; }
     .header__content .header__clock img {
       grid-area: 1/1/3/2;
-      align-self: center; }
+      align-self: center;
+      max-width: 100%; }
     .header__content .header__clock span {
       grid-area: 1/2/3/3; }
     .header__content .header__clock .header__clock__title {
@@ -87,7 +140,7 @@ header {
         font-family: "Open Sans";
         font-weight: 400;
         color: #333333;
-        font-size: 1.3125vh; }
+        font-size: 0.875em; }
       .header__content .header__clock .header__clock__title .hours {
         align-self: center;
         font-family: "Open Sans";
@@ -185,7 +238,7 @@ main {
             z-index: 4;
             font-family: "Open Sans Condensed";
             font-weight: 700;
-            font-size: 1.2rem;
+            font-size: 1.2em;
             color: #ffffff;
             grid-area: 2/1/3/2;
             align-self: center;
@@ -348,7 +401,7 @@ main {
               color: #000000;
               font-family: "Open Sans";
               font-weight: 400;
-              font-size: 0.9rem;
+              font-size: 0.9em;
               line-height: 30px; }
             main .type__balkon .primer__raboty .cold .content__priemushestva .cold__checkbox img {
               width: 100%; }
@@ -363,14 +416,14 @@ main {
             main .type__balkon .primer__raboty .cold .primer__raboty__footer .primer__raboty__footer__cold__left .cost__cold {
               font-family: "Open Sans";
               font-weight: 700;
-              font-size: 1.25rem;
-              line-height: 1.875rem;
+              font-size: 1.25em;
+              line-height: 1.875em;
               align-self: center; }
             main .type__balkon .primer__raboty .cold .primer__raboty__footer .primer__raboty__footer__cold__left .key {
               font-family: "Open Sans";
               font-weight: 400;
-              font-size: 0.875rem;
-              line-height: 1.875rem;
+              font-size: 0.875em;
+              line-height: 1.875em;
               align-self: center; }
           main .type__balkon .primer__raboty .cold .primer__raboty__footer .primer__raboty__footer__cold__right .button {
             border-radius: 10px;
@@ -382,7 +435,7 @@ main {
             font-family: "Open Sans Condensed";
             font-weight: 700;
             color: #000000;
-            font-size: 1.25rem;
+            font-size: 1.25em;
             width: 100%;
             height: 100%;
             text-transform: uppercase;
@@ -429,7 +482,7 @@ main {
               color: #000000;
               font-family: "Open Sans";
               font-weight: 400;
-              font-size: 0.9rem;
+              font-size: 0.9em;
               line-height: 30px; }
             main .type__balkon .primer__raboty .hot .content__priemushestva .hot__checkbox img {
               width: 100%; }
@@ -444,14 +497,14 @@ main {
             main .type__balkon .primer__raboty .hot .primer__raboty__footer .primer__raboty__footer__hot__left .cost__hot {
               font-family: "Open Sans";
               font-weight: 700;
-              font-size: 1.25rem;
-              line-height: 1.875rem;
+              font-size: 1.25em;
+              line-height: 1.875em;
               align-self: center; }
             main .type__balkon .primer__raboty .hot .primer__raboty__footer .primer__raboty__footer__hot__left .key {
               font-family: "Open Sans";
               font-weight: 400;
-              font-size: 0.875rem;
-              line-height: 1.875rem;
+              font-size: 0.875em;
+              line-height: 1.875em;
               align-self: center; }
           main .type__balkon .primer__raboty .hot .primer__raboty__footer .primer__raboty__footer__hot__right .button {
             border-radius: 10px;
@@ -463,7 +516,7 @@ main {
             font-family: "Open Sans Condensed";
             font-weight: 700;
             color: #000000;
-            font-size: 1.25rem;
+            font-size: 1.25em;
             width: 100%;
             height: 100%;
             text-transform: uppercase;
@@ -474,7 +527,7 @@ main {
       display: grid;
       grid-template-columns: auto;
       grid-template-rows: 8.5753803596% 11.0650069156% 13.0013831259% 5.5325034578% 61.1341632089%;
-      padding: 4.9375rem 0;
+      padding: 4.9375em 0;
       height: 723px; }
       main .main__primer__otdelky .container .primer__otdelki .primer__otdelki__title {
         display: grid;
@@ -513,7 +566,7 @@ main {
           main .main__primer__otdelky .container .primer__otdelki .primer__otdelki__menu .vnutr__otdelka p {
             font-family: "Open Sans";
             font-weight: 400;
-            font-size: 1.25rem;
+            font-size: 1.25em;
             text-transform: uppercase;
             justify-self: center;
             align-self: center;
@@ -541,7 +594,7 @@ main {
           main .main__primer__otdelky .container .primer__otdelki .primer__otdelki__menu .vnesh__otdelka p {
             font-family: "Open Sans";
             font-weight: 400;
-            font-size: 1.25rem;
+            font-size: 1.25em;
             text-transform: uppercase;
             justify-self: center;
             align-self: center; }
@@ -568,7 +621,7 @@ main {
           main .main__primer__otdelky .container .primer__otdelki .primer__otdelki__menu .vynos__otdelka p {
             font-family: "Open Sans";
             font-weight: 400;
-            font-size: 1.25rem;
+            font-size: 1.25em;
             text-transform: uppercase;
             justify-self: center;
             align-self: center; }
@@ -595,7 +648,7 @@ main {
           main .main__primer__otdelky .container .primer__otdelki .primer__otdelki__menu .krysha__otdelka p {
             font-family: "Open Sans";
             font-weight: 400;
-            font-size: 1.25rem;
+            font-size: 1.25em;
             text-transform: uppercase;
             justify-self: center;
             align-self: center; }
@@ -634,14 +687,14 @@ main {
             main .main__primer__otdelky .container .primer__otdelki .primer__content .primer__content__material .material__content .material__razmer {
               font-family: "Open Sans";
               font-weight: 700;
-              font-size: 0.875rem;
+              font-size: 0.875em;
               color: #0d8fe3;
               justify-self: center;
               align-self: end; }
             main .main__primer__otdelky .container .primer__otdelki .primer__content .primer__content__material .material__content .with__material {
               font-family: "Open Sans";
               font-weight: 400;
-              font-size: 0.75rem;
+              font-size: 0.75em;
               justify-self: center;
               align-self: start; }
         main .main__primer__otdelky .container .primer__otdelki .primer__content .form {
@@ -753,7 +806,7 @@ main {
           font-family: "Open Sans";
           font-weight: 700;
           text-transform: uppercase;
-          font-size: 1.875rem;
+          font-size: 1.875em;
           color: #ffffff;
           justify-self: center; }
         main .main__garantiya .container .garantiya__we .garantiya__title .bbottom {
@@ -780,7 +833,7 @@ main {
             align-self: start;
             font-family: "Open Sans";
             color: #ffffff;
-            font-size: 1.125rem;
+            font-size: 1.125em;
             font-weight: 400; }
   main .main__sposob__oplaty {
     margin: 80px 0; }
@@ -793,7 +846,7 @@ main {
       main .main__sposob__oplaty .container .sposoby__oplaty h1 {
         font-family: "Open Sans";
         font-weight: 700;
-        font-size: 1.875rem;
+        font-size: 1.875em;
         justify-self: center; }
       main .main__sposob__oplaty .container .sposoby__oplaty .sposob__oplaty__container {
         display: grid;
@@ -810,7 +863,7 @@ main {
             justify-self: start;
             font-family: "Open Sans";
             font-weight: 400;
-            font-size: 1.25rem; }
+            font-size: 1.25em; }
   main .main__sale {
     background-image: url(../img/manbg.png);
     background-position: center center;
@@ -834,13 +887,13 @@ main {
         main .main__sale .sale__contain .sale__title h1 {
           font-family: "Open Sans";
           font-weight: 700;
-          font-size: 3rem;
+          font-size: 3em;
           text-transform: uppercase;
           color: #008cce; }
         main .main__sale .sale__contain .sale__title p {
           font-family: "Open Sans";
           font-weight: 400;
-          font-size: 1.5rem; }
+          font-size: 1.5em; }
       main .main__sale .sale__contain .sale__time {
         border-radius: 10px;
         border: 1px solid #d1d1d1;
