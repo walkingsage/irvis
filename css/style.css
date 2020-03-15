@@ -1,58 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap&subset=cyrillic");
-@media (min-width: 992px) and (max-width: 1199px) {
-  .container {
-    max-width: 1190px !important; }
-
+@media (max-width: 1206px) {
   body {
-    font-size: 14px !important; }
-
-  .header__content {
-    grid-template-columns: 12.126% 1.22% 22.7% 3.13% 14.5175% 3.13% 15.468% 2% 21.72% !important; }
-
-  .header__contact {
-    grid-template-columns: 14.65% 0.1% 85.34% !important; }
-
-  .header__contact img {
-    justify-self: end; }
-
-  .header__clock {
-    grid-template-columns: 20% 10% 66% !important; }
-
-  .header__clock img {
-    justify-self: end; } }
-@media (min-width: 768px) and (max-width: 992px) {
-  .container {
-    width: 100vh !important;
-    box-sizing: border-box;
-    margin: 0 !important; }
-
-  body {
-    font-size: 13px !important; }
-
-  .clock__btn {
-    display: block !important;
-    grid-area: 1/9/2/10;
-    justify-self: center; }
-
-  .header__clock {
-    display: none !important; }
-
-  .header__content span {
-    display: none; }
-
-  .header__content {
-    grid-template-columns: 15% 20% 5% !important;
-    grid-gap: 30%; }
-
-  .clock__btn__content {
-    position: absolute; }
-
-  .header__contact {
-    grid-area: 1/7/2/8;
-    grid-template-columns: 8.65% 2% 92.35% !important; }
-
-  .header__title {
-    display: none; } }
+    font-size: 15px !important; } }
 * {
   padding: 0;
   margin: 0; }
@@ -67,7 +16,6 @@ body {
 
 header {
   background-color: #fff;
-  padding: 20px 0 20px 0;
   height: 100px;
   margin: 0;
   position: fixed;
@@ -76,11 +24,11 @@ header {
   z-index: 50; }
 
 .header__content {
-  height: 100px;
+  padding: 20px 0 20px 0;
   display: grid;
   box-sizing: border-box;
   grid-template-columns: 38.1196581197% 14.5299145299% 38.2051282051%;
-  grid-template-rows: 100%;
+  grid-template-rows: 60%;
   grid-gap: 4.5726495726%;
   width: 100%;
   z-index: 51; }
@@ -89,7 +37,8 @@ header {
     grid-template-columns: 31.8385650224% 62.331838565%;
     grid-template-rows: 100%;
     grid-gap: 6.7183462532%;
-    z-index: 51; }
+    z-index: 51;
+    align-items: center; }
     .header__content .header__logo__title .header__logo {
       width: 100%;
       align-self: center; }
@@ -112,7 +61,8 @@ header {
     border: 2px solid #55a831;
     border-radius: 10px;
     text-decoration: none;
-    z-index: 51; }
+    z-index: 51;
+    background-color: #ffffff; }
     .header__content .header__button img {
       width: 100%;
       height: auto; }
@@ -138,7 +88,7 @@ header {
       grid-template-columns: 20.5479452055% 65.7534246575%;
       grid-template-rows: repeat(2, 50%);
       grid-column-gap: 13.698630137%;
-      grid-row-gap: 39.1304347826%; }
+      align-items: center; }
       .header__content .header__hours__phone .work__time img {
         grid-area: 1/1/3/2;
         width: 100%; }
@@ -155,13 +105,13 @@ header {
         font-family: "Open Sans";
         font-weight: 700;
         color: #333333;
-        font-size: 100%; }
+        font-size: 1.125em; }
     .header__content .header__hours__phone .header__phone {
       display: grid;
       grid-template-columns: 8.658008658% 85.7142857143%;
       grid-template-rows: repeat(2, 50%);
       grid-column-gap: 6.4935064935%;
-      grid-row-gap: 46.6666666667%; }
+      align-items: center; }
       .header__content .header__hours__phone .header__phone img {
         grid-area: 1/1/2/2;
         width: 100%; }

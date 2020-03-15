@@ -15,7 +15,6 @@ body
 
 header
     background-color: #fff
-    padding: 20px 0 20px 0
     height: 100px
     margin: 0
     position: fixed
@@ -25,11 +24,11 @@ header
     
    
 .header__content
-    height: 100px
+    padding: 20px 0 20px 0
     display: grid
     box-sizing: border-box
     grid-template-columns: 446px/1170px*100% 170px/1170px*100% 447px/1170px*100%
-    grid-template-rows: 100%
+    grid-template-rows: 60px/100px*100%
     grid-gap: 53.5px/1170px*100%
     width: 100%
     z-index: 51
@@ -40,6 +39,7 @@ header
         grid-template-rows: 100%
         grid-gap: 26px/387px*100%
         z-index: 51
+        align-items: center
         
 
         .header__logo
@@ -68,6 +68,7 @@ header
         border-radius: 10px
         text-decoration: none
         z-index: 51
+        background-color: #ffffff
          
         img
             width: 100%
@@ -98,7 +99,7 @@ header
             grid-template-columns: 30px/146px*100% 96px/146px*100%
             grid-template-rows: repeat(2,50%)
             grid-column-gap: 20px/146px*100%
-            grid-row-gap: 9px/23px*100%
+            align-items: center
 
             img
                 grid-area: 1/1/3/2
@@ -117,14 +118,14 @@ header
                 +opensans
                 +bold
                 color: #333333
-                font-size: 100%
+                font-size: 18px/16px*1em
    
         .header__phone
             display: grid
             grid-template-columns: 20px/231px*100% 198px/231px*100%
             grid-template-rows: repeat(2,50%)
             grid-column-gap: 15px/231px*100%
-            grid-row-gap: 14px/30px*100%
+            align-items: center
 
             img
                 grid-area: 1/1/2/2
