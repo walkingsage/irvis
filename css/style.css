@@ -1,7 +1,124 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap&subset=cyrillic");
 @media (max-width: 1206px) {
   body {
-    font-size: 15px !important; } }
+    font-size: 15px !important; }
+
+  .header__content {
+    grid-template-columns: 38.9743589744% 14.5299145299% 39.0598290598% !important;
+    grid-gap: 3.7179487179% !important; }
+
+  .header__hours__phone {
+    grid-template-columns: 37.1364653244% 56.1521252796% !important;
+    grid-gap: 6.711409396% !important; }
+
+  .work__time {
+    grid-template-columns: 18.0722891566% 69.8795180723% !important;
+    grid-column-gap: 6.8493150685%; }
+
+  .header__phone {
+    grid-template-columns: 7.96812749% 86.8525896414% !important;
+    grid-column-gap: 2.1645021645%; } }
+@media (max-width: 992px) {
+  body {
+    font-size: 13px !important; }
+
+  .header__content {
+    grid-template-columns: 40.1709401709% 17.094017094% 40.1709401709% !important;
+    grid-gap: 1.1538461538% !important; }
+
+  .header__button p {
+    font-size: 0.8125em !important; }
+
+  .work__time {
+    grid-template-columns: 100% !important;
+    grid-column-gap: 0px !important;
+    grid-template-rows: 15.5555555556% 15.5555555556% !important;
+    justify-items: center; }
+
+  .work__time img {
+    display: none; }
+
+  .work__time .without__weekends {
+    grid-area: 2/1/3/2 !important; }
+
+  .work__time .working__time {
+    grid-area: 3/1/4/2 !important; }
+
+  .header__phone {
+    grid-template-columns: 100% !important; }
+
+  .header__phone img {
+    display: none; }
+
+  .header__phone .number {
+    grid-area: 1/1/2/2 !important; }
+
+  .header__phone .goform {
+    grid-area: 2/1/3/2 !important; } }
+@media (max-width: 768px) {
+  body {
+    font-size: 12px; }
+
+  .header__logo__title {
+    grid-template-columns: 100% !important;
+    grid-template-rows: 46.6666666667% 32.2222222222% !important;
+    grid-row-gap: 11.1111111111%;
+    grid-gap: 0px !important;
+    align-self: center; }
+
+  .header__logo {
+    max-width: 142px;
+    max-height: 100%;
+    grid-area: 1/1/2/2; }
+
+  .header__title {
+    grid-area: 2/1/3/2; }
+
+  .header__hours__phone {
+    grid-template-columns: 100% !important;
+    grid-template-rows: 69.696969697% 30.303030303% !important;
+    grid-gap: 0px !important;
+    justify-content: end; }
+
+  .work__time {
+    grid-area: 2/1/3/2;
+    grid-template-columns: 26.7734553776% 70.938215103% !important;
+    grid-column-gap: 2.2883295195% !important;
+    grid-template-rows: 100% !important;
+    justify-items: right !important; }
+
+  .work__time img {
+    display: none;
+    display: block !important;
+    grid-area: 1/1/2/2 !important;
+    width: 100%;
+    max-height: 20px;
+    max-width: 20px;
+    justify-self: right; }
+
+  .work__time .without__weekends {
+    display: none; }
+
+  .work__time .working__time {
+    grid-area: 1/2/2/3 !important;
+    text-align: right !important; }
+
+  .header__phone {
+    grid-area: 1/1/2/2;
+    grid-template-columns: 26.7734553776% 70.938215103% !important; }
+
+  .header__phone img {
+    display: block !important;
+    grid-area: 1/1/2/2;
+    max-height: 20px;
+    max-width: 20px;
+    justify-self: center; }
+
+  .header__phone .number {
+    grid-area: 1/2/2/3 !important; }
+
+  .header__phone .goform {
+    grid-area: 2/2/3/3 !important; } }
 * {
   padding: 0;
   margin: 0; }
@@ -16,120 +133,122 @@ body {
 
 header {
   background-color: #fff;
-  height: 100px;
-  margin: 0;
+  margin: 0 auto;
   position: fixed;
   width: 100%;
   top: 0px;
   z-index: 50; }
-
-.header__content {
-  padding: 20px 0 20px 0;
-  display: grid;
-  box-sizing: border-box;
-  grid-template-columns: 38.1196581197% 14.5299145299% 38.2051282051%;
-  grid-template-rows: 60%;
-  grid-gap: 4.5726495726%;
-  width: 100%;
-  z-index: 51; }
-  .header__content .header__logo__title {
+  header .header__content {
+    justify-self: center;
+    padding: 20px 0 20px 0;
     display: grid;
-    grid-template-columns: 31.8385650224% 62.331838565%;
-    grid-template-rows: 100%;
-    grid-gap: 6.7183462532%;
-    z-index: 51;
-    align-items: center; }
-    .header__content .header__logo__title .header__logo {
-      width: 100%;
-      align-self: center; }
-    .header__content .header__logo__title .header__title {
-      font-family: "Open Sans";
-      font-weight: 400;
-      color: #0096dc;
-      font-size: 0.875em;
-      z-index: 51; }
-  .header__content .header__button {
-    padding: 0.9375em;
     box-sizing: border-box;
-    display: grid;
-    grid-template-columns: 22.2222222222% 70.3703703704%;
-    grid-gap: 7.4074074074%;
-    align-items: center;
-    justify-content: center;
+    grid-template-columns: 38.1196581197% 14.5299145299% 38.2051282051%;
+    grid-template-rows: 60%;
+    grid-gap: 4.5726495726%;
     width: 100%;
-    height: auto;
-    border: 2px solid #55a831;
-    border-radius: 10px;
-    text-decoration: none;
-    z-index: 51;
-    background-color: #ffffff; }
-    .header__content .header__button img {
-      width: 100%;
-      height: auto; }
-    .header__content .header__button p {
-      text-transform: uppercase;
-      font-family: "Open Sans";
-      font-weight: 700;
-      font-size: 0.875em;
-      color: #55a831;
-      border-bottom: none; }
-  .header__content .header__button:hover {
-    border: 2px solid #3a790e; }
-    .header__content .header__button:hover p {
-      color: #3a790e; }
-  .header__content .header__hours__phone {
-    display: grid;
-    grid-template-columns: 32.6621923937% 51.677852349%;
-    grid-template-rows: 100%;
-    grid-gap: 15.6599552573%;
     z-index: 51; }
-    .header__content .header__hours__phone .work__time {
+    header .header__content .header__logo__title {
       display: grid;
-      grid-template-columns: 20.5479452055% 65.7534246575%;
-      grid-template-rows: repeat(2, 50%);
-      grid-column-gap: 13.698630137%;
+      grid-template-columns: 31.8385650224% 62.331838565%;
+      grid-template-rows: 100%;
+      grid-gap: 6.7183462532%;
+      z-index: 51;
       align-items: center; }
-      .header__content .header__hours__phone .work__time img {
-        grid-area: 1/1/3/2;
-        width: 100%; }
-      .header__content .header__hours__phone .work__time .without__weekends {
-        grid-area: 1/2/2/3;
-        align-self: end;
+      header .header__content .header__logo__title .header__logo {
+        width: 100%;
+        align-self: center; }
+      header .header__content .header__logo__title .header__title {
         font-family: "Open Sans";
         font-weight: 400;
-        color: #333333;
-        font-size: 0.875em; }
-      .header__content .header__hours__phone .work__time .working__time {
-        grid-area: 2/2/3/3;
-        align-self: start;
-        font-family: "Open Sans";
-        font-weight: 700;
-        color: #333333;
-        font-size: 1.125em; }
-    .header__content .header__hours__phone .header__phone {
+        color: #0096dc;
+        font-size: 0.875em;
+        z-index: 51; }
+    header .header__content .header__button {
+      padding: 0.9375em;
+      box-sizing: border-box;
       display: grid;
-      grid-template-columns: 8.658008658% 85.7142857143%;
-      grid-template-rows: repeat(2, 50%);
-      grid-column-gap: 6.4935064935%;
-      align-items: center; }
-      .header__content .header__hours__phone .header__phone img {
-        grid-area: 1/1/2/2;
-        width: 100%; }
-      .header__content .header__hours__phone .header__phone .number {
-        grid-area: 1/2/2/3;
-        text-decoration: none;
+      grid-template-columns: 22.2222222222% 70.3703703704%;
+      grid-gap: 7.4074074074%;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: auto;
+      border: 2px solid #55a831;
+      border-radius: 10px;
+      text-decoration: none;
+      z-index: 51;
+      background-color: #ffffff; }
+      header .header__content .header__button img {
+        width: 100%;
+        height: auto; }
+      header .header__content .header__button p {
+        text-align: left;
+        text-transform: uppercase;
         font-family: "Open Sans";
         font-weight: 700;
-        font-size: 1.375em;
-        color: #333333;
-        text-align: right; }
-      .header__content .header__hours__phone .header__phone .goform {
-        grid-area: 2/2/3/3;
-        font-family: "Open Sans";
-        font-weight: 400;
-        font-size: 0.9375em;
-        color: #0089cc;
-        text-align: right; }
+        font-size: 0.875em;
+        color: #55a831;
+        border-bottom: none; }
+    header .header__content .header__button:hover {
+      border: 2px solid #3a790e;
+      cursor: pointer; }
+      header .header__content .header__button:hover p {
+        color: #3a790e; }
+    header .header__content .header__hours__phone {
+      display: grid;
+      grid-template-columns: 32.6621923937% 51.677852349%;
+      grid-template-rows: 100%;
+      grid-gap: 15.6599552573%;
+      z-index: 51;
+      align-items: center; }
+      header .header__content .header__hours__phone .work__time {
+        display: grid;
+        grid-template-columns: 20.5479452055% 65.7534246575%;
+        grid-template-rows: repeat(2, 50%);
+        grid-column-gap: 13.698630137%;
+        align-items: center; }
+        header .header__content .header__hours__phone .work__time img {
+          grid-area: 1/1/3/2;
+          width: 100%; }
+        header .header__content .header__hours__phone .work__time .without__weekends {
+          grid-area: 1/2/2/3;
+          align-self: end;
+          font-family: "Open Sans";
+          font-weight: 400;
+          color: #333333;
+          font-size: 0.875em; }
+        header .header__content .header__hours__phone .work__time .working__time {
+          grid-area: 2/2/3/3;
+          align-self: start;
+          font-family: "Open Sans";
+          font-weight: 700;
+          color: #333333;
+          font-size: 1.125em; }
+      header .header__content .header__hours__phone .header__phone {
+        display: grid;
+        grid-template-columns: 8.658008658% 85.7142857143%;
+        grid-template-rows: repeat(2, 50%);
+        grid-column-gap: 2.1645021645%;
+        align-items: center; }
+        header .header__content .header__hours__phone .header__phone img {
+          grid-area: 1/1/2/2;
+          width: 100%; }
+        header .header__content .header__hours__phone .header__phone .number {
+          grid-area: 1/2/2/3;
+          text-decoration: none;
+          font-family: "Open Sans";
+          font-weight: 700;
+          font-size: 1.375em;
+          color: #333333;
+          text-align: right; }
+        header .header__content .header__hours__phone .header__phone .goform {
+          grid-area: 2/2/3/3;
+          font-family: "Open Sans";
+          font-weight: 400;
+          font-size: 0.9375em;
+          color: #0089cc;
+          text-align: right; }
 
 main {
   margin-top: 100px; }
