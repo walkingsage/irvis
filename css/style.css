@@ -17,7 +17,21 @@
 
   .header__phone {
     grid-template-columns: 7.96812749% 86.8525896414% !important;
-    grid-column-gap: 2.1645021645%; } }
+    grid-column-gap: 2.1645021645%; }
+
+  .whowe__main {
+    grid-template-columns: 48% 32% !important;
+    grid-template-rows: 442px;
+    grid-gap: 20% !important; }
+
+  .whowe__title {
+    grid-template-rows: 50% 50%; }
+
+  .whowe__title__one {
+    font-size: 1.625em; }
+
+  .whowe__title__two {
+    font-size: 3.4375em; } }
 @media (max-width: 992px) {
   body {
     font-size: 13px !important; }
@@ -56,7 +70,28 @@
     grid-area: 1/1/2/2 !important; }
 
   .header__phone .goform {
-    grid-area: 2/1/3/2 !important; } }
+    grid-area: 2/1/3/2 !important; }
+
+  .whowe__main {
+    grid-template-columns: 53% 32% !important;
+    grid-template-rows: 442px;
+    grid-gap: 15% !important; }
+
+  .whowe__title {
+    grid-template-rows: 50% 50%; }
+
+  .whowe__title__one {
+    font-size: 1.625em; }
+
+  .whowe__title__two {
+    font-size: 3.4375em; }
+
+  .contain {
+    grid-template-rows: 60% 40% !important; }
+
+  .contain span {
+    height: 90px !important;
+    width: 90px !important; } }
 @media (max-width: 768px) {
   body {
     font-size: 12px; }
@@ -127,7 +162,35 @@
     grid-area: 1/2/2/3 !important; }
 
   .header__phone .goform {
-    grid-area: 2/2/3/3 !important; } }
+    grid-area: 2/2/3/3 !important; }
+
+  .whowe__main {
+    grid-template-columns: 34% 32% 34% !important;
+    grid-template-rows: 442px 442px;
+    grid-row-gap: 80px;
+    grid-gap: 0% !important; }
+
+  .whowe__left {
+    grid-area: 1/1/2/4; }
+
+  form {
+    grid-area: 2/2/3/3; }
+
+  .whowe__title {
+    grid-template-rows: 50% 50%; }
+
+  .whowe__title__one {
+    font-size: 1.625em; }
+
+  .whowe__title__two {
+    font-size: 3.4375em; }
+
+  .contain {
+    grid-template-rows: 60% 40% !important; }
+
+  .contain span {
+    height: 90px !important;
+    width: 90px !important; } }
 @media (max-width: 650px) {
   body {
     font-size: 11px !important; }
@@ -432,8 +495,8 @@ main {
           justify-items: center; }
           main .whowe .whowe__main .whowe__favorite .contain span {
             grid-area: 2/1/3/2;
-            width: 100%;
-            height: 100%;
+            width: 110px;
+            height: 110px;
             background-color: #0d8fe3;
             border: 1px solid #ffffff;
             border-radius: 50%;
@@ -443,7 +506,7 @@ main {
           main .whowe .whowe__main .whowe__favorite .contain img {
             z-index: 4;
             position: absolute;
-            bottom: 84px; }
+            bottom: 5.25em; }
           main .whowe .whowe__main .whowe__favorite .contain p {
             z-index: 4;
             font-family: "Open Sans Condensed";
