@@ -9,6 +9,7 @@
    body{
        font-size: 15px !important;
    }
+    // header__adaptive
    .header__content{
     grid-template-columns: 456px/1170px*100% 170px/1170px*100% 457px/1170px*100% !important;
     grid-gap: 43.5px/1170px*100% !important;
@@ -25,6 +26,10 @@
     grid-template-columns: 20px/251px*100% 218px/251px*100% !important;
     grid-column-gap: 5px/231px*100%;
    }
+   // header__adaptive__end
+
+
+   //    whowe__Adaptive__start
    .whowe__main{
     grid-template-columns: 48% 32% !important;
     grid-template-rows: 442px;
@@ -41,12 +46,30 @@
     .whowe__title__two{
         font-size: 55px/16px*1em
     }
+
+//    whowe__Adaptive__end
+
+    // type__balkon adaptive start
+    
+    .type__balkon{  
+        margin: 69px 0 103px 0 !important;
+        grid-template-rows: 5.84% 5.95% 19.157% 3.73% 63.6% !important;
+    }
+    .content__priemushestva p{
+        font-size: 0.8em !important;
+        align-self: center;
+    }
+    .content__priemushestva img{
+        align-self: center;
+    }
+    // type__balkon adaptive end
 }
 
 @media (max-width: 992px) {
     body{
         font-size: 13px !important;
     }
+    // header__adaptive
     .header__content{
     grid-template-columns: 460px/1170px*100% 220px/1170px*100% 460px/1170px*100% !important;
     grid-gap: 13.5px/1170px*100% !important;
@@ -85,7 +108,10 @@
    .header__phone .goform{
        grid-area: 2/1/3/2 !important;
    }
+   // header__adaptive__end
 
+
+   //    whowe__Adaptive__start
    .whowe__main{
     grid-template-columns: 53% 32% !important;
     grid-template-rows: 442px;
@@ -109,13 +135,55 @@
         height: 90px !important;
         width: 90px !important;
     }
-    
+    //    whowe__Adaptive__end
+
+    // type__balkon adaptive start
+    .cold{
+
+    }
+    .type__balkon{  
+        margin: 69px 0 -60px 0 !important;
+        grid-template-rows: 5.84% 5.95% 19.157% 3.73% 63.6% !important;
+    }
+    .content__priemushestva p{
+        font-size: 0.7em !important;
+        align-self: center;
+    }
+    .content__priemushestva img{
+        align-self: center;
+    }
+    .content__primer__cold{
+        grid-template-rows: 38.9168053245% 19.1347753744% 10.4725457571% !important;
+        grid-row-gap: 5.237936772% !important; 
+    }
+    .content__primer__hot{
+        grid-template-rows: 38.9168053245% 19.1347753744% 10.4725457571% !important;
+        grid-row-gap: 5.237936772% !important; 
+    }
+    .button{
+        font-size: 1em !important;
+    }
+    // type__balkon adaptive end
+
 }
+
+@media (max-width: 880px) {
+    .content__primer__cold{
+        grid-template-rows: 34.9168053245% 19.1347753744% 10.4725457571% !important;
+        grid-row-gap: 5.237936772% !important; 
+    }
+    .content__primer__hot{
+        grid-template-rows: 34.9168053245% 19.1347753744% 10.4725457571% !important;
+        grid-row-gap: 5.237936772% !important; 
+    }
+}
+
 
 @media (max-width: 768px) {
     body{
         font-size: 12px;
     }
+    // header__adaptive
     .header__content{
         grid-template-columns: 450px/1170px*100% 240px/1170px*100% 450px/1170px*100% !important;
         grid-gap: 13.5px/1170px*100% !important;
@@ -186,7 +254,9 @@
        .header__phone .goform{
            grid-area: 2/2/3/3 !important;
        }
-       
+       // header__adaptive__end
+
+       //    whowe__Adaptive__start
        .whowe__main{
         grid-template-columns: 58% 35% !important;
         grid-template-rows: 442px;
@@ -210,13 +280,61 @@
             height: 80px !important;
             width: 80px !important;
         }
-        
+        //    whowe__Adaptive__end
+
+    // type__balkon adaptive start
+    
+    .type__balkon{  
+        margin: 69px 0 -80px 0 !important;
+        grid-template-rows: 5.84% 5.95% 19.157% 3.73% 63.6% !important;
+    }
+    .content__priemushestva p{
+        font-size: 0.6em !important;
+        align-self: center;
+    }
+    .content__priemushestva img{
+        align-self: center;
+    }
+    .content__primer__cold{
+        grid-template-rows: 31.9168053245% 19.1347753744% 10.4725457571% !important;
+        grid-row-gap: 5.237936772% !important; 
+    }
+    .content__primer__hot{
+        grid-template-rows: 31.9168053245% 19.1347753744% 10.4725457571% !important;
+        grid-row-gap: 5.237936772% !important; 
+    }
+    .button{
+        font-size: 1em !important;
+    }
+    .cost__cold{
+        font-size: 1em !important;
+    }
+    .cost__hot{
+        font-size: 1em !important;
+    }
+    .key {
+        font-size: 0.675em !important;
+    }
+    // type__balkon adaptive end
+}
+
+@media (max-width: 700px) {
+    .content__primer__cold{
+        grid-template-rows: 27.9168053245% 19.1347753744% 10.4725457571% !important;
+        grid-row-gap: 5.237936772% !important; 
+    }
+    .content__primer__hot{
+        grid-template-rows: 27.9168053245% 19.1347753744% 10.4725457571% !important;
+        grid-row-gap: 5.237936772% !important; 
+    }
 }
 
 @media (max-width: 650px) {
     body{
         font-size: 11px !important;
     }
+
+    // header__adaptive
     .header__content{
         grid-template-columns: 450px/1170px*100% 270px/1170px*100% 420px/1170px*100% !important;
         grid-gap: 13.5px/1170px*100% !important;
@@ -288,8 +406,13 @@
        .header__phone .goform{
            grid-area: 2/1/3/2 !important;
        }
+       // header__adaptive__end
+
+
+       //    whowe__Adaptive__start
        .whowe{
            padding: 80px 0 !important;
+            background-position: right !important;
        }
        .whowe__main{
         grid-template-columns: 100% !important;
@@ -301,15 +424,17 @@
        }
                       
         .whowe__title__one{ 
-            font-size: 15px !important;
+            font-size: 22px !important;
             text-transform: uppercase;
             text-align: center;
+            color: #000000 !important;
         }
         
         .whowe__title__two{
-            font-size: 35px !important;
+            font-size: 28px !important;
             text-transform: uppercase;
             text-align: center;
+            color: #000000 !important;
         }
         .contain{
             grid-template-rows: 60% 40% !important;
@@ -325,12 +450,29 @@
             font-size: 14px !important;
             align-self: start !important;
         }
+        .whowe__main .form{
+            width: 100%;
+            justify-self: center;
+        }
+        //    whowe__Adaptive__end
+
+    // type__balkon adaptive start
+    
+    .content__primer__cold{
+        display: none !important;
+    }
+    .content__primer__hot{
+        display: none !important;
+    }
+    // type__balkon adaptive end
 } 
 
 @media (max-width: 480px) {
     body{
         font-size: 8px !important;
     }
+
+    // header__adaptive
     .header__content{
         grid-template-columns: 410px/1170px*100% 310px/1170px*100% 410px/1170px*100% !important;
         grid-gap: 13.5px/1170px*100% !important;
@@ -384,6 +526,14 @@
        .header__phone .goform{
            grid-area: 2/1/3/2 !important;
        }
+       // header__adaptive__end
+
+
+    //    whowe__Adaptive__start
+       .whowe{
+        padding: 80px 0 !important;
+         background-position: right !important;
+        }
        .whowe__main{
         grid-template-columns: 100% !important;
         grid-template-rows: 250px 442px !important ;
@@ -394,15 +544,17 @@
        }
                       
         .whowe__title__one{ 
-            font-size: 10px !important;
+            font-size: 16px !important;
             text-transform: uppercase;
             text-align: center;
+            color: #000000 !important;
         }
         
         .whowe__title__two{
-            font-size: 30px !important;
+            font-size: 24px !important;
             text-transform: uppercase;
             text-align: center;
+            color: #000000 !important;
         }
         .contain{
             grid-template-rows: 60% 40% !important;
@@ -416,7 +568,17 @@
         }
         .contain p{
             font-size: 12px !important;
-            align-self: center !important;
+            align-self: start !important;
         }
+        .form__title h1{
+            font-size: 14px !important;
+        }
+        .form__title p{
+            font-size: 18px !important;
+        }
+        form .button{
+            font-size: 15px !important;
+        }
+        //    whowe__Adaptive__end
 }
 
