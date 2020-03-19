@@ -1,5 +1,6 @@
 @import fonts
 @import media
+@import animations
 
 *
     padding: 0
@@ -279,16 +280,20 @@ main
                         font-size: 11px/16px*1em
                         color: #666666
     
-    
+
     .type__balkon
         display: grid
         grid-template-columns: auto
-        grid-template-rows: 5.84% 7.95% 19.157% 3.73% 63.6%
-        height: 1044px
+        grid-template-rows: 61px  200px  689px
+        grid-row-gap: 61px
+        padding: 80px 0 80px 0
+        
+        
         
 
         .main__primer__title
             display: grid
+            height: 61px
             grid-template-rows: 70% 30%
             text-align: center
             justify-items: center
@@ -309,6 +314,7 @@ main
                 align-self: end
         
         .main__primer__type
+            height: 200px
             display: grid
             grid-template-columns: repeat(5,18%)
             grid-gap: 2.5%
@@ -343,13 +349,17 @@ main
         
         
         
-            
+    
         .primer__raboty
             display: grid
-            grid-template-columns: 50% 50%
+            grid-template-columns: 50% 50% 
+            grid-template-rows: 698px/16px*1em
+            max-height: 698px/16px*1em
 
             .cold
                 background-image: url("../img/cold.png")
+                background-repeat: no-repeat
+                background-size: cover
                 display: grid
                 grid-template-rows: 88px/689px*100% 601px/689px*100%
 
@@ -463,6 +473,8 @@ main
 
             .hot
                 background-image: url("../img/hot.png")
+                background-repeat: no-repeat
+                background-size: cover
                 display: grid
                 grid-template-rows: 88px/689px*100% 601px/689px*100%
 

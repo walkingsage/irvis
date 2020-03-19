@@ -33,10 +33,6 @@
   .whowe__title__two {
     font-size: 3.4375em; }
 
-  .type__balkon {
-    margin: 69px 0 103px 0 !important;
-    grid-template-rows: 5.84% 5.95% 19.157% 3.73% 63.6% !important; }
-
   .content__priemushestva p {
     font-size: 0.8em !important;
     align-self: center; }
@@ -104,35 +100,21 @@
     height: 90px !important;
     width: 90px !important; }
 
-  .type__balkon {
-    margin: 69px 0 -60px 0 !important;
-    grid-template-rows: 5.84% 5.95% 19.157% 3.73% 63.6% !important; }
-
   .content__priemushestva p {
-    font-size: 0.7em !important;
-    align-self: center; }
+    font-size: 0.7em !important; }
 
-  .content__priemushestva img {
-    align-self: center; }
+  .primer__raboty__footer__cold__right .button {
+    font-size: 1em !important; }
 
-  .content__primer__cold {
-    grid-template-rows: 38.9168053245% 19.1347753744% 10.4725457571% !important;
-    grid-row-gap: 5.237936772% !important; }
+  .primer__raboty__footer__hot__right .button {
+    font-size: 1em !important; }
 
-  .content__primer__hot {
-    grid-template-rows: 38.9168053245% 19.1347753744% 10.4725457571% !important;
-    grid-row-gap: 5.237936772% !important; }
+  .primer__raboty {
+    grid-template-rows: 37.5em !important;
+    height: 37.5em; }
 
-  .button {
-    font-size: 1em !important; } }
-@media (max-width: 880px) {
-  .content__primer__cold {
-    grid-template-rows: 34.9168053245% 19.1347753744% 10.4725457571% !important;
-    grid-row-gap: 5.237936772% !important; }
-
-  .content__primer__hot {
-    grid-template-rows: 34.9168053245% 19.1347753744% 10.4725457571% !important;
-    grid-row-gap: 5.237936772% !important; } }
+  .type__balkon {
+    max-height: 133.625em; } }
 @media (max-width: 768px) {
   body {
     font-size: 12px; }
@@ -226,44 +208,43 @@
     height: 80px !important;
     width: 80px !important; }
 
-  .type__balkon {
-    margin: 69px 0 -80px 0 !important;
-    grid-template-rows: 5.84% 5.95% 19.157% 3.73% 63.6% !important; }
+  .hot {
+    grid-template-rows: 12.7721335269% 87.2278664731% !important;
+    position: absolute;
+    width: 100%;
+    justify-self: center;
+    max-width: 585px;
+    height: 100%;
+    opacity: 0%;
+    animation: show 2s ease 1 alternate forwards;
+    -webkit-animation: show 2s ease 1 alternate forwards;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -ms-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards; }
 
-  .content__priemushestva p {
-    font-size: 0.6em !important;
-    align-self: center; }
+  .primer__raboty {
+    grid-template-columns: auto !important;
+    grid-template-rows: 698px !important;
+    max-height: 698px !important;
+    height: 100%;
+    position: relative; }
 
-  .content__priemushestva img {
-    align-self: center; }
-
-  .content__primer__cold {
-    grid-template-rows: 31.9168053245% 19.1347753744% 10.4725457571% !important;
-    grid-row-gap: 5.237936772% !important; }
-
-  .content__primer__hot {
-    grid-template-rows: 31.9168053245% 19.1347753744% 10.4725457571% !important;
-    grid-row-gap: 5.237936772% !important; }
-
-  .button {
-    font-size: 1em !important; }
-
-  .cost__cold {
-    font-size: 1em !important; }
-
-  .cost__hot {
-    font-size: 1em !important; }
-
-  .key {
-    font-size: 0.675em !important; } }
-@media (max-width: 700px) {
-  .content__primer__cold {
-    grid-template-rows: 27.9168053245% 19.1347753744% 10.4725457571% !important;
-    grid-row-gap: 5.237936772% !important; }
-
-  .content__primer__hot {
-    grid-template-rows: 27.9168053245% 19.1347753744% 10.4725457571% !important;
-    grid-row-gap: 5.237936772% !important; } }
+  .cold {
+    grid-template-rows: 12.7721335269% 87.2278664731% !important;
+    position: absolute;
+    width: 100%;
+    justify-self: center;
+    max-width: 585px;
+    height: 100%;
+    animation: hide 2s ease 1 alternate forwards;
+    -webkit-animation: hide 2s ease 1 alternate forwards;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -ms-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards; } }
 @media (max-width: 650px) {
   body {
     font-size: 11px !important; }
@@ -378,13 +359,7 @@
 
   .whowe__main .form {
     width: 100%;
-    justify-self: center; }
-
-  .content__primer__cold {
-    display: none !important; }
-
-  .content__primer__hot {
-    display: none !important; } }
+    justify-self: center; } }
 @media (max-width: 480px) {
   body {
     font-size: 8px !important; }
@@ -487,6 +462,20 @@
 
   form .button {
     font-size: 15px !important; } }
+@keyframes hide {
+  0% {
+    left: 0px;
+    opacity: 100%; }
+  100% {
+    left: 1000px;
+    opacity: 0%; } }
+@keyframes show {
+  from {
+    left: -500px;
+    opacity: 0%; }
+  to {
+    left: 0px;
+    opacity: 100%; } }
 * {
   padding: 0;
   margin: 0; }
@@ -743,10 +732,12 @@ main {
   main .type__balkon {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 5.84% 7.95% 19.157% 3.73% 63.6%;
-    height: 1044px; }
+    grid-template-rows: 61px 200px 689px;
+    grid-row-gap: 61px;
+    padding: 80px 0 80px 0; }
     main .type__balkon .main__primer__title {
       display: grid;
+      height: 61px;
       grid-template-rows: 70% 30%;
       text-align: center;
       justify-items: center; }
@@ -764,6 +755,7 @@ main {
         height: 7.7%;
         align-self: end; }
     main .type__balkon .main__primer__type {
+      height: 200px;
       display: grid;
       grid-template-columns: repeat(5, 18%);
       grid-gap: 2.5%; }
@@ -794,9 +786,13 @@ main {
         cursor: pointer; }
     main .type__balkon .primer__raboty {
       display: grid;
-      grid-template-columns: 50% 50%; }
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 43.625em;
+      max-height: 43.625em; }
       main .type__balkon .primer__raboty .cold {
         background-image: url("../img/cold.png");
+        background-repeat: no-repeat;
+        background-size: cover;
         display: grid;
         grid-template-rows: 12.7721335269% 87.2278664731%; }
         main .type__balkon .primer__raboty .cold .upper__cold {
@@ -891,6 +887,8 @@ main {
             font-weight: 700; }
       main .type__balkon .primer__raboty .hot {
         background-image: url("../img/hot.png");
+        background-repeat: no-repeat;
+        background-size: cover;
         display: grid;
         grid-template-rows: 12.7721335269% 87.2278664731%; }
         main .type__balkon .primer__raboty .hot .upper__hot {
