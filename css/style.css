@@ -474,7 +474,8 @@
     left: -500px;
     opacity: 0%; }
   to {
-    left: 0px;
+    left: 50%;
+    margin-left: -292.5px;
     opacity: 100%; } }
 * {
   padding: 0;
@@ -789,6 +790,8 @@ main {
       grid-template-columns: 50% 50%;
       grid-template-rows: 43.625em;
       max-height: 43.625em; }
+      main .type__balkon .primer__raboty .arrow-2 {
+        display: none; }
       main .type__balkon .primer__raboty .cold {
         background-image: url("../img/cold.png");
         background-repeat: no-repeat;
