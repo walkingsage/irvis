@@ -220,7 +220,7 @@
     cursor: pointer;
     overflow: visible; }
 
-  .arrow-6 .svg .polygon {
+  .arrow-6 .svg .polygon1 {
     transition: all 0.5s cubic-bezier(0.2, 1, 0.3, 1);
     fill: #ffb903;
     -webkit-transition: all 0.5s cubic-bezier(0.2, 1, 0.3, 1);
@@ -293,7 +293,8 @@
     grid-template-rows: 698px !important;
     max-height: 698px !important;
     height: 100%;
-    position: relative; }
+    position: relative;
+    overflow: hidden; }
 
   .cold {
     grid-template-rows: 12.7721335269% 87.2278664731% !important;
