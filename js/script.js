@@ -1,4 +1,4 @@
-"use strict";
+
 
 const vnutrOtdelka = document.querySelector('.vnutr__otdelka'),
 vnutrUpper = document.querySelector('.vnutr__upper'),
@@ -15,19 +15,59 @@ vynosP = document.querySelector('.vynos__p'),
 kryshaOtdelka = document.querySelector('.krysha__otdelka'),
 kryshaUpper = document.querySelector('.krysha__upper'),
 kryshaTreugolnik = document.querySelector('.krysha__treugolnik'),
-kryshaP = document.querySelector('.krysha__p');
+kryshaP = document.querySelector('.krysha__p'),
+arrow = document.querySelector('.arrow-6'),
+cold = document.querySelector('.cold'),
+hot = document.querySelector('.hot'),
+polygon = document.querySelector('.polygon'),
+path = document.querySelector('.path'),
+polygon1 = document.querySelector('.polygon1'),
+arrowfixed = document.querySelector('.arrow-6-pl-fixed'),
+arrowpl = document.querySelector('arrow-6-pl'),
+svg = document.querySelector('.svg');
 
 
-// vneshOtdelka.addEventListener('mouseover', function() {
-//     vneshUpper.style.opacity = '100%';
-//    vneshTreugolnik.style.opacity = '100%';
-//    vneshP.style.color = '#0085db';
-//  });
 
 
-// vneshUpper.style.opacity = '100%';
-// vneshTreugolnik.style.opacity = '100%';
-// vneshP.style.color = '#0085db';
+svg.addEventListener('click',function(){
+    if(hot.classList.contains('hide__elem')){
+        hot.classList.remove('hide__elem');
+        cold.classList.add('hide__elem');
+        hot.classList.add('show__elem');
+        path.style.fill = '#ffb903';
+        polygon.style.fill = '#0d8fe3';
+    }
+    else if(hot.classList.contains('show__elem')){
+        hot.classList.remove('show__elem');
+        hot.classList.add('hide__elem');
+        cold.classList.remove('hide__elem')
+        cold.classList.add('show__elem'); 
+        path.style.fill = '#0d8fe3';
+        polygon.style.fill = '#ffb903'; 
+    }
+});
+
+svg.addEventListener('mouseover',function(){
+    if (hot.classList.contains('show__elem')){
+        path.style.fill = '#ffb903';
+        polygon.style.fill = '#0d8fe3';
+    }
+    if (hot.classList.contains('hide__elem')){
+        path.style.fill = '#0d8fe3';
+        polygon.style.fill = '#ffb903';
+    }
+});
+svg.addEventListener('mouseout',function(){
+    if (hot.classList.contains('show__elem')){
+        path.style.fill = '#ffb903';
+        polygon.style.fill = '#0d8fe3';
+    }
+    if (hot.classList.contains('hide__elem')){
+        path.style.fill = '#0d8fe3';
+        polygon.style.fill = '#ffb903';
+    }
+});
+
 
 
 vneshOtdelka.addEventListener('mouseout', function() {
