@@ -149,7 +149,7 @@
         height: 600px/16px*1em;
     }
     .type__balkon{
-        max-height: 1069px/16px*1em*2;
+        grid-template-rows: auto !important;
     }
     // type__balkon adaptive end
 
@@ -236,9 +236,13 @@
        // header__adaptive__end
 
        //    whowe__Adaptive__start
-       .whowe__main{
-        grid-template-columns: 58% 35% !important;
-        grid-template-rows: 442px;
+       .whowe{
+        padding: 80px 0 !important;
+         background-position: right !important;
+    }
+    .whowe__main{
+        grid-template-columns: 100% !important;
+        grid-template-rows: 300px 442px !important ;
         grid-gap: 7% !important;
        }
        .whowe__title{
@@ -246,11 +250,17 @@
        }
                       
         .whowe__title__one{ 
-            font-size: 22px/16px*1em !important;
+            font-size: 22px !important;
+            text-transform: uppercase;
+            text-align: center;
+            color: #000000 !important;
         }
         
         .whowe__title__two{
-            font-size: 50px/16px*1em !important;
+            font-size: 28px !important;
+            text-transform: uppercase;
+            text-align: center;
+            color: #000000 !important;
         }
         .contain{
             grid-template-rows: 60% 40% !important;
@@ -259,14 +269,27 @@
             height: 80px !important;
             width: 80px !important;
         }
+        .contain img{
+            bottom: 65px !important;
+        }
+        .contain p{
+            font-size: 14px !important;
+            align-self: start !important;
+        }
+        .whowe__main .form{
+            width: 100%;
+            justify-self: center;
+        }
         //    whowe__Adaptive__end
 
     // type__balkon adaptive start
     .arrow-6 {
-        margin:20px;
+        margin:10px;
         display: block !important;
         justify-self: right;
         align-self: center;
+        
+        
     }
     .arrow-6 svg {
         width: 40px !important;
@@ -338,14 +361,31 @@
             opacity: 1;
         }
     }
-    
+    .show__elem{
+        animation: show 2s ease 1 alternate forwards;
+        -webkit-animation: show 2s ease 1 alternate forwards;
+        -webkit-animation-fill-mode: forwards;
+        -moz-animation-fill-mode: forwards;
+        -ms-animation-fill-mode: forwards;
+        -o-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+    }
+    .hide__elem{
+        animation: hide 2s ease 1 alternate forwards;
+        -webkit-animation: hide 2s ease 1 alternate forwards;
+        -webkit-animation-fill-mode: forwards;
+        -moz-animation-fill-mode: forwards;
+        -ms-animation-fill-mode: forwards;
+        -o-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+    }
     
     .hot{
         grid-template-rows: 88px/689px*100% 601px/689px*100% !important;
         position: absolute;
         width: 100%;
+        max-width: 70%;
         justify-self: center;
-        max-width: 585px;
         height: 100%;
         opacity: 0%;
         // animation: show 2s ease 1 alternate forwards;
@@ -359,11 +399,10 @@
     }
     .primer__raboty{
         grid-template-columns: auto !important;
-            grid-template-rows: 698px !important;
-            max-height: 698px !important;
-            height: 100%;
-            position: relative;
-            overflow: hidden;
+        grid-template-rows: 37.5em !important;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
         
     }
     .cold{
@@ -371,7 +410,7 @@
         position: absolute;
         width: 100%;
         justify-self: center;
-        max-width: 585px;
+        max-width: 70%;
         height: 100%;
         // animation: hide 2s ease 1 alternate forwards;
         // -webkit-animation: hide 2s ease 1 alternate forwards;
@@ -467,10 +506,7 @@
 
 
        //    whowe__Adaptive__start
-       .whowe{
-           padding: 80px 0 !important;
-            background-position: right !important;
-       }
+       
        .whowe__main{
         grid-template-columns: 100% !important;
         grid-template-rows: 300px 442px !important ;
@@ -516,10 +552,7 @@
     // type__balkon adaptive start
     
    
-    // .type__balkon{
-    //     height: 100% !important;
-    //     max-height: 1251px !important;
-    // }
+    
             
     // type__balkon adaptive end
 } 

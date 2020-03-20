@@ -114,7 +114,7 @@
     height: 37.5em; }
 
   .type__balkon {
-    max-height: 133.625em; } }
+    grid-template-rows: auto !important; } }
 @media (max-width: 768px) {
   body {
     font-size: 12px; }
@@ -187,19 +187,29 @@
   .header__phone .goform {
     grid-area: 2/2/3/3 !important; }
 
+  .whowe {
+    padding: 80px 0 !important;
+    background-position: right !important; }
+
   .whowe__main {
-    grid-template-columns: 58% 35% !important;
-    grid-template-rows: 442px;
+    grid-template-columns: 100% !important;
+    grid-template-rows: 300px 442px !important;
     grid-gap: 7% !important; }
 
   .whowe__title {
     grid-template-rows: 50% 50%; }
 
   .whowe__title__one {
-    font-size: 1.375em !important; }
+    font-size: 22px !important;
+    text-transform: uppercase;
+    text-align: center;
+    color: #000000 !important; }
 
   .whowe__title__two {
-    font-size: 3.125em !important; }
+    font-size: 28px !important;
+    text-transform: uppercase;
+    text-align: center;
+    color: #000000 !important; }
 
   .contain {
     grid-template-rows: 60% 40% !important; }
@@ -208,8 +218,19 @@
     height: 80px !important;
     width: 80px !important; }
 
+  .contain img {
+    bottom: 65px !important; }
+
+  .contain p {
+    font-size: 14px !important;
+    align-self: start !important; }
+
+  .whowe__main .form {
+    width: 100%;
+    justify-self: center; }
+
   .arrow-6 {
-    margin: 20px;
+    margin: 10px;
     display: block !important;
     justify-self: right;
     align-self: center; }
@@ -274,12 +295,30 @@
       opacity: 0.4; }
     100% {
       opacity: 1; } }
+  .show__elem {
+    animation: show 2s ease 1 alternate forwards;
+    -webkit-animation: show 2s ease 1 alternate forwards;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -ms-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards; }
+
+  .hide__elem {
+    animation: hide 2s ease 1 alternate forwards;
+    -webkit-animation: hide 2s ease 1 alternate forwards;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -ms-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards; }
+
   .hot {
     grid-template-rows: 12.7721335269% 87.2278664731% !important;
     position: absolute;
     width: 100%;
+    max-width: 70%;
     justify-self: center;
-    max-width: 585px;
     height: 100%;
     opacity: 0%;
     -webkit-animation-fill-mode: forwards;
@@ -290,8 +329,7 @@
 
   .primer__raboty {
     grid-template-columns: auto !important;
-    grid-template-rows: 698px !important;
-    max-height: 698px !important;
+    grid-template-rows: 37.5em !important;
     height: 100%;
     position: relative;
     overflow: hidden; }
@@ -301,7 +339,7 @@
     position: absolute;
     width: 100%;
     justify-self: center;
-    max-width: 585px;
+    max-width: 70%;
     height: 100%;
     -webkit-animation-fill-mode: forwards;
     -moz-animation-fill-mode: forwards;
@@ -381,10 +419,6 @@
 
   .header__phone .goform {
     grid-area: 2/1/3/2 !important; }
-
-  .whowe {
-    padding: 80px 0 !important;
-    background-position: right !important; }
 
   .whowe__main {
     grid-template-columns: 100% !important;
@@ -533,12 +567,14 @@
     left: 1000px;
     opacity: 0%; } }
 @keyframes show {
-  from {
+  0% {
     left: -500px;
     opacity: 0%; }
-  to {
-    left: 50%;
-    margin-left: -292.5px;
+  75% {
+    left: 100px;
+    opacity: 75%; }
+  100% {
+    justify-self: center;
     opacity: 100%; } }
 * {
   padding: 0;
@@ -551,24 +587,6 @@ body {
   max-width: 1190px;
   padding: 0 10px 0 10px;
   margin: 0 auto; }
-
-.show__elem {
-  animation: show 2s ease 1 alternate forwards;
-  -webkit-animation: show 2s ease 1 alternate forwards;
-  -webkit-animation-fill-mode: forwards;
-  -moz-animation-fill-mode: forwards;
-  -ms-animation-fill-mode: forwards;
-  -o-animation-fill-mode: forwards;
-  animation-fill-mode: forwards; }
-
-.hide__elem {
-  animation: hide 2s ease 1 alternate forwards;
-  -webkit-animation: hide 2s ease 1 alternate forwards;
-  -webkit-animation-fill-mode: forwards;
-  -moz-animation-fill-mode: forwards;
-  -ms-animation-fill-mode: forwards;
-  -o-animation-fill-mode: forwards;
-  animation-fill-mode: forwards; }
 
 header {
   background-color: #fff;
@@ -915,7 +933,8 @@ main {
         grid-row-gap: 7.237936772%; }
         main .type__balkon .primer__raboty .content__primer__cold img {
           width: 100%;
-          justify-self: center; }
+          justify-self: center;
+          max-height: 100%; }
         main .type__balkon .primer__raboty .content__primer__cold .content__priemushestva {
           display: grid;
           grid-template-columns: auto;
@@ -932,7 +951,10 @@ main {
               font-size: 0.9em;
               line-height: 30px; }
             main .type__balkon .primer__raboty .content__primer__cold .content__priemushestva .cold__checkbox img {
-              width: 100%; }
+              width: 95%;
+              max-height: 95%;
+              justify-self: center;
+              align-self: center; }
         main .type__balkon .primer__raboty .content__primer__cold .primer__raboty__footer {
           display: grid;
           grid-template-columns: 44.8430493274% 48.6547085202%;
@@ -1011,7 +1033,8 @@ main {
         grid-row-gap: 7.237936772%; }
         main .type__balkon .primer__raboty .content__primer__hot img {
           width: 100%;
-          justify-self: center; }
+          justify-self: center;
+          max-height: 100%; }
         main .type__balkon .primer__raboty .content__primer__hot .content__priemushestva {
           display: grid;
           grid-template-columns: auto;
@@ -1028,7 +1051,10 @@ main {
               font-size: 0.9em;
               line-height: 30px; }
             main .type__balkon .primer__raboty .content__primer__hot .content__priemushestva .hot__checkbox img {
-              width: 100%; }
+              width: 95%;
+              max-height: 95%;
+              justify-self: center;
+              align-self: center; }
         main .type__balkon .primer__raboty .content__primer__hot .primer__raboty__footer {
           display: grid;
           grid-template-columns: 44.8430493274% 48.6547085202%;

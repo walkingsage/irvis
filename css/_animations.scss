@@ -11,13 +11,16 @@
 }
 
 @keyframes show{
-    from{
+    0%{
         left: -500px;
         opacity: 0%;
     }
-    to{
-        left: 50%;
-        margin-left: -292.5px;
+    75%{
+        left: 100px;
+        opacity: 75%;
+    }
+    100%{
+        justify-self: center;
         opacity: 100%;
     }
 }

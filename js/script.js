@@ -26,15 +26,24 @@ arrowfixed = document.querySelector('.arrow-6-pl-fixed'),
 arrowpl = document.querySelector('arrow-6-pl'),
 svg = document.querySelector('.svg');
 
-
-if(screen.width <= 768){
-    hot.classList.add('hide__elem');
-}
+window.addEventListener('resize',
+    function razmerscreen(){
+    if(screen.width <= 767){
+        hot.classList.add('hide__elem');
+    }
+    else if(screen.width > 768){
+        hot.classList.remove('hide__elem');
+        cold.classList.remove('hide__elem');
+        hot.classList.remove('show__elem');
+        cold.classList.remove('show__elem');
+    }
+});
 if(hot.classList.contains('hide__elem')){
-    
+    polygon.style.fill = '#ffb903';
     polygon1.style.fill = '#ffb903';
 }
 svg.addEventListener('click',function(){
+    
     if(hot.classList.contains('hide__elem')){
         hot.classList.remove('hide__elem');
         cold.classList.add('hide__elem');
@@ -55,6 +64,7 @@ svg.addEventListener('click',function(){
 });
 
 svg.addEventListener('mouseover',function(){
+    
     if (hot.classList.contains('show__elem')){
         path.style.fill = '#ffb903';
         polygon.style.fill = '#0d8fe3';
