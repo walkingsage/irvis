@@ -14,6 +14,19 @@ body
     padding: 0 10px 0 10px
     margin: 0 auto
 
+.button__zakaz
+    border-radius: 10px
+    border: 1px solid #ffc600
+    box-shadow: 0 2px 20px rgba(255, 153, 0, 0.4)
+    background-image: linear-gradient(to bottom, #ffed26 0%, #ffb400 100%)
+    background-color: #e8e8e8
+    text-align: center
+    +sanscond
+    +bold
+    color: #000000
+    font-size: 25px/16px*1em
+    max-width: 304px
+    text-transform: uppercase
 
 
 
@@ -612,10 +625,10 @@ main
             .primer__otdelki
                 display: grid
                 grid-template-columns: auto
-                grid-template-rows:  241px auto !important
+                grid-template-rows:  241px auto
                 grid-row-gap: 40px/16px*1em
-                padding: 79px/16px*1em 0
-                height: 723px
+                padding: 79px 0 79px 0
+                height: auto
 
                 .primer__otdelki__upper
                     display: grid
@@ -783,38 +796,40 @@ main
                     display: grid
                     grid-template-columns: 300px/1169px*100% 402px/1169px*100% 370px/1169px*100%
                     grid-column-gap: 48.5px/16px*1em
-                    grid-template-rows: auto
+                    grid-template-rows: 442px
 
                     .img__primer
-                        padding: 35px/300px*100% 15px/300px*100%
                         max-width: 300px
                         width: 100%
                         max-height: 100%
+                        height: 100%
+                        align-self: center
+                        justify-self: center
                     .primer__content__material
                         display: grid
-                        height: 100%
                         grid-template-columns: repeat(3,107px/402px*100%)
-                        grid-template-rows: repeat(2,159px/442px*100%)
-                        grid-column-gap: 44px/402px*100%
-                        grid-row-gap: 70px/16px*1em
-                        padding: 30px/442px*100% 0 22px/442px*100% 0
+                        grid-template-rows: 159px 159px
+                        grid-row-gap: 70px/442px*100%
+                        grid-column-gap: 40.5px/402px*100%
+                        margin: 30px/442px*100% 0 24px/442px*100%
 
                         .material__content
                             display: grid
-                            grid-template-columns: 100%
-                            grid-template-rows: 70px/16px*1em 69px/16px*1em
+                            grid-template-columns: auto
+                            grid-template-rows: 70px 69px
+                            grid-row-gap: 20px
 
                             img
-                                height: 70px/90px*100%
+                                max-width: 70px 
+                                width: 100%
+                                align-self: start
                                 justify-self: center
-                                border: 1px solid #000000
-                                border-radius: 50%
                             
                             .material__content__title
                                 display: grid
                                 grid-template-columns: auto
-                                grid-template-rows: 34px/16px*1em 15px/16px*1em 10px/16px*1em
-                                grid-row-gap: 5px/16px*1em
+                                grid-template-rows: 34px 15px 10px
+                                grid-row-gap: 5px
                             
                                 .material__title
                                     +opensans
@@ -830,7 +845,7 @@ main
                                     font-size: 14px/16px*1em
                                     color: #0d8fe3
                                     justify-self: center
-                                    align-self: end
+                                    align-self: start
                                 
                                 .with__material
                                     +opensans
