@@ -233,7 +233,8 @@
     margin: 10px;
     display: block !important;
     justify-self: right;
-    align-self: center; }
+    align-self: center;
+    z-index: 40; }
 
   .arrow-6 svg {
     width: 40px !important;
@@ -878,7 +879,7 @@ main {
           font-family: "Open Sans";
           font-weight: 400;
           font-size: 100%;
-          line-height: 26px; }
+          line-height: 1.625em; }
         main .type__balkon .main__primer__type .type__name .active {
           color: #464646;
           text-decoration: none; }
@@ -931,7 +932,9 @@ main {
         grid-template-columns: auto;
         grid-template-rows: 49.9168053245% 19.1347753744% 16.4725457571%;
         grid-row-gap: 7.237936772%; }
-        main .type__balkon .primer__raboty .content__primer__cold img {
+        main .type__balkon .primer__raboty .content__primer__cold .primer__image__cold {
+          background-image: url(../img/derevocold.png);
+          background-size: cover;
           width: 100%;
           justify-self: center;
           max-height: 100%; }
@@ -1031,9 +1034,12 @@ main {
         grid-template-columns: auto;
         grid-template-rows: 49.9168053245% 19.1347753744% 16.4725457571%;
         grid-row-gap: 7.237936772%; }
-        main .type__balkon .primer__raboty .content__primer__hot img {
+        main .type__balkon .primer__raboty .content__primer__hot .primer__image__hot {
+          background-image: url(../img/derevohot.png);
+          background-size: cover;
+          background-position: center center;
+          background-repeat: no-repeat;
           width: 100%;
-          justify-self: center;
           max-height: 100%; }
         main .type__balkon .primer__raboty .content__primer__hot .content__priemushestva {
           display: grid;

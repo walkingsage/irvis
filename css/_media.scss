@@ -288,7 +288,7 @@
         display: block !important;
         justify-self: right;
         align-self: center;
-        
+        z-index: 40;
         
     }
     .arrow-6 svg {
@@ -549,12 +549,7 @@
         }
         //    whowe__Adaptive__end
 
-    // type__balkon adaptive start
     
-   
-    
-            
-    // type__balkon adaptive end
 } 
 
 @media (max-width: 480px) {
@@ -670,5 +665,12 @@
             font-size: 15px !important;
         }
         //    whowe__Adaptive__end
+
+    // type__balkon adaptive start
+    
+        
+    
+            
+    // type__balkon adaptive end
 }
 

@@ -343,7 +343,7 @@ main
                     +opensans
                     +regular
                     font-size: 100%
-                    line-height: 26px
+                    line-height: 26px/16px*1em
                 .active
                     color: #464646
                     text-decoration: none
@@ -408,7 +408,9 @@ main
                 grid-template-rows: 300px/601px*100% 115px/601px*100% 99px/601px*100% 
                 grid-row-gap: 43.5px/601px*100%
             
-                img
+                .primer__image__cold
+                    background-image: url(../img/derevocold.png)
+                    background-size: cover
                     width: 100%
                     justify-self: center
                     max-height: 100%
@@ -527,9 +529,12 @@ main
                 grid-template-rows: 300px/601px*100% 115px/601px*100% 99px/601px*100% 
                 grid-row-gap: 43.5px/601px*100%
             
-                img
+                .primer__image__hot
+                    background-image: url(../img/derevohot.png)
+                    background-size: cover
+                    background-position: center center
+                    background-repeat: no-repeat
                     width: 100%
-                    justify-self: center
                     max-height: 100%
 
                 .content__priemushestva
