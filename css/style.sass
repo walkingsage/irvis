@@ -336,7 +336,7 @@ main
                     width: 100%
                     max-width: 100px
 
-                a
+                p
                     grid-area: 2/1/3/2
                     align-self: center
                     color: #249ae6
@@ -612,183 +612,197 @@ main
             .primer__otdelki
                 display: grid
                 grid-template-columns: auto
-                grid-template-rows: 62px/723px*100% 80px/723px*100% 94px/723px*100% 40px/723px*100% 442px/723px*100%
+                grid-template-rows:  241px auto !important
+                grid-row-gap: 40px/16px*1em
                 padding: 79px/16px*1em 0
                 height: 723px
 
-                .primer__otdelki__title
+                .primer__otdelki__upper
                     display: grid
                     grid-template-columns: auto
-                    grid-template-rows: 36px/61px*100% 25px/61px*100%
-                    justify-items: center
-                    
-                    h1
-                        +opensans
-                        +bold
-                        font-size: 30px/16px*1em
-                        color: #333333
-                        text-transform: uppercase
-                    
-                    .primer__title__border
-                        background-color: #57B1EC
-                        width: 9.6%
-                        height: 7.7%
-                        align-self: end
+                    grid-template-rows: auto
+                    grid-row-gap: 80px/234px*100%
 
-                .primer__otdelki__menu      
-                    display: grid
-                    grid-template-columns: repeat(4,25%)
-
-                    .vnutr__otdelka
+                    .primer__otdelki__title
                         display: grid
-                        grid-template-rows: 10px/94px*100% 12px/94px*100% 72px/94px*100%
-                        background-image: linear-gradient(to bottom, #EDEDED 0%, rgba(0, 0, 0, 0) 100%)
-
-                        .vnutr__upper
-                            background-color: #0d8fe3
-                            width: 100%
-                            height: 100%
+                        grid-template-columns: auto
+                        grid-template-rows: 36px 25px
+                        justify-items: center
                         
-                        .vnutr__treugolnik
-                            width: 0
-                            height: 0
-                            border-left: 6px solid transparent
-                            border-right: 6px solid transparent
-                            border-top: 6px solid #0d8fe3
-                            justify-self: center
-
-                        p
+                        h1
                             +opensans
-                            +regular
-                            font-size: 20px/16px*1em
+                            +bold
+                            font-size: 30px/16px*1em
+                            color: #333333
                             text-transform: uppercase
-                            justify-self: center
-                            align-self: center
-                            color: #0085db
+                        
+                        .primer__title__border
+                            background-color: #57B1EC
+                            width: 9.6%
+                            height: 7.7%
+                            align-self: end
 
-                    .vnutr__otdelka:hover
-                        border: 1px solid responsive
-                        background-image: linear-gradient(to bottom, #EDEDED 0%, rgba(0, 0, 0, 0) 100%)
-                        cursor: pointer
+                    .primer__otdelki__menu      
+                        display: grid
+                        grid-template-columns: repeat(4,25%)
+                        grid-template-rows: 93px
+
+                        .vnutr__otdelka
+                            display: grid
+                            grid-template-rows: 10px/94px*100% 12px/94px*100% 72px/94px*100%
+                            background-image: linear-gradient(to bottom, #EDEDED 0%, rgba(0, 0, 0, 0) 100%)
+
+                            .vnutr__upper
+                                background-color: #0d8fe3
+                                width: 100%
+                                height: 100%
                             
-                        
+                            .vnutr__treugolnik
+                                width: 0
+                                height: 0
+                                border-left: 6px solid transparent
+                                border-right: 6px solid transparent
+                                border-top: 6px solid #0d8fe3
+                                justify-self: center
 
-                    .vnesh__otdelka
-                        display: grid
-                        grid-template-rows: 10px/94px*100% 12px/94px*100% 72px/94px*100%
+                            p
+                                +opensans
+                                +regular
+                                font-size: 20px/16px*1em
+                                text-transform: uppercase
+                                justify-self: center
+                                align-self: center
+                                color: #0085db
 
-                        .vnesh__upper
-                            opacity: 0%
-                            background-color: #0d8fe3
-                            width: 100%
-                            height: 100%
-
-                        .vnesh__treugolnik
-                            opacity: 0%
-                            width: 0
-                            height: 0
-                            border-left: 6px solid transparent
-                            border-right: 6px solid transparent
-                            border-top: 6px solid #0d8fe3
-                            justify-self: center
-
-                        p
-                            +opensans
-                            +regular
-                            font-size: 20px/16px*1em
-                            text-transform: uppercase
-                            justify-self: center
-                            align-self: center
-
-                    .vnesh__otdelka:hover
-                        border: 1px solid responsive
-                        background-image: linear-gradient(to bottom, #EDEDED 0%, rgba(0, 0, 0, 0) 100%)
-                        cursor: pointer
+                        .vnutr__otdelka:hover
+                            border: 1px solid responsive
+                            background-image: linear-gradient(to bottom, #EDEDED 0%, rgba(0, 0, 0, 0) 100%)
+                            cursor: pointer
+                                
                             
 
-                    .vynos__otdelka
-                        display: grid
-                        grid-template-rows: 10px/94px*100% 12px/94px*100% 72px/94px*100%
+                        .vnesh__otdelka
+                            display: grid
+                            grid-template-rows: 10px/94px*100% 12px/94px*100% 72px/94px*100%
 
-                        .vynos__upper
-                            opacity: 0%
-                            background-color: #0d8fe3
-                            width: 100%
-                            height: 100%
+                            .vnesh__upper
+                                opacity: 0%
+                                background-color: #0d8fe3
+                                width: 100%
+                                height: 100%
 
-                        .vynos__treugolnik
-                            opacity: 0%
-                            width: 0
-                            height: 0
-                            border-left: 6px solid transparent
-                            border-right: 6px solid transparent
-                            border-top: 6px solid #0d8fe3
-                            justify-self: center
+                            .vnesh__treugolnik
+                                opacity: 0%
+                                width: 0
+                                height: 0
+                                border-left: 6px solid transparent
+                                border-right: 6px solid transparent
+                                border-top: 6px solid #0d8fe3
+                                justify-self: center
 
-                        p
-                            +opensans
-                            +regular
-                            font-size: 20px/16px*1em
-                            text-transform: uppercase
-                            justify-self: center
-                            align-self: center
+                            p
+                                +opensans
+                                +regular
+                                font-size: 20px/16px*1em
+                                text-transform: uppercase
+                                justify-self: center
+                                align-self: center
 
-                    .vynos__otdelka:hover
-                        border: 1px solid responsive
-                        background-image: linear-gradient(to bottom, #EDEDED 0%, rgba(0, 0, 0, 0) 100%)
-                        cursor: pointer
+                        .vnesh__otdelka:hover
+                            border: 1px solid responsive
+                            background-image: linear-gradient(to bottom, #EDEDED 0%, rgba(0, 0, 0, 0) 100%)
+                            cursor: pointer
+                                
+
+                        .vynos__otdelka
+                            display: grid
+                            grid-template-rows: 10px/94px*100% 12px/94px*100% 72px/94px*100%
+
+                            .vynos__upper
+                                opacity: 0%
+                                background-color: #0d8fe3
+                                width: 100%
+                                height: 100%
+
+                            .vynos__treugolnik
+                                opacity: 0%
+                                width: 0
+                                height: 0
+                                border-left: 6px solid transparent
+                                border-right: 6px solid transparent
+                                border-top: 6px solid #0d8fe3
+                                justify-self: center
+
+                            p
+                                +opensans
+                                +regular
+                                font-size: 20px/16px*1em
+                                text-transform: uppercase
+                                justify-self: center
+                                align-self: center
+
+                        .vynos__otdelka:hover
+                            border: 1px solid responsive
+                            background-image: linear-gradient(to bottom, #EDEDED 0%, rgba(0, 0, 0, 0) 100%)
+                            cursor: pointer
+                                
+
+                        .krysha__otdelka
+                            display: grid
+                            grid-template-rows: 10px/94px*100% 12px/94px*100% 72px/94px*100%
+
+                            .krysha__upper
+                                opacity: 0%
+                                background-color: #0d8fe3
+                                width: 100%
+                                height: 100%
                             
+                            .krysha__treugolnik
+                                opacity: 0%
+                                width: 0
+                                height: 0
+                                border-left: 6px solid transparent
+                                border-right: 6px solid transparent
+                                border-top: 6px solid #0d8fe3
+                                justify-self: center
 
-                    .krysha__otdelka
-                        display: grid
-                        grid-template-rows: 10px/94px*100% 12px/94px*100% 72px/94px*100%
-
-                        .krysha__upper
-                            opacity: 0%
-                            background-color: #0d8fe3
-                            width: 100%
-                            height: 100%
+                            p
+                                +opensans
+                                +regular
+                                font-size: 20px/16px*1em
+                                text-transform: uppercase
+                                justify-self: center
+                                align-self: center
                         
-                        .krysha__treugolnik
-                            opacity: 0%
-                            width: 0
-                            height: 0
-                            border-left: 6px solid transparent
-                            border-right: 6px solid transparent
-                            border-top: 6px solid #0d8fe3
-                            justify-self: center
-
-                        p
-                            +opensans
-                            +regular
-                            font-size: 20px/16px*1em
-                            text-transform: uppercase
-                            justify-self: center
-                            align-self: center
-                    
-                    .krysha__otdelka:hover
-                        border: 1px solid responsive
-                        background-image: linear-gradient(to bottom, #EDEDED 0%, rgba(0, 0, 0, 0) 100%)
-                        cursor: pointer
+                        .krysha__otdelka:hover
+                            border: 1px solid responsive
+                            background-image: linear-gradient(to bottom, #EDEDED 0%, rgba(0, 0, 0, 0) 100%)
+                            cursor: pointer
 
                 .primer__content
                     display: grid
-                    grid-template-columns: 300px/1169px*100% 31px/1169px*100% 402px/1169px*100% 66px/1169px*100% 370px/1169px*100%
-                    grid-template-rows: 100%
+                    grid-template-columns: 300px/1169px*100% 402px/1169px*100% 370px/1169px*100%
+                    grid-column-gap: 48.5px/16px*1em
+                    grid-template-rows: auto
 
+                    .img__primer
+                        padding: 35px/300px*100% 15px/300px*100%
+                        max-width: 300px
+                        width: 100%
+                        max-height: 100%
                     .primer__content__material
                         display: grid
                         height: 100%
                         grid-template-columns: repeat(3,107px/402px*100%)
                         grid-template-rows: repeat(2,159px/442px*100%)
                         grid-column-gap: 44px/402px*100%
-                        grid-row-gap: 70px/442px*100%
+                        grid-row-gap: 70px/16px*1em
                         padding: 30px/442px*100% 0 22px/442px*100% 0
 
                         .material__content
                             display: grid
                             grid-template-columns: 100%
-                            grid-template-rows: 90px/159px*100% 31px/159px*100% 28px/159px*100% 10px/159px*100%
+                            grid-template-rows: 70px/16px*1em 69px/16px*1em
 
                             img
                                 height: 70px/90px*100%
@@ -796,37 +810,44 @@ main
                                 border: 1px solid #000000
                                 border-radius: 50%
                             
-                            .material__title
-                                +opensans
-                                +bold
-                                font-size: 14px/16px*1em
-                                text-align: center
-                                justify-self: center
-                                align-self: start
-
-                            .material__razmer
-                                +opensans
-                                +bold
-                                font-size: 14px/16px*1em
-                                color: #0d8fe3
-                                justify-self: center
-                                align-self: end
+                            .material__content__title
+                                display: grid
+                                grid-template-columns: auto
+                                grid-template-rows: 34px/16px*1em 15px/16px*1em 10px/16px*1em
+                                grid-row-gap: 5px/16px*1em
                             
-                            .with__material
-                                +opensans
-                                +regular
-                                font-size: 12px/16px*1em
-                                justify-self: center
-                                align-self: start
+                                .material__title
+                                    +opensans
+                                    +bold
+                                    font-size: 14px/16px*1em
+                                    text-align: center
+                                    justify-self: center
+                                    align-self: start
+
+                                .material__razmer
+                                    +opensans
+                                    +bold
+                                    font-size: 14px/16px*1em
+                                    color: #0d8fe3
+                                    justify-self: center
+                                    align-self: end
+                                
+                                .with__material
+                                    +opensans
+                                    +regular
+                                    font-size: 12px/16px*1em
+                                    text-align: center
+                                    align-self: center
 
 
-                    .form
+                    .form__otdelka
                         display: grid
                         grid-template-columns: auto
                         grid-template-rows: 25% 75%
                         background-color: #ffffff
                         border-radius: 10px
                         height: 100%
+                        max-width: 370px
                         .form__title
                             text-align: center
                             display: grid
@@ -916,6 +937,8 @@ main
 
                 .container__photo
                     position: relative
+                    img
+                        max-width: 100%
 
                     .zoom 
                         position: absolute
