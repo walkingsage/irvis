@@ -24,3 +24,40 @@
         opacity: 100%;
     }
 }
+
+@-webkit-keyframes fade {
+    from {
+    opacity: .4
+    }
+    to {
+    opacity: 1
+    }
+  }
+  @keyframes fade {
+    from {
+    opacity: .4
+    }
+    to {
+    opacity: 1
+    }
+  }
+
+  @keyframes slidershow{
+    from{
+        opacity: 0%;
+        display: block;
+    }
+    to{
+        opacity: 100%;
+    }
+  }
+  @keyframes sliderhide{
+    from{
+        opacity: 100%;
+        display: block;
+    }
+    to{
+        opacity: 0%;
+        display: none;
+    }
+  }

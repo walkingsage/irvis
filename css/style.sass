@@ -625,7 +625,7 @@ main
             .primer__otdelki
                 display: grid
                 grid-template-columns: auto
-                grid-template-rows:  241px auto
+                grid-template-rows:  auto auto
                 grid-row-gap: 40px/16px*1em
                 padding: 79px 0 79px 0
                 height: auto
@@ -634,7 +634,7 @@ main
                     display: grid
                     grid-template-columns: auto
                     grid-template-rows: auto
-                    grid-row-gap: 80px/234px*100%
+                    grid-row-gap: 80px/16px*1em
 
                     .primer__otdelki__title
                         display: grid
@@ -658,139 +658,79 @@ main
                     .primer__otdelki__menu      
                         display: grid
                         grid-template-columns: repeat(4,25%)
-                        grid-template-rows: 93px
+                        grid-template-rows: 100px
 
                         .vnutr__otdelka
-                            display: grid
-                            grid-template-rows: 10px/94px*100% 12px/94px*100% 72px/94px*100%
-                            background-image: linear-gradient(to bottom, #EDEDED 0%, rgba(0, 0, 0, 0) 100%)
-
-                            .vnutr__upper
-                                background-color: #0d8fe3
-                                width: 100%
-                                height: 100%
-                            
-                            .vnutr__treugolnik
-                                width: 0
-                                height: 0
-                                border-left: 6px solid transparent
-                                border-right: 6px solid transparent
-                                border-top: 6px solid #0d8fe3
-                                justify-self: center
-
-                            p
-                                +opensans
-                                +regular
-                                font-size: 20px/16px*1em
-                                text-transform: uppercase
-                                justify-self: center
-                                align-self: center
-                                color: #0085db
-
-                        .vnutr__otdelka:hover
-                            border: 1px solid responsive
-                            background-image: linear-gradient(to bottom, #EDEDED 0%, rgba(0, 0, 0, 0) 100%)
-                            cursor: pointer
-                                
-                            
-
+                            border-right: 2px solid
+                            border-color: #EFEFEF 
                         .vnesh__otdelka
-                            display: grid
-                            grid-template-rows: 10px/94px*100% 12px/94px*100% 72px/94px*100%
-
-                            .vnesh__upper
-                                opacity: 0%
-                                background-color: #0d8fe3
-                                width: 100%
-                                height: 100%
-
-                            .vnesh__treugolnik
-                                opacity: 0%
-                                width: 0
-                                height: 0
-                                border-left: 6px solid transparent
-                                border-right: 6px solid transparent
-                                border-top: 6px solid #0d8fe3
-                                justify-self: center
-
-                            p
-                                +opensans
-                                +regular
-                                font-size: 20px/16px*1em
-                                text-transform: uppercase
-                                justify-self: center
-                                align-self: center
-
-                        .vnesh__otdelka:hover
-                            border: 1px solid responsive
-                            background-image: linear-gradient(to bottom, #EDEDED 0%, rgba(0, 0, 0, 0) 100%)
-                            cursor: pointer
-                                
-
+                            border-right: 2px solid
+                            border-color: #EFEFEF
                         .vynos__otdelka
+                            border-right: 2px solid
+                            border-color: #EFEFEF
+                              
+
+                        .navedenie__otdelka
+                            background-color: #EDEDED
+
+                        .active__otdelka
+                            background-color: #EDEDED
+
+                        .active__p
+                            +opensans
+                            +regular
+                            font-size: 20px/16px*1em
+                            text-transform: uppercase
+                            justify-self: center
+                            align-self: center
+                            color: #0085db
+                            border-bottom: none
+
+                        .otdelka
                             display: grid
-                            grid-template-rows: 10px/94px*100% 12px/94px*100% 72px/94px*100%
+                            grid-template-rows: 22px 78px
 
-                            .vynos__upper
+                            .upper__otd
+                                display: grid
+                                grid-template-columns: 100%
+                                grid-template-rows: 10px 12px
                                 opacity: 0%
-                                background-color: #0d8fe3
-                                width: 100%
-                                height: 100%
-
-                            .vynos__treugolnik
-                                opacity: 0%
-                                width: 0
-                                height: 0
-                                border-left: 6px solid transparent
-                                border-right: 6px solid transparent
-                                border-top: 6px solid #0d8fe3
-                                justify-self: center
-
-                            p
-                                +opensans
-                                +regular
-                                font-size: 20px/16px*1em
-                                text-transform: uppercase
-                                justify-self: center
-                                align-self: center
-
-                        .vynos__otdelka:hover
-                            border: 1px solid responsive
-                            background-image: linear-gradient(to bottom, #EDEDED 0%, rgba(0, 0, 0, 0) 100%)
-                            cursor: pointer
-                                
-
-                        .krysha__otdelka
-                            display: grid
-                            grid-template-rows: 10px/94px*100% 12px/94px*100% 72px/94px*100%
-
-                            .krysha__upper
-                                opacity: 0%
-                                background-color: #0d8fe3
-                                width: 100%
-                                height: 100%
-                            
-                            .krysha__treugolnik
-                                opacity: 0%
-                                width: 0
-                                height: 0
-                                border-left: 6px solid transparent
-                                border-right: 6px solid transparent
-                                border-top: 6px solid #0d8fe3
-                                justify-self: center
-
-                            p
-                                +opensans
-                                +regular
-                                font-size: 20px/16px*1em
-                                text-transform: uppercase
-                                justify-self: center
-                                align-self: center
                         
-                        .krysha__otdelka:hover
-                            border: 1px solid responsive
-                            background-image: linear-gradient(to bottom, #EDEDED 0%, rgba(0, 0, 0, 0) 100%)
+                                .otdelka__upper
+                                    background-color: #0d8fe3
+                                    width: 100%
+                                    height: 100%
+
+                                
+                                .otdelka__treugolnik
+                                    width: 0
+                                    height: 0
+                                    border-left: 6px solid transparent
+                                    border-right: 6px solid transparent
+                                    border-top: 6px solid #0d8fe3
+                                    justify-self: center
+
+                            .otdelka__p
+                                +opensans
+                                +regular
+                                font-size: 20px/16px*1em
+                                text-transform: uppercase
+                                justify-self: center
+                                align-self: center
+                                color: #000000
+                                border-bottom: 1px dotted #000000
+
+                        .otdelka:hover
                             cursor: pointer
+                            background-color: #EDEDED
+                            .upper__otd
+                                opacity: 100%
+                            .otdelka__p
+                                color: #0085db
+                                border-bottom: none 
+
+                        
 
                 .primer__content
                     display: grid
@@ -812,18 +752,22 @@ main
                         grid-row-gap: 70px/442px*100%
                         grid-column-gap: 40.5px/402px*100%
                         margin: 30px/442px*100% 0 24px/442px*100%
+                        
 
                         .material__content
                             display: grid
                             grid-template-columns: auto
                             grid-template-rows: 70px 69px
                             grid-row-gap: 20px
+                            max-width: 110px
 
                             img
                                 max-width: 70px 
                                 width: 100%
+                                height: 100%
                                 align-self: start
                                 justify-self: center
+                                border-radius: 50%
                             
                             .material__content__title
                                 display: grid
@@ -914,19 +858,20 @@ main
                                 color: #666666
 
     .main__our__work
-        padding: 80px 0
+        height: auto
 
         .our__work
-            height: 704px
+            height: auto
             display: grid
-            grid-template-columns: 100%
-            grid-template-rows: 54px/704px*100%  570px/704px*100%
-            grid-row-gap: 80px/704px*100%   
+            grid-template-columns: auto
+            grid-template-rows: auto
+            grid-row-gap: 80px/16px*1em  
+            padding: 80px 0 80px 0
 
             .our__work__title
                 display: grid
                 grid-template-columns: 100%
-                grid-template-rows: 23px/54px*100%  31px/54px*100%
+                grid-template-rows: 23px 31px
                     
                 h1
                     +opensans
@@ -946,19 +891,31 @@ main
             .work__images
                 display: grid
                 grid-template-columns: repeat(4,270px/1170px*100%)
-                grid-template-rows: repeat(2,270px/570px*100%)
-                grid-row-gap: 30px/570px*100%
+                grid-template-rows: repeat(2,270px/16px*1em)
+                grid-row-gap: 30px
                 grid-column-gap: 30px/1170px*100%
 
                 .container__photo
                     position: relative
-                    img
-                        max-width: 100%
+                    .photo
+                        width: 100%
+                        height: 100%
+                        max-width: 300px
 
                     .zoom 
+                        opacity: 0%
                         position: absolute
                         top: 115px/270px*100%
                         left: 115px/270px*100%
+
+                .container__photo:hover
+                    cursor: pointer
+                    img
+                        opacity: 70%
+                    .zoom
+                        opacity: 100%
+                        
+
     .main__garantiya
         background-image: url(../img/bg3.png)
         padding: 80px 0
@@ -1242,6 +1199,10 @@ main
                 
                 .map
                     grid-area: 2/1/2/2
+                    max-width: 100%
+
+                    .maps
+                        max-width: 100%
 
                 .where__we__info
                     grid-area: 2/2/3/3

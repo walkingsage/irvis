@@ -1,21 +1,33 @@
 
 
 const vnutrOtdelka = document.querySelector('.vnutr__otdelka'),
-vnutrUpper = document.querySelector('.vnutr__upper'),
-vnutrTreugolnik = document.querySelector('.vnutr__treugolnik'),
+upperVnutr = document.querySelector('.upper__vnutr'),
 vnutrP = document.querySelector('.vnutr__p'),
 vneshOtdelka = document.querySelector('.vnesh__otdelka'),
-vneshUpper = document.querySelector('.vnesh__upper'),
-vneshTreugolnik = document.querySelector('.vnesh__treugolnik'),
+upperVnesh = document.querySelector('.upper__vnesh'),
 vneshP = document.querySelector('.vnesh__p'),
 vynosOtdelka = document.querySelector('.vynos__otdelka'),
-vynosUpper = document.querySelector('.vynos__upper'),
-vynosTreugolnik = document.querySelector('.vynos__treugolnik'),
+upperVynos = document.querySelector('.upper__vynos'),
 vynosP = document.querySelector('.vynos__p'),
 kryshaOtdelka = document.querySelector('.krysha__otdelka'),
-kryshaUpper = document.querySelector('.krysha__upper'),
-kryshaTreugolnik = document.querySelector('.krysha__treugolnik'),
+upperKrysha = document.querySelector('.upper__krysha'),
 kryshaP = document.querySelector('.krysha__p'),
+imgPrimer = document.querySelector('.img__primer'),
+cost1 = document.querySelector('.cost1'),
+cost2 = document.querySelector('.cost2'),
+cost3 = document.querySelector('.cost3'),
+cost4 = document.querySelector('.cost4'),
+cost5 = document.querySelector('.cost5'),
+img1 = document.querySelector('.img1'),
+img2 = document.querySelector('.img2'),
+img3 = document.querySelector('.img3'),
+img4 = document.querySelector('.img4'),
+img5 = document.querySelector('.img5'),
+material1 = document.querySelector('.material1'),
+material2 = document.querySelector('.material2'),
+material3 = document.querySelector('.material3'),
+material4 = document.querySelector('.material4'),
+material5 = document.querySelector('.material5'),
 arrow = document.querySelector('.arrow-6'),
 cold = document.querySelector('.cold'),
 hot = document.querySelector('.hot'),
@@ -38,7 +50,19 @@ without = document.querySelector('.type__without'),
 imageCold = document.querySelector('.primer__image__cold'),
 imageHot = document.querySelector('.primer__image__hot'),
 costCold = document.querySelector('.cost__value__cold'),
-costHot = document.querySelector('.cost__value__hot');
+costHot = document.querySelector('.cost__value__hot'),
+prev = document.querySelector('.prev'),
+next = document.querySelector('.next'),
+firstPhoto = document.querySelector('.container__first'),
+secondPhoto = document.querySelector('.container__second'),
+threePhoto = document.querySelector('.container__three'),
+fourPhoto = document.querySelector('.container__four'),
+fivePhoto = document.querySelector('.container__five'),
+sixPhoto = document.querySelector('.container__six'),
+sevenPhoto = document.querySelector('.container__seven'),
+eightPhoto = document.querySelector('.container__eight');
+
+const DATA = [firstPhoto,secondPhoto,threePhoto,fourPhoto,fivePhoto,sixPhoto,sevenPhoto,eightPhoto];
 
 window.addEventListener('resize',
     function razmerscreen(){
@@ -122,45 +146,6 @@ blockWithout.addEventListener('click',function(){
     costHot.textContent= '12000';
 });
 
-// function done(){
-//     if(derevo.classList.contains('active')){
-//         alumine.classList.remove('active');
-//         plast.classList.remove('active');
-//         france.classList.remove('active');
-//         without.classList.remove('active');
-//     }
-    // else if(alumine.classList.contains('active')){
-    //     derevo.classList.remove('active');
-    //     plast.classList.remove('active');
-    //     france.classList.remove('active');
-    //     without.classList.remove('active');
-    // }
-    // else if(plast.classList.contains('active')){
-    //     derevo.classList.remove('active');
-    //     alumine.classList.remove('active');
-    //     france.classList.remove('active');
-    //     without.classList.remove('active');
-    // }
-    // else if(france.classList.contains('active')){
-    //     derevo.classList.remove('active');
-    //     alumine.classList.remove('active');
-    //     without.classList.remove('active');
-    //     plast.classList.remove('active');
-    // }
-//     else if(without.classList.contains('active')){
-//         alumine.classList.remove('active');
-//         plast.classList.remove('active');
-//         france.classList.remove('active');
-//         derevo.classList.remove('active');
-//     }
-// }
-
-
-
-
-
-
-
 if(hot.classList.contains('hide__elem')){
     polygon.style.fill = '#ffb903';
     polygon1.style.fill = '#ffb903';
@@ -208,49 +193,204 @@ svg.addEventListener('mouseout',function(){
     }
 });
 
+vnutrOtdelka.classList.add('active__otdelka');
+upperVnutr.style.opacity = '100%';
+vnutrP.classList.remove('otdelka__p');
+vnutrP.classList.add('active__p');
 
+function activeOtdelka(otdelka,upper,p){
+    otdelka.classList.add('active__otdelka')
+    upper.style.opacity = '100%';
+    p.classList.remove('otdelka__p');
+    p.classList.add('active__p');
+    
+}
 
-vneshOtdelka.addEventListener('mouseout', function() {
- vneshUpper.style.opacity = '0%';
- vneshTreugolnik.style.opacity = '0%';
- vneshP.style.color = '#000000';});
+function onlyOne(otdelka,upper,p){
+    otdelka.classList.remove('active__otdelka');
+    otdelka.classList.remove('navedenie__otdelka');
+    upper.style.opacity = '0%';
+    p.classList.remove('active__p');
+    p.classList.add('otdelka__p');
+}
 
+function navedenie(otdelka,upper,p){
+    otdelka.classList.add('navedenie__otdelka');
+    upper.style.opacity = '100%';
+    p.classList.remove('otdelka__p');
+    p.classList.add('active__p');
+}
 
-vneshOtdelka.addEventListener ('mouseover', function() { 
-    vneshUpper.style.opacity = '100%';
-    vneshTreugolnik.style.opacity = '100%';
-    vneshP.style.color = '#0085db';
+function otvedenie(otdelka,upper,p){
+    otdelka.classList.remove('navedenie__otdelka');
+    upper.style.opacity = '0%';
+    p.classList.remove('active__p');
+    p.classList.add('otdelka__p');
+}
+
+vnutrOtdelka.addEventListener('click',function(){
+    onlyOne(vneshOtdelka,upperVnesh,vneshP);
+    onlyOne(vynosOtdelka,upperVynos,vynosP);
+    onlyOne(kryshaOtdelka,upperKrysha,kryshaP);
+    activeOtdelka(vnutrOtdelka,upperVnutr,vnutrP);
+    imgPrimer.src=('../img/image-01.png');
+    cost1.textContent='600';
+    cost2.textContent='750';
+    cost3.textContent='800';
+    cost4.textContent='1250';
+    cost5.textContent='1650';
+    img4.src=('../img/laminat.png');
+    img5.src=('../img/forest.png');
+    material4.textContent='Настил пола из ламината';
+    material5.textContent='Настил пола из дерева';
+    
 });
 
-    
-
- vynosOtdelka.addEventListener('mouseover', function() {
-    vynosUpper.style.opacity = '100%';
-    vynosTreugolnik.style.opacity = '100%';
-    vynosP.style.color = '#0085db';
-});
-
-vynosOtdelka.addEventListener('mouseout', function() {
-    vynosUpper.style.opacity = '0%';
-    vynosTreugolnik.style.opacity = '0%';
-    vynosP.style.color = '#000000';
- });
-
- kryshaOtdelka.addEventListener('mouseover', function() {
-    kryshaUpper.style.opacity = '100%';
-    kryshaTreugolnik.style.opacity = '100%';
-    kryshaP.style.color = '#0085db';
+vneshOtdelka.addEventListener('click',function(){
+    onlyOne(vnutrOtdelka,upperVnutr,vnutrP);
+    onlyOne(vynosOtdelka,upperVynos,vynosP);
+    onlyOne(kryshaOtdelka,upperKrysha,kryshaP);
+    activeOtdelka(vneshOtdelka,upperVnesh,vneshP);
+    imgPrimer.src=('../img/vneshotd.jpg');
+    cost1.textContent='700';
+    cost2.textContent='850';
+    cost3.textContent='900';
+    cost4.textContent='1350';
+    cost5.textContent='1750';
+    img4.src=('../img/siding.jpg');
+    img5.src=('../img/profnastil.jpg');
+    material4.textContent='Сайдинг';
+    material5.textContent='Профнастил';
     
 });
 
-kryshaOtdelka.addEventListener('mouseout', function() {
-    kryshaUpper.style.opacity = '0%';
-    kryshaTreugolnik.style.opacity = '0%';
-    kryshaP.style.color = '#000000';
- });
+vynosOtdelka.addEventListener('click',function(){
+    onlyOne(vnutrOtdelka,upperVnutr,vnutrP);
+    onlyOne(vneshOtdelka,upperVnesh,vneshP);
+    onlyOne(kryshaOtdelka,upperKrysha,kryshaP);
+    activeOtdelka(vynosOtdelka,upperVynos,vynosP);
+    imgPrimer.src=('../img/vynosotd.jpg');
+    cost1.textContent='800';
+    cost2.textContent='950';
+    cost3.textContent='1000';
+    cost4.textContent='1450';
+    cost5.textContent='1850';
+});
+
+kryshaOtdelka.addEventListener('click',function(){
+    onlyOne(vnutrOtdelka,upperVnutr,vnutrP);
+    onlyOne(vneshOtdelka,upperVnesh,vneshP);
+    onlyOne(vynosOtdelka,upperVynos,vynosP);
+    activeOtdelka(kryshaOtdelka,upperKrysha,kryshaP);
+    imgPrimer.src=('../img/kryshaotd.jpg');
+    cost1.textContent='900';
+    cost2.textContent='1050';
+    cost3.textContent='1100';
+    cost4.textContent='1550';
+    cost5.textContent='1950';
+});
+
+vnutrOtdelka.addEventListener('mouseover',function(){
+    navedenie(vnutrOtdelka,upperVnutr,vnutrP);
+});
+vnutrOtdelka.addEventListener('mouseout',function(){
+    if(vnutrOtdelka.classList.contains('active__otdelka')){
+        activeOtdelka(vnutrOtdelka,upperVnutr,vnutrP);
+    }
+    else{
+        otvedenie(vnutrOtdelka,upperVnutr,vnutrP);
+    }
+});
+
+vneshOtdelka.addEventListener('mouseover',function(){
+    navedenie(vneshOtdelka,upperVnesh,vneshP);
+});
+vneshOtdelka.addEventListener('mouseout',function(){
+    if(vneshOtdelka.classList.contains('active__otdelka')){
+        activeOtdelka(vneshOtdelka,upperVnesh,vneshP);
+    }
+    else{
+        otvedenie(vneshOtdelka,upperVnesh,vneshP);
+    }
+});
+
+vynosOtdelka.addEventListener('mouseover',function(){
+    navedenie(vynosOtdelka,upperVynos,vynosP);
+});
+vynosOtdelka.addEventListener('mouseout',function(){
+    if(vynosOtdelka.classList.contains('active__otdelka')){
+        activeOtdelka(vynosOtdelka,upperVynos,vynosP);
+    }
+    else{
+        otvedenie(vynosOtdelka,upperVynos,vynosP);
+    }
+});
+
+kryshaOtdelka.addEventListener('mouseover',function(){
+    navedenie(kryshaOtdelka,upperKrysha,kryshaP);
+});
+kryshaOtdelka.addEventListener('mouseout',function(){
+    if(kryshaOtdelka.classList.contains('active__otdelka')){
+        activeOtdelka(kryshaOtdelka,upperKrysha,kryshaP);
+    }
+    else{
+        otvedenie(kryshaOtdelka,upperKrysha,kryshaP);
+    }
+});
+let result = 0;
+let number = 0;
+function sliderhidenext(i){
+    i -= 1;
+    let photos = DATA[i];
+    photos.style.animation = 'sliderhide 2s ease 1 alternate forwards';
+    photos.style.display = 'none';
+    console.log(photos);
+}
+function sliderhideprev(i){
+    i += 1;
+    let photos = DATA[i];
+    photos.style.animation = 'sliderhide 2s ease 1 alternate forwards';
+    photos.style.display = 'none';
+    console.log(photos);
+}
+function slidershow(prv,nx,i){
+    if(i>0 && i<7){
+    prv.style.display = 'block';
+    nx.style.display = 'block';
+    let photo = DATA[i];
+    photo.style.display = 'block';
+    photo.style.animation = 'slidershow 2s ease 1 alternate forwards';
+    console.log(photo);}
+    else if(i=7){
+    nx.style.display = 'none';
+    let photo = DATA[i];
+    photo.style.display = 'block';
+    photo.style.animation = 'slidershow 2s ease 1 alternate forwards';
+    console.log(photo);
+    }
+    else{
+    prv.style.display = 'none';
+    let photo = DATA[i];
+    photo.style.display = 'block';
+    photo.style.animation = 'slidershow 2s ease 1 alternate forwards';
+    console.log(photo);
+    }
+}
+
+next.addEventListener('click',function(){
+    result +=1;
+    number +=1;
+    sliderhidenext(number);
+    slidershow(prev,next,result);
+});
+
+prev.addEventListener('click',function(){
+    result -=1;
+    number -=1;
+    sliderhideprev(number);
+    slidershow(prev,next,result);
+})
 
 
 
-
-    
 
