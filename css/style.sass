@@ -894,6 +894,7 @@ main
                 grid-template-rows: repeat(2,270px/16px*1em)
                 grid-row-gap: 30px
                 grid-column-gap: 30px/1170px*100%
+                
 
                 .container__photo
                     position: relative
@@ -918,21 +919,22 @@ main
 
     .main__garantiya
         background-image: url(../img/bg3.png)
-        padding: 80px 0
+        background-repeat: no-repeat
+        background-size: cover
+        padding: 80px 0 80px 0
 
         .container
 
             .garantiya__we
                 display: grid
                 grid-template-columns: 100%
-                grid-template-rows: 54px/495px*100% 361px/495px*100%
-                grid-row-gap: 80px/495px*100%
-                height: 495px
+                grid-template-rows: auto
+                grid-row-gap: 80px/16px*1em
 
                 .garantiya__title
                     display: grid
                     grid-template-columns: 100%
-                    grid-template-rows: 23px/54px*100% 31px/54px*100%
+                    grid-template-rows: 23px 31px
                     
 
  
@@ -955,15 +957,16 @@ main
                 .garantya__content
                     display: grid
                     grid-template-columns: repeat(3,170px/976px*100%)
-                    grid-template-rows: 141px/361px*100% 141px/361px*100%
-                    grid-row-gap: 79px/361px*100%
+                    grid-template-rows: auto
+                    grid-row-gap: 79px
                     grid-column-gap: 220px/976px*100%
 
                     .garantya__container    
                         display: grid
                         grid-template-columns: 100%
-                        grid-template-rows: 70px/142px*100% 40px/142px*100%
-                        grid-row-gap: 32px/142px*100%
+                        grid-template-rows: 70px 40px
+                        grid-row-gap: 32px
+                        max-width: 170px
 
                         img
                             justify-self: center
@@ -978,15 +981,14 @@ main
 
             
     .main__sposob__oplaty
-        margin: 80px 0 
+        margin: 80px 0 80px 0
 
         .container  
             .sposoby__oplaty
-                height: 179px
                 display: grid
                 grid-template-columns: 100%
-                grid-template-rows: 30px/179px*100% 70px/179px*100%
-                grid-row-gap: 79px/179px*100%
+                grid-template-rows: auto
+                grid-row-gap: 79px/16px*1em
 
                 h1
                     +opensans
@@ -997,15 +999,16 @@ main
                 .sposob__oplaty__container
                     display: grid
                     grid-template-columns: repeat(3,303px/1176px*100%)
-                    grid-gap: 133.5px/1176px*100%
+                    grid-column-gap: 133.5px/1176px*100%
 
                     .sposoby__oplaty__contain
                         display: grid
                         grid-template-columns: 70px/303px*100% 203px/303px*100%
-                        grid-gap: 30px/303px*100%
+                        grid-column-gap: 30px/303px*100%
 
                         img
                             width: 100%
+                            max-width: 70px
 
                         p  
                             align-self: center
@@ -1024,19 +1027,18 @@ main
         padding: 80px 0 80px 0
 
         .sale__contain
-            height: 442px
             display: grid
             grid-template-columns: 400px/1171px*100% 370px/1171px*100%
-            grid-template-rows: 190px/442px*100% 160px/442px*100%
+            grid-template-rows: auto
             grid-column-gap: 404px/1171px*100%
-            grid-row-gap: 80px/442px*100%
+            grid-row-gap: 80px/16px*1em
             
             .sale__title
                 grid-area: 1/1/2/2
                 display: grid
                 grid-template-columns: 100%
-                grid-template-rows: 45px/190px*100% 64px/190px*100%
-                grid-row-gap: 81px/190px*100%
+                grid-template-rows: 45px 64px
+                grid-row-gap: 81px/16px*1em
 
                 h1
                     +opensans
@@ -1056,7 +1058,7 @@ main
                 background-color: #ffffff
                 display: grid
                 grid-template-columns: 100%
-                grid-template-rows: (14px+21px)/160px*100% (19px+50px+18px+13px+25px)/160px*100%
+                grid-template-rows: (14px+21px) (19px+50px+18px+13px+25px)
 
                 h2
                     +opensans
@@ -1069,41 +1071,17 @@ main
                 .sale__timer
                     display: grid
                     grid-template-columns: 100%
-                    grid-template-rows: (13px+25px+87px)/160px*100% 
+                    grid-template-rows: (13px+25px+87px)
                     margin-top: 10px/160px*100%
+                    align-self: end
 
                     .timer
                         
                         align-self: center
                         
-                        // justify-self: center
+                    
 
-                    // .hours
-                    //     grid-area: 2/1/3/2
-                    //     +opensans
-                    //     +bold
-                    //     font-size: 13px/16px*1em
-                    //     justify-self: center
-                    //     align-self: end
-
-                    // .minutes
-                    //     grid-area: 2/2/3/3
-                    //     +opensans
-                    //     +bold
-                    //     font-size: 13px/16px*1em
-                    //     justify-self: center
-                    //     align-self: end
-
-                    // .seconds
-                    //     margin-right: 10px
-                    //     grid-area: 2/3/3/4   
-                    //     +opensans
-                    //     +bold
-                    //     font-size: 13px/16px*1em
-                    //     justify-self: center 
-                    //     align-self: end
-
-            .form
+            .form__sale
                 grid-area: 1/2/3/2 
                 display: grid
                 grid-template-columns: auto
@@ -1165,23 +1143,21 @@ main
                         color: #666666  
     
     .main__where_we
-        padding: 80px 0
-        
+        padding: 80px 0 80px 0
         .container
 
             .where__we
-                height: 609px
                 display: grid
                 grid-template-columns: 569px/1170px*100% 472px/1170px*100%
-                grid-template-rows: 61px/609px*100% 467px/609px*100%
-                grid-row-gap: 80px/609px*100%
+                grid-template-rows: auto
+                grid-row-gap: 80px/16px*1em
                 grid-column-gap: 129px/1170px*100%
 
                 .where__we__title
                     grid-area: 1/1/2/3
                     display: grid
                     grid-template-columns: 100%
-                    grid-template-rows: 30px/61px*100% 31px/61px*100%
+                    grid-template-rows: 30px 31px/16px*1em
 
                     h1
 
@@ -1195,7 +1171,7 @@ main
                     .bbottom
                         background-color: #57B1EC
                         width: 9.6%
-                        height: 7.7%
+                        height: 2px
                         align-self: end
                         justify-self: center
                 
@@ -1210,14 +1186,14 @@ main
                     grid-area: 2/2/3/3
                     display: grid
                     grid-template-columns: 100%
-                    grid-template-rows: repeat(5,61.4px/467px*100%)
-                    grid-row-gap:  42px/467px*100%
+                    grid-template-rows: repeat(5,61.4px)
+                    grid-row-gap:  42px/16px*1em
 
                     .info__container
                         display: grid
                         grid-template-columns: 100%
-                        grid-template-rows: 16px/61.4px*100% 28.4px/61.4px*100%
-                        grid-row-gap: 17px/61.4px*100%
+                        grid-template-rows: 16px 28.4px
+                        grid-row-gap: 17px/16px*1em
 
                         .info__sup
                             +opensans
@@ -1261,7 +1237,7 @@ main
                     color: #f8e1e1
     
 footer
-    padding: 40px 0
+    padding: 40px/16px*1em 0 40px/16px*1em 0
         
     .container
         max-width: 1190px
@@ -1271,7 +1247,7 @@ footer
         .footer__contain
             display: grid
             grid-template-columns: repeat(3,176px/1170px*100%)
-            grid-template-rows: 100%
+            grid-template-rows: auto
             grid-column-gap: 321px/1170px*100%
 
             p   
@@ -1281,15 +1257,16 @@ footer
                 color: #000000
                 text-align-last: left
                 justify-self: start
+                align-self: center
 
             img
-                width: 80%
+                width: 100%
+                align-self: center
 
             .right  
                 display: grid
                 grid-template-columns: auto
-                grid-template-rows: 16px/41px*100% 14px/41px*100%
-                grid-row-gap: 6px/41px*100%
+                grid-template-rows: 16px 14px
                 text-align: right
                 
                 .tel
@@ -1297,6 +1274,7 @@ footer
                     +bold
                     font-size: 18px/16px*1em
                     color: #333333
+                    align-self: center
 
                 .mail
                     color: #0090d5
@@ -1304,7 +1282,7 @@ footer
                     font-size: 14px/16px*1em
                     font-weight: 400
                     line-height: 26px
-                    
+                    align-self: center
                     justify-self: end
 
 
