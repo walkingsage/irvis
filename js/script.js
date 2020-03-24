@@ -337,6 +337,7 @@ kryshaOtdelka.addEventListener('mouseout',function(){
         otvedenie(kryshaOtdelka,upperKrysha,kryshaP);
     }
 });
+prev.style.display='none';
 let result = 0;
 let number = 0;
 function sliderhidenext(i){
@@ -352,6 +353,8 @@ function sliderhideprev(i){
     photos.style.animation = 'sliderhide 2s ease 1 alternate forwards';
     photos.style.display = 'none';
     console.log(photos);
+    
+    console.log(number);
 }
 function slidershow(prv,nx,i){
     if(i>0 && i<7){
@@ -361,15 +364,15 @@ function slidershow(prv,nx,i){
     photo.style.display = 'block';
     photo.style.animation = 'slidershow 2s ease 1 alternate forwards';
     console.log(photo);}
-    else if(i=7){
-    nx.style.display = 'none';
+    else if(i==0){
+    prv.style.display = 'none';
     let photo = DATA[i];
     photo.style.display = 'block';
     photo.style.animation = 'slidershow 2s ease 1 alternate forwards';
     console.log(photo);
     }
     else{
-    prv.style.display = 'none';
+    nx.style.display = 'none';
     let photo = DATA[i];
     photo.style.display = 'block';
     photo.style.animation = 'slidershow 2s ease 1 alternate forwards';
@@ -380,17 +383,20 @@ function slidershow(prv,nx,i){
 next.addEventListener('click',function(){
     result +=1;
     number +=1;
+    console.log(result);
     sliderhidenext(number);
     slidershow(prev,next,result);
+    console.log(result);
 });
 
 prev.addEventListener('click',function(){
     result -=1;
     number -=1;
+    console.log(number);
     sliderhideprev(number);
     slidershow(prev,next,result);
-})
-
+    console.log(number);
+});
 
 
 
