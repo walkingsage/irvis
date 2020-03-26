@@ -91,7 +91,9 @@ else if(screen.width > 768){
     hot.classList.remove('show__elem');
     cold.classList.remove('show__elem');
 }
-
+if(screen.width >= 651){
+    
+}
 
 derevo.classList.add('active');
 
