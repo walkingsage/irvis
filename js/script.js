@@ -91,9 +91,23 @@ else if(screen.width > 768){
     hot.classList.remove('show__elem');
     cold.classList.remove('show__elem');
 }
-if(screen.width >= 651){
-    
-}
+// if(screen.width >= 651){
+//     function sliderPC(num){
+//         if(num==0){
+//             prev.style.display='none';
+//             DATA[num].style.animation = 'slidershow 2s ease 1 alternate forwards';
+//         }
+//         else if(num==7){
+//             next.style.display='none';
+//             DATA[num].style.animation = 'slidershow 2s ease 1 alternate forwards';
+//         }
+//         else{
+//             prev.style.display='block';
+//             next.style.display='block';
+//             DATA[num].style.animation = 'slidershow 2s ease 1 alternate forwards';
+//         }
+//     }
+// }
 
 derevo.classList.add('active');
 
@@ -436,27 +450,27 @@ nameInput2.addEventListener('input',function(){
 });
 
 numberInput.addEventListener('keyup',function(){
-    numberInput.value = numberInput.value.replace(/[a-z,A-Z,а-я,А-Я,-.,:+/*]/, '');
+    numberInput.value = numberInput.value.replace(/[a-z,A-Z,а-я,А-Я,.,:/*]/, '');
 });
 
 numberInput.addEventListener('input',function(){
-    numberInput.value = numberInput.value.replace(/[a-z,A-Z,а-я,А-Я,-.,:+/*]/g, '');
+    numberInput.value = numberInput.value.replace(/[a-z,A-Z,а-я,А-Я,.,:/*]/g, '');
 });
 
 numberInput1.addEventListener('keyup',function(){
-    numberInput1.value = numberInput1.value.replace(/[a-z,A-Z,а-я,А-Я,-.,:+/*]/, '');
+    numberInput1.value = numberInput1.value.replace(/[a-z,A-Z,а-я,А-Я,.,:/*]/, '');
 });
 
 numberInput1.addEventListener('input',function(){
-    numberInput1.value = numberInput1.value.replace(/[a-z,A-Z,а-я,А-Я,-.,:+/*]/g, '');
+    numberInput1.value = numberInput1.value.replace(/[a-z,A-Z,а-я,А-Я,.,:/*]/g, '');
 });
 
 numberInput2.addEventListener('keyup',function(){
-    numberInput2.value = numberInput2.value.replace(/[a-z,A-Z,а-я,А-Я,-.,:+/*]/, '');
+    numberInput2.value = numberInput2.value.replace(/[a-z,A-Z,а-я,А-Я,.,:/*]/, '');
 });
 
 numberInput2.addEventListener('input',function(){
-    numberInput2.value = numberInput2.value.replace(/[a-z,A-Z,а-я,А-Я,-.,:+/*]/g, '');
+    numberInput2.value = numberInput2.value.replace(/[a-z,A-Z,а-я,А-Я,.,:/*]/g, '');
 });
 
 
