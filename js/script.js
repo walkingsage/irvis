@@ -60,7 +60,13 @@ fourPhoto = document.querySelector('.container__four'),
 fivePhoto = document.querySelector('.container__five'),
 sixPhoto = document.querySelector('.container__six'),
 sevenPhoto = document.querySelector('.container__seven'),
-eightPhoto = document.querySelector('.container__eight');
+eightPhoto = document.querySelector('.container__eight'),
+numberInput = document.querySelector('.number'),
+nameInput = document.querySelector('.name'),
+numberInput1 = document.querySelector('.number1'),
+nameInput1 = document.querySelector('.name1'),
+numberInput2 = document.querySelector('.number2'),
+nameInput2 = document.querySelector('.name2');
 
 const DATA = [firstPhoto,secondPhoto,threePhoto,fourPhoto,fivePhoto,sixPhoto,sevenPhoto,eightPhoto];
 
@@ -270,6 +276,8 @@ vynosOtdelka.addEventListener('click',function(){
     onlyOne(kryshaOtdelka,upperKrysha,kryshaP);
     activeOtdelka(vynosOtdelka,upperVynos,vynosP);
     imgPrimer.src=('../img/vynosotd.jpg');
+    img4.src=('../img/siding.jpg');
+    img5.src=('../img/profnastil.jpg');
     cost1.textContent='800';
     cost2.textContent='950';
     cost3.textContent='1000';
@@ -283,6 +291,8 @@ kryshaOtdelka.addEventListener('click',function(){
     onlyOne(vynosOtdelka,upperVynos,vynosP);
     activeOtdelka(kryshaOtdelka,upperKrysha,kryshaP);
     imgPrimer.src=('../img/kryshaotd.jpg');
+    img4.src=('../img/siding.jpg');
+    img5.src=('../img/profnastil.jpg');
     cost1.textContent='900';
     cost2.textContent='1050';
     cost3.textContent='1100';
@@ -398,5 +408,53 @@ prev.addEventListener('click',function(){
     console.log(number);
 });
 
+
+nameInput.addEventListener('keyup',function(){
+    nameInput.value = nameInput.value.replace(/[0-9,-.,:+/*]/, '');
+});
+
+nameInput.addEventListener('input',function(){
+    nameInput.value = nameInput.value.replace(/[0-9,-.,:+/*]/g, '');
+});
+
+nameInput1.addEventListener('keyup',function(){
+    nameInput1.value = nameInput1.value.replace(/[0-9,-.,:+/*]/, '');
+});
+
+nameInput1.addEventListener('input',function(){
+    nameInput1.value = nameInput1.value.replace(/[0-9,-.,:+/*]/g, '');
+});
+
+nameInput2.addEventListener('keyup',function(){
+    nameInput2.value = nameInput2.value.replace(/[0-9,-.,:+/*]/, '');
+});
+
+nameInput2.addEventListener('input',function(){
+    nameInput2.value = nameInput2.value.replace(/[0-9,-.,:+/*]/g, '');
+});
+
+numberInput.addEventListener('keyup',function(){
+    numberInput.value = numberInput.value.replace(/[a-z,A-Z,а-я,А-Я,-.,:+/*]/, '');
+});
+
+numberInput.addEventListener('input',function(){
+    numberInput.value = numberInput.value.replace(/[a-z,A-Z,а-я,А-Я,-.,:+/*]/g, '');
+});
+
+numberInput1.addEventListener('keyup',function(){
+    numberInput1.value = numberInput1.value.replace(/[a-z,A-Z,а-я,А-Я,-.,:+/*]/, '');
+});
+
+numberInput1.addEventListener('input',function(){
+    numberInput1.value = numberInput1.value.replace(/[a-z,A-Z,а-я,А-Я,-.,:+/*]/g, '');
+});
+
+numberInput2.addEventListener('keyup',function(){
+    numberInput2.value = numberInput2.value.replace(/[a-z,A-Z,а-я,А-Я,-.,:+/*]/, '');
+});
+
+numberInput2.addEventListener('input',function(){
+    numberInput2.value = numberInput2.value.replace(/[a-z,A-Z,а-я,А-Я,-.,:+/*]/g, '');
+});
 
 
