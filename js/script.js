@@ -66,10 +66,22 @@ nameInput = document.querySelector('.name'),
 numberInput1 = document.querySelector('.number1'),
 nameInput1 = document.querySelector('.name1'),
 numberInput2 = document.querySelector('.number2'),
-nameInput2 = document.querySelector('.name2');
+nameInput2 = document.querySelector('.name2'),
+firstPhotoPC = document.querySelector('.first__photo__PC'),
+secondPhotoPC = document.querySelector('.second__photo__PC'),
+threePhotoPC = document.querySelector('.three__photo__PC'),
+fourPhotoPC = document.querySelector('.four__photo__PC'),
+fivePhotoPC = document.querySelector('.five__photo__PC'),
+sixPhotoPC = document.querySelector('.six__photo__PC'),
+sevenPhotoPC = document.querySelector('.seven__photo__PC'),
+eightPhotoPC = document.querySelector('.eight__photo__PC'),
+sliderPC = document.querySelector('.slider__For__PC'),
+prevPC = document.querySelector('.prev__PC'),
+nextPC = document.querySelector('.next__PC'),
+closeBtn = document.querySelector('.cl-btn-6');
 
 const DATA = [firstPhoto,secondPhoto,threePhoto,fourPhoto,fivePhoto,sixPhoto,sevenPhoto,eightPhoto];
-
+const DATAPC = [firstPhotoPC,secondPhotoPC,threePhotoPC,fourPhotoPC,fivePhotoPC,sixPhotoPC,sevenPhotoPC,eightPhotoPC];   
 window.addEventListener('resize',
     function razmerscreen(){
     if(screen.width <= 767){
@@ -91,23 +103,101 @@ else if(screen.width > 768){
     hot.classList.remove('show__elem');
     cold.classList.remove('show__elem');
 }
-// if(screen.width >= 651){
-//     function sliderPC(num){
-//         if(num==0){
-//             prev.style.display='none';
-//             DATA[num].style.animation = 'slidershow 2s ease 1 alternate forwards';
-//         }
-//         else if(num==7){
-//             next.style.display='none';
-//             DATA[num].style.animation = 'slidershow 2s ease 1 alternate forwards';
-//         }
-//         else{
-//             prev.style.display='block';
-//             next.style.display='block';
-//             DATA[num].style.animation = 'slidershow 2s ease 1 alternate forwards';
-//         }
-//     }
-// }
+
+let numberPC = 0;
+prevPC.style.display='none';
+function firstHide(){
+    for(let n = 0;n<8;n++){
+        DATAPC[n].style.display = 'none';
+    }
+}
+firstHide();
+function pcSliderHideNext(i){
+    i--;
+    DATAPC[i].style.animation='sliderhide 2s ease 1 alternate forwards';
+    DATAPC[i].style.display='none';
+}
+
+function pcSliderHidePrev(i){
+    i++;
+    DATAPC[i].style.animation='sliderhide 2s ease 1 alternate forwards';
+    DATAPC[i].style.display='none';
+}
+
+function pcSliderShow(i){
+    if(i == 0){
+        prevPC.style.display = 'none';
+        DATAPC[i].style.display = 'block';
+        DATAPC[i].style.animation = 'slidershow 2s ease 1 alternate forwards';
+    }
+    else if(i == 7){
+        nextPC.style.display = 'none';
+        DATAPC[i].style.display = 'block';
+        DATAPC[i].style.animation = 'slidershow 2s ease 1 alternate forwards';
+    }
+    else{
+        prevPC.style.display = 'block';
+        nextPC.style.display = 'block';
+        DATAPC[i].style.display = 'block';
+        DATAPC[i].style.animation = 'slidershow 2s ease 1 alternate forwards';
+    }
+}
+prevPC.addEventListener('click',function(){
+    numberPC--;
+    pcSliderHidePrev(numberPC);
+    pcSliderShow(numberPC);
+});
+nextPC.addEventListener('click',function(){
+    numberPC++;
+    pcSliderHideNext(numberPC);
+    pcSliderShow(numberPC);
+});
+function showPCSlider(i){
+    sliderPC.style.display='grid';
+    DATAPC[i].style.display = 'block';
+}
+function hidePCSlider(){
+    sliderPC.style.display = 'none';
+    for(let n = 0;n<8;n++){
+        DATAPC[n].style.display = 'none';
+    }
+}
+closeBtn.addEventListener('click',function(){
+    hidePCSlider();
+});
+firstPhoto.addEventListener('click',function(){
+    numberPC=0;
+    showPCSlider(numberPC);
+});
+secondPhoto.addEventListener('click',function(){
+    numberPC=1;
+    showPCSlider(numberPC);
+});
+threePhoto.addEventListener('click',function(){
+    numberPC=2;
+    showPCSlider(numberPC);
+});
+fourPhoto.addEventListener('click',function(){
+    numberPC=3;
+    showPCSlider(numberPC);
+});
+fivePhoto.addEventListener('click',function(){
+    numberPC=4;
+    showPCSlider(numberPC);
+});
+sixPhoto.addEventListener('click',function(){
+    numberPC=5;
+    showPCSlider(numberPC);
+});
+sevenPhoto.addEventListener('click',function(){
+    numberPC=6;
+    showPCSlider(numberPC);
+});
+eightPhoto.addEventListener('click',function(){
+    numberPC=7;
+    showPCSlider(numberPC);
+});
+
 
 derevo.classList.add('active');
 
