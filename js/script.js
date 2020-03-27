@@ -105,7 +105,6 @@ else if(screen.width > 768){
 }
 
 let numberPC = 0;
-prevPC.style.display='none';
 function firstHide(){
     for(let n = 0;n<8;n++){
         DATAPC[n].style.display = 'none';
@@ -153,8 +152,27 @@ nextPC.addEventListener('click',function(){
     pcSliderShow(numberPC);
 });
 function showPCSlider(i){
+    if(i==0){
+        
+    nextPC.style.display='block';
+    prevPC.style.display='none';
     sliderPC.style.display='grid';
     DATAPC[i].style.display = 'block';
+    }
+    else if(i==7){
+        
+    prevPC.style.display='block';
+        nextPC.style.display='none';
+        sliderPC.style.display='grid';
+        DATAPC[i].style.display = 'block';
+    }
+    
+    else{
+    nextPC.style.display='block';
+    prevPC.style.display='block';
+    sliderPC.style.display='grid';
+    DATAPC[i].style.display = 'block';
+    }
 }
 function hidePCSlider(){
     sliderPC.style.display = 'none';
