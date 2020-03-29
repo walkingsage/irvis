@@ -196,7 +196,7 @@ vneshOtdelkaCalc.addEventListener('click',function(){
     profnastilCalc.disabled = false;
 });
 vynosOsteklCalc.addEventListener('click',function(){
-    vneshOtdelkaCalc.checked=false;
+    vnutrOtdCalc.checked=false;
     vneshOtdelkaCalc.checked=false;
     kryshaBalkonCalc.checked=false;
     laminatCalc.disabled = false;
@@ -206,7 +206,7 @@ vynosOsteklCalc.addEventListener('click',function(){
 });
 kryshaBalkonCalc.addEventListener('click',function(){
     vneshOtdelkaCalc.checked=false;
-    vynosOsteklCalc.checked=false;
+    vnutrOtdCalc.checked=false;
     vynosOsteklCalc.checked=false;
     laminatCalc.disabled = true;
     derevoNastilCalc.disabled = true;

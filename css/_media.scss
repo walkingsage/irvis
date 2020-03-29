@@ -329,6 +329,14 @@
         text-align: center;
     }
 
+    //slider pc adaprive
+    .slider__For__PC{
+        width: 100% !important;
+    }
+    .photos__slider__PC .photo{
+        width: 100% !important;
+        height: 100% !important;
+    }
 
 }
 
@@ -718,6 +726,14 @@
         grid-area: 2/1/3/2;
         text-align: center !important;
         justify-self: center !important;
+    }
+    //slider pc adaprive
+    .slider__For__PC{
+        width: 100% !important;
+    }
+    .photos__slider__PC .photo{
+        width: 100% !important;
+        height: 90% !important;
     }
 }
 
@@ -1163,6 +1179,38 @@
         
         font-size: 18px/16px*1em !important;
     }
+
+    //calculator adaptive start
+    .close-btn-6 {
+        width: 20px !important;
+    }
+    legend{
+        
+        font-size: 25px/16px*1em !important;
+    }
+    .calculator__content{
+        padding: 20px 10px 20px 10px !important;
+    }
+    .checkbox__content{
+        grid-template-columns: 30px/1190px*100% auto !important;
+        grid-column-gap: 20px/1190px*100% !important
+    }
+    .checkbox__content p{
+        font-size:  20px/16px*1em !important;
+    }
+    .price__summ__calc{
+        font-size: 16px/16px*1em !important;
+    }
+    .price__calc{
+        font-size: 16px/16px*1em !important;
+    }
+    .price__summ__sale__calc{
+        font-size: 16px/16px*1em !important;
+    }
+    .price__sale__calc{
+        font-size: 16px/16px*1em !important;
+    }
+    
 } 
 
 @media (max-width: 480px) {
