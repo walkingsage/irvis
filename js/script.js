@@ -1,4 +1,4 @@
-
+"use strict";
 
 const vnutrOtdelka = document.querySelector('.vnutr__otdelka'),
 upperVnutr = document.querySelector('.upper__vnutr'),
@@ -133,6 +133,7 @@ function pcSliderShow(i){
         nextPC.style.display = 'none';
         DATAPC[i].style.display = 'block';
         DATAPC[i].style.animation = 'slidershow 2s ease 1 alternate forwards';
+        
     }
     else{
         prevPC.style.display = 'block';
@@ -158,6 +159,7 @@ function showPCSlider(i){
     prevPC.style.display='none';
     sliderPC.style.display='grid';
     DATAPC[i].style.display = 'block';
+    DATAPC[i].style.animation = 'slidershow 2s ease 1 alternate forwards';
     }
     else if(i==7){
         
@@ -165,6 +167,7 @@ function showPCSlider(i){
         nextPC.style.display='none';
         sliderPC.style.display='grid';
         DATAPC[i].style.display = 'block';
+        DATAPC[i].style.animation = 'slidershow 2s ease 1 alternate forwards';
     }
     
     else{
@@ -172,13 +175,14 @@ function showPCSlider(i){
     prevPC.style.display='block';
     sliderPC.style.display='grid';
     DATAPC[i].style.display = 'block';
+    DATAPC[i].style.animation = 'slidershow 2s ease 1 alternate forwards';
     }
 }
 function hidePCSlider(){
-    sliderPC.style.display = 'none';
     for(let n = 0;n<8;n++){
         DATAPC[n].style.display = 'none';
     }
+    sliderPC.style.display = 'none';
 }
 closeBtn.addEventListener('click',function(){
     hidePCSlider();

@@ -627,10 +627,214 @@ main
                             +bold
 
 
-    .main__primer__otdelky
-        background-color: #f7f7f7
-        
+    .main__calculator
+        position: fixed
+        width: 80%
+        height: 100%
+        max-height: 70vh
+        overflow: scroll
+        z-index: 47
+        margin: 0 auto
+        top: 150px
+        left: 10%
+        background-color: #ffffffd2
+        border-radius: 10px
+        padding: 20px 20px 20px 20px
 
+        .container  
+            .calculator__content
+                display: grid
+                grid-template-columns: 100%
+                grid-template-rows: auto
+                grid-row-gap: 20px
+                
+                .calc__title
+                    grid-area: 1/1/2/2
+                    display: grid
+                    grid-template-columns: 100%
+                    grid-template-rows: auto
+                    grid-row-gap: 20px
+
+                    h1
+                        font-size: 30px/16px*1em
+                        +opensans
+                        +bold
+                        text-align: center
+                        text-transform: uppercase
+                        color: #333333
+                    .border
+                        width: 7%
+                        height: 2px
+                        border-radius: 100%
+                        background-color: #269AE6 
+                        justify-self: center
+                form
+                    display: grid
+                    grid-template-columns: 100%
+                    grid-template-rows: auto
+                    grid-row-gap: 20px
+                    
+                    fieldset
+                        border: none
+
+                        .fieldset__content
+                            display: grid
+                            grid-template-columns: 100%
+                            grid-template-rows: auto auto
+                            grid-row-gap: 20px
+
+                            legend
+                                +opensans
+                                +bold
+                                font-size: 15px/16px*1em
+                                text-transform: uppercase
+                                color: #008cce
+
+
+
+                            .fieldset__checkbox
+                                display: grid
+                                grid-template-columns: 100%
+                                grid-template-rows: auto
+                                grid-row-gap: 5px
+
+                                .checkbox__content
+                                    display: grid
+                                    grid-template-columns: 25px/1190px*100% auto
+                                    grid-column-gap: 10px/1190px*100%
+
+                                    p  
+                                        +opensans
+                                        +regular
+                                        font-size:  18px
+                                    
+                                    input
+                                        align-self: center
+                                        justify-self: center
+                                        
+                                .ploshyad__content
+                                    display: grid
+                                    grid-template-columns: 270px/1190px*100% auto
+                                    grid-column-gap: 10px/1190px*100%
+                                    #ploshyad__calc
+                                        border-radius: 10px
+                                        border: 1px solid #d1d1d1
+                                        text-align: center
+                                        max-width: 270px
+                button
+                    border-radius: 10px
+                    border: 1px solid #ffc600
+                    box-shadow: 0 2px 20px rgba(255, 153, 0, 0.4)
+                    background-image: linear-gradient(to bottom, #ffed26 0%, #ffb400 100%)
+                    background-color: #e8e8e8
+                    text-align: center
+                    +sanscond
+                    +bold
+                    color: #000000
+                    font-size: 20px/16px*1em
+                    width: 100%
+                    max-width: 270px
+                    text-transform: uppercase
+                    justify-self: center
+                button:hover
+                    border: 1px solid #e2b513
+                    background-color: #ecbd11
+                    background-image: linear-gradient(to bottom, #ecbd11 0%, #fab411 100%)
+                    cursor: pointer
+                    
+
+                .price__calculator
+                    display: grid
+                    grid-template-columns: auto
+                    grid-template-rows: auto
+                    grid-row-gap: 10px
+
+                    .price__summ__calc
+                        +opensans
+                        +bold
+                        font-size: 20px
+                        text-transform: uppercase
+                        color: #008cce
+                    
+                    .price__calc
+                        +opensans
+                        +bold
+                        font-size: 20px
+                        text-transform: uppercase
+                        color: #000000
+
+                    .price__summ__sale__calc
+                        +opensans
+                        +bold
+                        font-size: 20px
+                        text-transform: uppercase
+                        color: #008cce
+
+                    .price__sale__calc
+                        +opensans
+                        +bold
+                        font-size: 20px
+                        text-transform: uppercase
+                        color: #000000
+            
+            .close-btn-6 
+                position: relative
+                width: 50px
+                cursor: pointer
+                grid-area: 1/1/2/2
+                align-self: start
+                justify-self: end
+                
+                .close-btn-6-in 
+                    width: inherit
+                    text-align: center
+
+                    .close-btn-6-txt 
+                        font-size: 9px
+                        text-align: center
+                        line-height: 40px
+                        font-weight: bold
+                        text-transform: uppercase
+                        color: #337AB7
+                        transition: all .3s ease-in
+                        opacity: 0
+                        cursor: pointer
+                        font-family: Verdana
+                    
+                .close-btn-6-in:before, .close-btn-6-in:after 
+                    position: absolute
+                    content: ''
+                    height: 4px
+                    width: inherit
+                    background: #337AB7
+                    left: 0
+                    transition: all .3s ease-in
+
+                .close-btn-6-in:before 
+                    top: calc(50% - 4px) 
+                    transform: rotate(45deg) 
+                
+                .close-btn-6-in:after  
+                    bottom: 50%
+                    transform: rotate(-45deg)
+                
+            .close-btn-6:hover
+                .close-btn-6-txt 
+                    opacity: 1
+                
+            .close-btn-6:hover .close-btn-6-in:before,.close-btn-6:hover .close-btn-6-in:after 
+                transform: rotate(0)
+                
+            .close-btn-6:hover .close-btn-6-in:before 
+                top: 0
+                
+            .close-btn-6:hover .close-btn-6-in:after 
+                    bottom: 0
+            
+
+
+    .main__primer__otdelky
+        
         .container
 
             .primer__otdelki

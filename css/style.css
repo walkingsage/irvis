@@ -1757,212 +1757,382 @@ main {
             text-transform: uppercase;
             align-self: center;
             font-weight: 700; }
-  main .main__primer__otdelky {
-    background-color: #f7f7f7; }
-    main .main__primer__otdelky .container .primer__otdelki {
+  main .main__calculator {
+    position: fixed;
+    width: 80%;
+    height: 100%;
+    max-height: 70vh;
+    overflow: scroll;
+    z-index: 47;
+    margin: 0 auto;
+    top: 150px;
+    left: 10%;
+    background-color: #ffffffd2;
+    border-radius: 10px;
+    padding: 20px 20px 20px 20px; }
+    main .main__calculator .container .calculator__content {
       display: grid;
-      grid-template-columns: auto;
-      grid-template-rows: auto auto;
-      grid-row-gap: 2.5em;
-      padding: 79px 0 79px 0;
-      height: auto; }
-      main .main__primer__otdelky .container .primer__otdelki .primer__otdelki__upper {
+      grid-template-columns: 100%;
+      grid-template-rows: auto;
+      grid-row-gap: 20px; }
+      main .main__calculator .container .calculator__content .calc__title {
+        grid-area: 1/1/2/2;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-row-gap: 20px; }
+        main .main__calculator .container .calculator__content .calc__title h1 {
+          font-size: 1.875em;
+          font-family: "Open Sans";
+          font-weight: 700;
+          text-align: center;
+          text-transform: uppercase;
+          color: #333333; }
+        main .main__calculator .container .calculator__content .calc__title .border {
+          width: 7%;
+          height: 2px;
+          border-radius: 100%;
+          background-color: #269AE6;
+          justify-self: center; }
+      main .main__calculator .container .calculator__content form {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-row-gap: 20px; }
+        main .main__calculator .container .calculator__content form fieldset {
+          border: none; }
+          main .main__calculator .container .calculator__content form fieldset .fieldset__content {
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: auto auto;
+            grid-row-gap: 20px; }
+            main .main__calculator .container .calculator__content form fieldset .fieldset__content legend {
+              font-family: "Open Sans";
+              font-weight: 700;
+              font-size: 0.9375em;
+              text-transform: uppercase;
+              color: #008cce; }
+            main .main__calculator .container .calculator__content form fieldset .fieldset__content .fieldset__checkbox {
+              display: grid;
+              grid-template-columns: 100%;
+              grid-template-rows: auto;
+              grid-row-gap: 5px; }
+              main .main__calculator .container .calculator__content form fieldset .fieldset__content .fieldset__checkbox .checkbox__content {
+                display: grid;
+                grid-template-columns: 2.1008403361% auto;
+                grid-column-gap: 0.8403361345%; }
+                main .main__calculator .container .calculator__content form fieldset .fieldset__content .fieldset__checkbox .checkbox__content p {
+                  font-family: "Open Sans";
+                  font-weight: 400;
+                  font-size: 18px; }
+                main .main__calculator .container .calculator__content form fieldset .fieldset__content .fieldset__checkbox .checkbox__content input {
+                  align-self: center;
+                  justify-self: center; }
+              main .main__calculator .container .calculator__content form fieldset .fieldset__content .fieldset__checkbox .ploshyad__content {
+                display: grid;
+                grid-template-columns: 22.6890756303% auto;
+                grid-column-gap: 0.8403361345%; }
+                main .main__calculator .container .calculator__content form fieldset .fieldset__content .fieldset__checkbox .ploshyad__content #ploshyad__calc {
+                  border-radius: 10px;
+                  border: 1px solid #d1d1d1;
+                  text-align: center;
+                  max-width: 270px; }
+      main .main__calculator .container .calculator__content button {
+        border-radius: 10px;
+        border: 1px solid #ffc600;
+        box-shadow: 0 2px 20px rgba(255, 153, 0, 0.4);
+        background-image: linear-gradient(to bottom, #ffed26 0%, #ffb400 100%);
+        background-color: #e8e8e8;
+        text-align: center;
+        font-family: "Open Sans Condensed";
+        font-weight: 700;
+        color: #000000;
+        font-size: 1.25em;
+        width: 100%;
+        max-width: 270px;
+        text-transform: uppercase;
+        justify-self: center; }
+      main .main__calculator .container .calculator__content button:hover {
+        border: 1px solid #e2b513;
+        background-color: #ecbd11;
+        background-image: linear-gradient(to bottom, #ecbd11 0%, #fab411 100%);
+        cursor: pointer; }
+      main .main__calculator .container .calculator__content .price__calculator {
         display: grid;
         grid-template-columns: auto;
         grid-template-rows: auto;
-        grid-row-gap: 5em; }
-        main .main__primer__otdelky .container .primer__otdelki .primer__otdelki__upper .primer__otdelki__title {
+        grid-row-gap: 10px; }
+        main .main__calculator .container .calculator__content .price__calculator .price__summ__calc {
+          font-family: "Open Sans";
+          font-weight: 700;
+          font-size: 20px;
+          text-transform: uppercase;
+          color: #008cce; }
+        main .main__calculator .container .calculator__content .price__calculator .price__calc {
+          font-family: "Open Sans";
+          font-weight: 700;
+          font-size: 20px;
+          text-transform: uppercase;
+          color: #000000; }
+        main .main__calculator .container .calculator__content .price__calculator .price__summ__sale__calc {
+          font-family: "Open Sans";
+          font-weight: 700;
+          font-size: 20px;
+          text-transform: uppercase;
+          color: #008cce; }
+        main .main__calculator .container .calculator__content .price__calculator .price__sale__calc {
+          font-family: "Open Sans";
+          font-weight: 700;
+          font-size: 20px;
+          text-transform: uppercase;
+          color: #000000; }
+    main .main__calculator .container .close-btn-6 {
+      position: relative;
+      width: 50px;
+      cursor: pointer;
+      grid-area: 1/1/2/2;
+      align-self: start;
+      justify-self: end; }
+      main .main__calculator .container .close-btn-6 .close-btn-6-in {
+        width: inherit;
+        text-align: center; }
+        main .main__calculator .container .close-btn-6 .close-btn-6-in .close-btn-6-txt {
+          font-size: 9px;
+          text-align: center;
+          line-height: 40px;
+          font-weight: bold;
+          text-transform: uppercase;
+          color: #337AB7;
+          transition: all 0.3s ease-in;
+          opacity: 0;
+          cursor: pointer;
+          font-family: Verdana; }
+      main .main__calculator .container .close-btn-6 .close-btn-6-in:before, main .main__calculator .container .close-btn-6 .close-btn-6-in:after {
+        position: absolute;
+        content: "";
+        height: 4px;
+        width: inherit;
+        background: #337AB7;
+        left: 0;
+        transition: all 0.3s ease-in; }
+      main .main__calculator .container .close-btn-6 .close-btn-6-in:before {
+        top: calc(50% - 4px);
+        transform: rotate(45deg); }
+      main .main__calculator .container .close-btn-6 .close-btn-6-in:after {
+        bottom: 50%;
+        transform: rotate(-45deg); }
+    main .main__calculator .container .close-btn-6:hover .close-btn-6-txt {
+      opacity: 1; }
+    main .main__calculator .container .close-btn-6:hover .close-btn-6-in:before, main .main__calculator .container .close-btn-6:hover .close-btn-6-in:after {
+      transform: rotate(0); }
+    main .main__calculator .container .close-btn-6:hover .close-btn-6-in:before {
+      top: 0; }
+    main .main__calculator .container .close-btn-6:hover .close-btn-6-in:after {
+      bottom: 0; }
+  main .main__primer__otdelky .container .primer__otdelki {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-row-gap: 2.5em;
+    padding: 79px 0 79px 0;
+    height: auto; }
+    main .main__primer__otdelky .container .primer__otdelki .primer__otdelki__upper {
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: auto;
+      grid-row-gap: 5em; }
+      main .main__primer__otdelky .container .primer__otdelki .primer__otdelki__upper .primer__otdelki__title {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 36px 25px;
+        justify-items: center; }
+        main .main__primer__otdelky .container .primer__otdelki .primer__otdelki__upper .primer__otdelki__title h1 {
+          font-family: "Open Sans";
+          font-weight: 700;
+          font-size: 1.875em;
+          color: #333333;
+          text-transform: uppercase; }
+        main .main__primer__otdelky .container .primer__otdelki .primer__otdelki__upper .primer__otdelki__title .primer__title__border {
+          background-color: #57B1EC;
+          width: 9.6%;
+          height: 7.7%;
+          align-self: end; }
+      main .main__primer__otdelky .container .primer__otdelki .primer__otdelki__upper .primer__otdelki__menu {
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: 100px; }
+        main .main__primer__otdelky .container .primer__otdelki .primer__otdelki__upper .primer__otdelki__menu .vnutr__otdelka {
+          border-right: 2px solid;
+          border-color: #EFEFEF; }
+        main .main__primer__otdelky .container .primer__otdelki .primer__otdelki__upper .primer__otdelki__menu .vnesh__otdelka {
+          border-right: 2px solid;
+          border-color: #EFEFEF; }
+        main .main__primer__otdelky .container .primer__otdelki .primer__otdelki__upper .primer__otdelki__menu .vynos__otdelka {
+          border-right: 2px solid;
+          border-color: #EFEFEF; }
+        main .main__primer__otdelky .container .primer__otdelki .primer__otdelki__upper .primer__otdelki__menu .navedenie__otdelka {
+          background-color: #EDEDED; }
+        main .main__primer__otdelky .container .primer__otdelki .primer__otdelki__upper .primer__otdelki__menu .active__otdelka {
+          background-color: #EDEDED; }
+        main .main__primer__otdelky .container .primer__otdelki .primer__otdelki__upper .primer__otdelki__menu .active__p {
+          font-family: "Open Sans";
+          font-weight: 400;
+          font-size: 1.25em;
+          text-transform: uppercase;
+          justify-self: center;
+          align-self: center;
+          color: #0085db;
+          border-bottom: none; }
+        main .main__primer__otdelky .container .primer__otdelki .primer__otdelki__upper .primer__otdelki__menu .otdelka {
           display: grid;
-          grid-template-columns: auto;
-          grid-template-rows: 36px 25px;
-          justify-items: center; }
-          main .main__primer__otdelky .container .primer__otdelki .primer__otdelki__upper .primer__otdelki__title h1 {
-            font-family: "Open Sans";
-            font-weight: 700;
-            font-size: 1.875em;
-            color: #333333;
-            text-transform: uppercase; }
-          main .main__primer__otdelky .container .primer__otdelki .primer__otdelki__upper .primer__otdelki__title .primer__title__border {
-            background-color: #57B1EC;
-            width: 9.6%;
-            height: 7.7%;
-            align-self: end; }
-        main .main__primer__otdelky .container .primer__otdelki .primer__otdelki__upper .primer__otdelki__menu {
-          display: grid;
-          grid-template-columns: repeat(4, 25%);
-          grid-template-rows: 100px; }
-          main .main__primer__otdelky .container .primer__otdelki .primer__otdelki__upper .primer__otdelki__menu .vnutr__otdelka {
-            border-right: 2px solid;
-            border-color: #EFEFEF; }
-          main .main__primer__otdelky .container .primer__otdelki .primer__otdelki__upper .primer__otdelki__menu .vnesh__otdelka {
-            border-right: 2px solid;
-            border-color: #EFEFEF; }
-          main .main__primer__otdelky .container .primer__otdelki .primer__otdelki__upper .primer__otdelki__menu .vynos__otdelka {
-            border-right: 2px solid;
-            border-color: #EFEFEF; }
-          main .main__primer__otdelky .container .primer__otdelki .primer__otdelki__upper .primer__otdelki__menu .navedenie__otdelka {
-            background-color: #EDEDED; }
-          main .main__primer__otdelky .container .primer__otdelki .primer__otdelki__upper .primer__otdelki__menu .active__otdelka {
-            background-color: #EDEDED; }
-          main .main__primer__otdelky .container .primer__otdelki .primer__otdelki__upper .primer__otdelki__menu .active__p {
+          grid-template-rows: 22px 78px; }
+          main .main__primer__otdelky .container .primer__otdelki .primer__otdelki__upper .primer__otdelki__menu .otdelka .upper__otd {
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 10px 12px;
+            opacity: 0%; }
+            main .main__primer__otdelky .container .primer__otdelki .primer__otdelki__upper .primer__otdelki__menu .otdelka .upper__otd .otdelka__upper {
+              background-color: #0d8fe3;
+              width: 100%;
+              height: 100%; }
+            main .main__primer__otdelky .container .primer__otdelki .primer__otdelki__upper .primer__otdelki__menu .otdelka .upper__otd .otdelka__treugolnik {
+              width: 0;
+              height: 0;
+              border-left: 6px solid transparent;
+              border-right: 6px solid transparent;
+              border-top: 6px solid #0d8fe3;
+              justify-self: center; }
+          main .main__primer__otdelky .container .primer__otdelki .primer__otdelki__upper .primer__otdelki__menu .otdelka .otdelka__p {
             font-family: "Open Sans";
             font-weight: 400;
             font-size: 1.25em;
             text-transform: uppercase;
             justify-self: center;
             align-self: center;
+            color: #000000;
+            border-bottom: 1px dotted #000000; }
+        main .main__primer__otdelky .container .primer__otdelki .primer__otdelki__upper .primer__otdelki__menu .otdelka:hover {
+          cursor: pointer;
+          background-color: #EDEDED; }
+          main .main__primer__otdelky .container .primer__otdelki .primer__otdelki__upper .primer__otdelki__menu .otdelka:hover .upper__otd {
+            opacity: 100%; }
+          main .main__primer__otdelky .container .primer__otdelki .primer__otdelki__upper .primer__otdelki__menu .otdelka:hover .otdelka__p {
             color: #0085db;
             border-bottom: none; }
-          main .main__primer__otdelky .container .primer__otdelki .primer__otdelki__upper .primer__otdelki__menu .otdelka {
-            display: grid;
-            grid-template-rows: 22px 78px; }
-            main .main__primer__otdelky .container .primer__otdelki .primer__otdelki__upper .primer__otdelki__menu .otdelka .upper__otd {
-              display: grid;
-              grid-template-columns: 100%;
-              grid-template-rows: 10px 12px;
-              opacity: 0%; }
-              main .main__primer__otdelky .container .primer__otdelki .primer__otdelki__upper .primer__otdelki__menu .otdelka .upper__otd .otdelka__upper {
-                background-color: #0d8fe3;
-                width: 100%;
-                height: 100%; }
-              main .main__primer__otdelky .container .primer__otdelki .primer__otdelki__upper .primer__otdelki__menu .otdelka .upper__otd .otdelka__treugolnik {
-                width: 0;
-                height: 0;
-                border-left: 6px solid transparent;
-                border-right: 6px solid transparent;
-                border-top: 6px solid #0d8fe3;
-                justify-self: center; }
-            main .main__primer__otdelky .container .primer__otdelki .primer__otdelki__upper .primer__otdelki__menu .otdelka .otdelka__p {
-              font-family: "Open Sans";
-              font-weight: 400;
-              font-size: 1.25em;
-              text-transform: uppercase;
-              justify-self: center;
-              align-self: center;
-              color: #000000;
-              border-bottom: 1px dotted #000000; }
-          main .main__primer__otdelky .container .primer__otdelki .primer__otdelki__upper .primer__otdelki__menu .otdelka:hover {
-            cursor: pointer;
-            background-color: #EDEDED; }
-            main .main__primer__otdelky .container .primer__otdelki .primer__otdelki__upper .primer__otdelki__menu .otdelka:hover .upper__otd {
-              opacity: 100%; }
-            main .main__primer__otdelky .container .primer__otdelki .primer__otdelki__upper .primer__otdelki__menu .otdelka:hover .otdelka__p {
-              color: #0085db;
-              border-bottom: none; }
-      main .main__primer__otdelky .container .primer__otdelki .primer__content {
+    main .main__primer__otdelky .container .primer__otdelki .primer__content {
+      display: grid;
+      grid-template-columns: 25.6629597947% 34.3883661249% 31.6509837468%;
+      grid-column-gap: 3.03125em;
+      grid-template-rows: 442px; }
+      main .main__primer__otdelky .container .primer__otdelki .primer__content .img__primer {
+        max-width: 300px;
+        width: 100%;
+        max-height: 100%;
+        height: 100%;
+        align-self: center;
+        justify-self: center; }
+      main .main__primer__otdelky .container .primer__otdelki .primer__content .primer__content__material {
         display: grid;
-        grid-template-columns: 25.6629597947% 34.3883661249% 31.6509837468%;
-        grid-column-gap: 3.03125em;
-        grid-template-rows: 442px; }
-        main .main__primer__otdelky .container .primer__otdelki .primer__content .img__primer {
-          max-width: 300px;
-          width: 100%;
-          max-height: 100%;
-          height: 100%;
-          align-self: center;
-          justify-self: center; }
-        main .main__primer__otdelky .container .primer__otdelki .primer__content .primer__content__material {
-          display: grid;
-          grid-template-columns: repeat(3, 26.6169154229%);
-          grid-template-rows: 159px 159px;
-          grid-row-gap: 15.8371040724%;
-          grid-column-gap: 10.0746268657%;
-          margin: 6.7873303167% 0 5.4298642534%; }
-          main .main__primer__otdelky .container .primer__otdelki .primer__content .primer__content__material .material__content {
-            display: grid;
-            grid-template-columns: auto;
-            grid-template-rows: 70px 69px;
-            grid-row-gap: 20px;
-            max-width: 110px; }
-            main .main__primer__otdelky .container .primer__otdelki .primer__content .primer__content__material .material__content img {
-              max-width: 70px;
-              max-height: 70px;
-              width: 100%;
-              height: 100%;
-              align-self: start;
-              justify-self: center;
-              border-radius: 50%; }
-            main .main__primer__otdelky .container .primer__otdelki .primer__content .primer__content__material .material__content .material__content__title {
-              display: grid;
-              grid-template-columns: auto;
-              grid-template-rows: 34px 15px 10px;
-              grid-row-gap: 5px; }
-              main .main__primer__otdelky .container .primer__otdelki .primer__content .primer__content__material .material__content .material__content__title .material__title {
-                font-family: "Open Sans";
-                font-weight: 700;
-                font-size: 0.875em;
-                text-align: center;
-                justify-self: center;
-                align-self: start; }
-              main .main__primer__otdelky .container .primer__otdelki .primer__content .primer__content__material .material__content .material__content__title .material__razmer {
-                font-family: "Open Sans";
-                font-weight: 700;
-                font-size: 0.875em;
-                color: #0d8fe3;
-                justify-self: center;
-                align-self: start; }
-              main .main__primer__otdelky .container .primer__otdelki .primer__content .primer__content__material .material__content .material__content__title .with__material {
-                font-family: "Open Sans";
-                font-weight: 400;
-                font-size: 0.75em;
-                text-align: center;
-                align-self: center; }
-        main .main__primer__otdelky .container .primer__otdelki .primer__content .form__otdelka {
+        grid-template-columns: repeat(3, 26.6169154229%);
+        grid-template-rows: 159px 159px;
+        grid-row-gap: 15.8371040724%;
+        grid-column-gap: 10.0746268657%;
+        margin: 6.7873303167% 0 5.4298642534%; }
+        main .main__primer__otdelky .container .primer__otdelki .primer__content .primer__content__material .material__content {
           display: grid;
           grid-template-columns: auto;
-          grid-template-rows: 25% 75%;
-          background-color: #ffffff;
-          border-radius: 10px;
-          height: 100%;
-          max-width: 370px; }
-          main .main__primer__otdelky .container .primer__otdelki .primer__content .form__otdelka .form__title {
-            text-align: center;
-            display: grid;
-            grid-template-rows: 50%;
-            grid-auto-columns: auto; }
-            main .main__primer__otdelky .container .primer__otdelki .primer__content .form__otdelka .form__title p {
-              align-self: end;
-              font-family: "Open Sans";
-              font-weight: 700;
-              font-size: 1em;
-              color: #333333;
-              text-transform: uppercase; }
-            main .main__primer__otdelky .container .primer__otdelki .primer__content .form__otdelka .form__title h1 {
-              align-self: start;
-              font-family: "Open Sans";
-              font-weight: 700;
-              font-size: 1.5em;
-              color: #333333;
-              text-transform: uppercase; }
-          main .main__primer__otdelky .container .primer__otdelki .primer__content .form__otdelka form {
+          grid-template-rows: 70px 69px;
+          grid-row-gap: 20px;
+          max-width: 110px; }
+          main .main__primer__otdelky .container .primer__otdelki .primer__content .primer__content__material .material__content img {
+            max-width: 70px;
+            max-height: 70px;
+            width: 100%;
+            height: 100%;
+            align-self: start;
+            justify-self: center;
+            border-radius: 50%; }
+          main .main__primer__otdelky .container .primer__otdelki .primer__content .primer__content__material .material__content .material__content__title {
             display: grid;
             grid-template-columns: auto;
-            grid-template-rows: 18% 18% 24% 18%;
-            grid-gap: 7%;
-            justify-items: center; }
-            main .main__primer__otdelky .container .primer__otdelki .primer__content .form__otdelka form input {
-              border-radius: 10px;
-              border: 1px solid #d1d1d1;
-              text-align: center;
-              width: 79%; }
-            main .main__primer__otdelky .container .primer__otdelki .primer__content .form__otdelka form .button {
-              border-radius: 10px;
-              border: 1px solid #ffc600;
-              box-shadow: 0 2px 20px rgba(255, 153, 0, 0.4);
-              background-image: linear-gradient(to bottom, #ffed26 0%, #ffb400 100%);
-              background-color: #e8e8e8;
-              text-align: center;
-              font-family: "Open Sans Condensed";
-              font-weight: 700;
-              color: #000000;
-              font-size: 1.25em;
-              width: 79%;
-              text-transform: uppercase; }
-            main .main__primer__otdelky .container .primer__otdelki .primer__content .form__otdelka form p {
+            grid-template-rows: 34px 15px 10px;
+            grid-row-gap: 5px; }
+            main .main__primer__otdelky .container .primer__otdelki .primer__content .primer__content__material .material__content .material__content__title .material__title {
               font-family: "Open Sans";
-              font-weight: 300;
-              font-size: 0.6875em;
-              color: #666666; }
+              font-weight: 700;
+              font-size: 0.875em;
+              text-align: center;
+              justify-self: center;
+              align-self: start; }
+            main .main__primer__otdelky .container .primer__otdelki .primer__content .primer__content__material .material__content .material__content__title .material__razmer {
+              font-family: "Open Sans";
+              font-weight: 700;
+              font-size: 0.875em;
+              color: #0d8fe3;
+              justify-self: center;
+              align-self: start; }
+            main .main__primer__otdelky .container .primer__otdelki .primer__content .primer__content__material .material__content .material__content__title .with__material {
+              font-family: "Open Sans";
+              font-weight: 400;
+              font-size: 0.75em;
+              text-align: center;
+              align-self: center; }
+      main .main__primer__otdelky .container .primer__otdelki .primer__content .form__otdelka {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 25% 75%;
+        background-color: #ffffff;
+        border-radius: 10px;
+        height: 100%;
+        max-width: 370px; }
+        main .main__primer__otdelky .container .primer__otdelki .primer__content .form__otdelka .form__title {
+          text-align: center;
+          display: grid;
+          grid-template-rows: 50%;
+          grid-auto-columns: auto; }
+          main .main__primer__otdelky .container .primer__otdelki .primer__content .form__otdelka .form__title p {
+            align-self: end;
+            font-family: "Open Sans";
+            font-weight: 700;
+            font-size: 1em;
+            color: #333333;
+            text-transform: uppercase; }
+          main .main__primer__otdelky .container .primer__otdelki .primer__content .form__otdelka .form__title h1 {
+            align-self: start;
+            font-family: "Open Sans";
+            font-weight: 700;
+            font-size: 1.5em;
+            color: #333333;
+            text-transform: uppercase; }
+        main .main__primer__otdelky .container .primer__otdelki .primer__content .form__otdelka form {
+          display: grid;
+          grid-template-columns: auto;
+          grid-template-rows: 18% 18% 24% 18%;
+          grid-gap: 7%;
+          justify-items: center; }
+          main .main__primer__otdelky .container .primer__otdelki .primer__content .form__otdelka form input {
+            border-radius: 10px;
+            border: 1px solid #d1d1d1;
+            text-align: center;
+            width: 79%; }
+          main .main__primer__otdelky .container .primer__otdelki .primer__content .form__otdelka form .button {
+            border-radius: 10px;
+            border: 1px solid #ffc600;
+            box-shadow: 0 2px 20px rgba(255, 153, 0, 0.4);
+            background-image: linear-gradient(to bottom, #ffed26 0%, #ffb400 100%);
+            background-color: #e8e8e8;
+            text-align: center;
+            font-family: "Open Sans Condensed";
+            font-weight: 700;
+            color: #000000;
+            font-size: 1.25em;
+            width: 79%;
+            text-transform: uppercase; }
+          main .main__primer__otdelky .container .primer__otdelki .primer__content .form__otdelka form p {
+            font-family: "Open Sans";
+            font-weight: 300;
+            font-size: 0.6875em;
+            color: #666666; }
   main .main__our__work {
     height: auto; }
     main .main__our__work .our__work {

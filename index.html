@@ -84,6 +84,139 @@
                 </div>
             </div>
         </div>
+        <div style="display: none;" class="main__calculator">
+            <div class="container">
+                <div class="calculator__content">
+                    <div class="calc__title">
+                        <h1>расчет стоимости</h1>
+                        <span class="border"></span>
+                    </div>
+                    <div class="close-btn-6">
+                        <div class="close-btn-6-in">
+                            <div class="close-btn-6-txt">Закрыть</div>
+                        </div>
+                    </div>
+                    <form action="">
+                        <fieldset>
+                            <div class="fieldset__content">
+                                <legend>Выберите тип остекления:</legend>
+                                <div class="fieldset__checkbox">
+                                    <div class="checkbox__content">
+                                        <input id="derevo__calc" type="radio">
+                                        <p>Деревянное остекление</p>
+                                    </div>
+                                    <div class="checkbox__content">
+                                        <input id="alumine__calc" type="radio">
+                                        <p>Аллюминиевое остекление</p>
+                                    </div>
+                                    <div class="checkbox__content">
+                                        <input id="plast__calc" type="radio">
+                                        <p>Остекление пластиковыми рамами</p>
+                                    </div>
+                                    <div class="checkbox__content">
+                                        <input id="france__calc" type="radio">
+                                        <p>Французское остекление</p>
+                                    </div>
+                                    <div class="checkbox__content">
+                                        <input id="vynosnoe__calc"  type="radio">
+                                        <p>Остекление с выносом</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <div class="fieldset__content">
+                                <legend>Холодное или теплое?</legend>
+                                <div class="fieldset__checkbox">
+                                    <div class="checkbox__content">
+                                        <input id="cold__calc" type="radio">
+                                        <p>Холодное</p>
+                                    </div>
+                                    <div class="checkbox__content">
+                                        <input id="hot__calc" type="radio">
+                                        <p>Теплое</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <div class="fieldset__content">
+                                <legend>Выберите вид работ:</legend>
+                                    <div class="fieldset__checkbox">
+                                        <div class="checkbox__content">
+                                            <input id="vnutr__otd__calc" type="radio">
+                                            <p>Внутренняя отделка</p>
+                                        </div>
+                                        <div class="checkbox__content">
+                                            <input id="vnesh__otd__calc" type="radio">
+                                            <p>Внешняя отделка</p>
+                                        </div>
+                                        <div class="checkbox__content">
+                                            <input id="vynos__ostekl__calc" type="radio">
+                                            <p>Выносное остекление</p>
+                                        </div>
+                                        <div class="checkbox__content">
+                                            <input id="krysha__balkon__calc" type="radio">
+                                            <p>Крыша на балкон</p>
+                                        </div>
+                                    </div>
+                                </div>
+                        </fieldset>
+                        <fieldset>
+                            <div class="fieldset__content">
+                                <legend>Какой материал будем использовать?</legend>
+                                    <div class="fieldset__checkbox">
+                                        <div class="checkbox__content">
+                                            <input id="vagonka__calc" type="checkbox">
+                                            <p>Вагонка</p>
+                                        </div>
+                                        <div class="checkbox__content">
+                                            <input id="plast__vagonka__calc" type="checkbox">
+                                            <p>Пластиковая вагонка</p>
+                                        </div>
+                                        <div class="checkbox__content">
+                                            <input id="pvh__panel__calc" type="checkbox">
+                                            <p>ПВХ-панели</p>
+                                        </div>
+                                        <div class="checkbox__content">
+                                            <input id="laminat__calc" type="checkbox">
+                                            <p>Настил пола из ламината</p>
+                                        </div>
+                                        <div class="checkbox__content">
+                                            <input id="derevo__nastil__calc" type="checkbox">
+                                            <p>Настил пола из дерева</p>
+                                        </div>
+                                        <div class="checkbox__content">
+                                            <input id="siding__calc" type="checkbox">
+                                            <p>Сайдинг</p>
+                                        </div>
+                                        <div class="checkbox__content">
+                                            <input id="profnastil__calc" type="checkbox">
+                                            <p>Профнастил</p>
+                                        </div>
+                                    </div>
+                                </div>
+                        </fieldset>
+                        <fieldset>
+                            <div class="fieldset__content">
+                                <legend>Площадь помещения:</legend>
+                                <div class="fieldset__checkbox">
+                                    <div class="ploshyad__content">
+                                        <input id="ploshyad__calc" type="number" step="0.1">
+                                        <p>м<sup>2</sup></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                    <button class="raschet" >Рассчитать</button>
+                    <div class="price__calculator">
+                        <p class="price__summ__calc">примерная стоимость: <span class="price__calc">Нажмите Рассчитать</span></p>
+                        <P class="price__summ__sale__calc">со скидкой 60%: <span class="price__sale__calc">Нажмите Рассчитать</span></P>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="main__primer">
             <div class="container">
                 <div class="type__balkon">
@@ -157,7 +290,7 @@
                                         <p class="key">под ключ с установкой</p>
                                     </div>
                                     <div class="primer__raboty__footer__cold__right">
-                                        <button class="button">расчитать стоимость</button>
+                                        <button class="button button__cold">расчитать стоимость</button>
                                     </div>
                                 </div>
                             </div>
@@ -196,7 +329,7 @@
                                         <p class="key">под ключ с установкой</p>
                                     </div>
                                     <div class="primer__raboty__footer__hot__right">
-                                        <button class="button">расчитать стоимость</button>
+                                        <button class="button button__hot">расчитать стоимость</button>
                                     </div>
                                 </div>
                             </div>
@@ -551,5 +684,6 @@
             $("#numberone").mask("+9(999)-999-99-99");
         });
     </script>
+    <script src="js/calc.js" ></script>
 </body>
 </html> 
